@@ -1,0 +1,56 @@
+ccflags-$(CONFIG_AMEBADPLUS)           += -DCONFIG_AMEBADPLUS
+ccflags-$(CONFIG_AMEBAGREEN2)          += -DCONFIG_AMEBAGREEN2
+ccflags-$(CONFIG_AMEBALITE)            += -DCONFIG_AMEBALITE
+ccflags-$(CONFIG_AMEBAX)               += -DCONFIG_AMEBAX
+
+ccflags-$(CONFIG_NAN) += -DCONFIG_NAN
+ccflags-$(CONFIG_P2P) += -DCONFIG_P2P
+ccflags-$(CONFIG_IEEE80211R) += -DCONFIG_IEEE80211R
+ccflags-$(CONFIG_BT_INIC) += -DCONFIG_BT_INIC
+ccflags-$(CONFIG_WHC_HCI_SPI) += -DCONFIG_WHC_HCI_SPI
+ccflags-$(CONFIG_WHC_CMD_PATH) += -DCONFIG_WHC_CMD_PATH
+ccflags-$(CONFIG_WHC_WIFI_API_PATH) += -DCONFIG_WHC_WIFI_API_PATH
+ccflags-$(CONFIG_SUPPLICANT_SME) += -DCONFIG_SUPPLICANT_SME
+ccflags-$(CONFIG_RMESH) += -DCONFIG_RMESH
+
+ccflags-y += -DCONFIG_WHC_HOST_LINUX
+ccflags-y += -I$(src)/../shared/include -I$(src)/core -I$(src)/platforms/linux_android/netdev
+ccflags-y += -I$(src)/include/sdk -I$(src)/core -I$(src)/core/common -I$(src)/bus/spi
+
+whc_spi-$(CONFIG_WHC_HCI_SPI) := \
+		bus/spi/whc_spi_host_ops.o \
+		bus/spi/whc_spi_host_probe.o \
+		platforms/linux_android/netdev/whc_host_ethtool_ops.o \
+		platforms/linux_android/netdev/whc_host_netdev_ops.o \
+		core/whc_host_trx.o \
+		core/whc_host_pkt_tx.o \
+		core/whc_host_pkt_rx.o \
+		core/whc_host_memory.o \
+		core/whc_host_hci.o \
+		platforms/linux_android/netdev/whc_host_ops_sta.o \
+		platforms/linux_android/netdev/whc_host_wiphy.o \
+		core/whc_host_regd.o \
+		core/whc_host_ft.o \
+		platforms/linux_android/netdev/whc_host_ops_ap.o \
+		platforms/linux_android/netdev/whc_host_ops_key.o \
+		platforms/linux_android/netdev/whc_host_ops_nan.o \
+		platforms/linux_android/netdev/whc_host_ops_p2p.o \
+		platforms/linux_android/netdev/whc_host_netdev_ops_p2p.o \
+		core/whc_host_cfgvendor.o \
+		core/whc_host_proc.o \
+		platforms/linux_android/netdev/whc_host_ops.o \
+			core/whc_host_event_tx.o \
+		core/whc_host_event_rx.o \
+		core/whc_host_event_hdl.o \
+		core/whc_host_protocal_offload.o \
+		core/whc_host_acs.o
+
+whc_spi-$(CONFIG_BT_INIC) += rtb_spi.o
+
+ifeq ($(CONFIG_WHC_CMD_PATH), y)
+    whc_spi-$(CONFIG_WHC_HCI_SPI) += \
+            core/whc_host_netlink.o \
+            core/whc_host_cmd_path_tx.o
+endif
+
+obj-m += whc_spi.o

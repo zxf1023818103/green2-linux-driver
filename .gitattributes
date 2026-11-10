@@ -1,0 +1,2 @@
+# Unified diff context starts with a required space before original tabs.
+*.patch -whitespace

@@ -2,12 +2,24 @@
   "hostap_reference": {
     "repository": "https://github.com/zephyrproject-rtos/hostap",
     "commit": "1ce844ea5a9d8860d8690a125925fcc7274461df",
-    "config": "app/wifi_nan_utility/pasn_probe/hostap-pasn.config"
+    "config": "cli_tool/legacy/wifi_nan_utility/pasn_probe/hostap-pasn.config"
   },
   "userspace": [
     "compatible libpasn.so",
     "OpenSSL",
     "libnl-3 and libnl-genl-3 (Android may supply the matching vendor libnl)"
   ],
-  "kernel": "prepared target kernel headers/configuration/Module.symvers; GKI ABI must match"
+  "kernel": "prepared target kernel headers/configuration/Module.symvers; GKI ABI must match",
+  "android_build": {
+    "gradle": "8.11.1",
+    "agp": "8.10.1",
+    "sdk": 36,
+    "build_tools": "36.0.0",
+    "ndk": "26.2.11394342"
+  },
+  "android_srt": {
+    "artifact": "srtdroid-core-1.9.5.aar",
+    "sha256": "44244f2ebd486ab6b4be87c3426617b0df523d828304465d147b443e55b46404",
+    "headers": "matching SRT headers supplied by caller"
+  }
 }

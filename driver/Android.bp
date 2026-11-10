@@ -1,0 +1,6 @@
+// Kernel source exports for device/vendor consumers; do not compile kernel code as cc_library.
+filegroup {
+    name: "green2_whc_android_sources",
+    visibility: ["//visibility:public"],
+    srcs: [":green2_whc_kernel_sources"],
+}

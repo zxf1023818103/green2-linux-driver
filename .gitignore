@@ -31,3 +31,14 @@ nik_cache
 pasn_npk
 
 /tests/out/
+
+# Component-local builds and SDK configuration
+**/.config
+**/.config.old
+**/build/
+**/build-*/
+**/.cxx/
+**/.gradle/
+**/local.properties
+*.apk
+*.aab

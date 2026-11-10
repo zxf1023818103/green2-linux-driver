@@ -1,0 +1,115 @@
+ccflags-$(CONFIG_AMEBADPLUS)           += -DCONFIG_AMEBADPLUS
+ccflags-$(CONFIG_AMEBAGREEN2)          += -DCONFIG_AMEBAGREEN2
+ccflags-$(CONFIG_AMEBALITE)            += -DCONFIG_AMEBALITE
+ccflags-$(CONFIG_AMEBAX)               += -DCONFIG_AMEBAX
+
+ccflags-$(CONFIG_NAN) += -DCONFIG_NAN
+ccflags-$(CONFIG_P2P) += -DCONFIG_P2P
+ccflags-$(CONFIG_MCC) += -DCONFIG_MCC
+ccflags-$(CONFIG_IEEE80211R) += -DCONFIG_IEEE80211R
+ccflags-$(CONFIG_BT_INIC) += -DCONFIG_BT_INIC
+ccflags-$(CONFIG_WHC_HCI_SDIO) += -DCONFIG_WHC_HCI_SDIO
+ccflags-$(CONFIG_WHC_CMD_PATH) += -DCONFIG_WHC_CMD_PATH
+ccflags-$(CONFIG_WHC_WIFI_API_PATH) += -DCONFIG_WHC_WIFI_API_PATH
+CONFIG_WHC_HOST_LOG_FWD := y
+ccflags-$(CONFIG_WHC_HOST_LOG_FWD) += -DCONFIG_WHC_HOST_LOG_FWD
+ccflags-$(CONFIG_SUPPLICANT_SME) += -DCONFIG_SUPPLICANT_SME
+ccflags-$(CONFIG_RMESH) += -DCONFIG_RMESH
+ccflags-$(CONFIG_FW_DOWNLOAD) += -DCONFIG_FW_DOWNLOAD
+ccflags-$(CONFIG_WHCH) += -DCONFIG_WHCH
+
+ccflags-y += -DCONFIG_WHC_HOST_LINUX
+ccflags-y += -I$(src)/../shared/include -I$(src)/core -I$(src)/platforms/linux_android/netdev
+ccflags-y += -I$(src)/include/sdk -I$(src)/core -I$(src)/core/common -I$(src)/bus/sdio
+
+ifeq ($(CONFIG_WHCH), y)
+ccflags-y += -I$(src)/core/whch -I$(src)/core/whch/hal
+ifeq ($(CONFIG_AMEBAGREEN2), y)
+ccflags-y += -I$(src)/core/whch/hal/rtl8721f
+endif
+endif
+
+#for ko size, no debug info if enabled
+#EXTRA_CFLAGS += -g0
+
+whc_sdio-$(CONFIG_WHC_HCI_SDIO) := \
+		bus/sdio/whc_sdio_host_drvio.o \
+		bus/sdio/whc_sdio_host_ops.o \
+		bus/sdio/whc_sdio_host_probe.o \
+		bus/sdio/whc_sdio_host_init.o	\
+		platforms/linux_android/netdev/whc_host_ethtool_ops.o \
+		platforms/linux_android/netdev/whc_host_netdev_ops.o \
+		core/whc_host_trx.o \
+		core/whc_host_pkt_tx.o \
+		core/whc_host_pkt_rx.o \
+		core/whc_host_memory.o \
+		core/whc_host_hci.o \
+		core/whc_host_ft.o \
+		platforms/linux_android/netdev/whc_host_ops_nan.o \
+		platforms/linux_android/netdev/whc_host_ops_p2p.o \
+		platforms/linux_android/netdev/whc_host_netdev_ops_p2p.o \
+		core/whc_host_cfgvendor.o
+
+ifeq ($(CONFIG_WHCH), y)
+    whc_sdio-$(CONFIG_WHC_HCI_SDIO) += \
+		core/whch/whch_host_pkt_tx_proc.o \
+		core/whch/whch_host_pkt_rx_proc.o \
+		core/whch/whch_host_sta_mgt.o \
+		core/whch/whch_host_security.o \
+		core/whch/whch_host_arc4.o \
+		core/whch/whch_host_mlme.o \
+		core/whch/whch_host_addba.o \
+		core/whch/hal/whch_host_hal_xmit_com.o \
+		core/whch/hal/whch_host_hal_recv_com.o
+ifeq ($(CONFIG_NAN), y)
+    whc_sdio-$(CONFIG_WHC_HCI_SDIO) += \
+		core/whch/whch_host_nan.o
+endif
+ifeq ($(CONFIG_AMEBAGREEN2), y)
+    whc_sdio-$(CONFIG_WHC_HCI_SDIO) += \
+		core/whch/hal/rtl8721f/whch_host_hal_xmit.o \
+		core/whch/hal/rtl8721f/whch_host_hal_rate.o \
+		core/whch/hal/rtl8721f/whch_host_hal_recv.o
+endif
+endif
+
+ifeq ($(CONFIG_WHC_WIFI_API_PATH), y)
+    whc_sdio-$(CONFIG_WHC_HCI_SDIO) += \
+			core/whc_host_proc.o \
+			platforms/linux_android/netdev/whc_host_ops_sta.o \
+			platforms/linux_android/netdev/whc_host_ops_ap.o \
+			platforms/linux_android/netdev/whc_host_ops.o \
+			core/whc_host_event_tx.o \
+			core/whc_host_event_rx.o \
+			core/whc_host_event_hdl.o \
+			platforms/linux_android/netdev/whc_host_wiphy.o \
+			core/whc_host_regd.o \
+			core/whc_host_protocal_offload.o \
+			platforms/linux_android/netdev/whc_host_ops_key.o \
+			core/whc_host_acs.o
+
+endif
+
+ifeq ($(CONFIG_WHC_CMD_PATH), y)
+    whc_sdio-$(CONFIG_WHC_HCI_SDIO) += \
+            core/whc_host_netlink.o \
+            core/whc_host_cmd_path_tx.o
+    whc_sdio-$(CONFIG_WHC_HOST_LOG_FWD) += core/whc_host_log_fwd.o
+
+    ifeq ($(CONFIG_WHC_HOST_RTW_CLI),y)
+        ccflags-$(CONFIG_WHC_HOST_RTW_CLI) += -DCONFIG_WHC_HOST_RTW_CLI
+        ccflags-y += -I$(src)/core/whc_host_rtw_cli
+
+        whc_sdio-$(CONFIG_WHC_HCI_SDIO) += \
+               core/whc_host_rtw_cli/whc_host_rtw_cli_custom_netlink.o \
+               core/whc_host_rtw_cli/whc_host_rtw_cli_api.o
+    endif
+
+endif
+
+whc_sdio-$(CONFIG_BT_INIC) += rtb_sdio.o
+
+include $(src)/bus/fwdl/Kbuild
+whc_sdio-$(CONFIG_FW_DOWNLOAD) += $(addprefix bus/fwdl/, $(FWDL_OBJS))
+
+obj-m += whc_sdio.o

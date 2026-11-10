@@ -1,0 +1,26 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" android:sharedUserId="android.uid.system">
+    <uses-sdk android:minSdkVersion="34" android:targetSdkVersion="36"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA"/>
+    <uses-feature android:name="android.hardware.wifi.aware" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <application android:label="Flash Studio" android:allowBackup="false" android:hasCode="true" android:extractNativeLibs="true">
+        <service android:name=".Green2Service" android:exported="true" android:permission="android.permission.DUMP" android:foregroundServiceType="connectedDevice|camera"/>
+        <receiver android:name=".BootReceiver" android:exported="false">
+            <intent-filter><action android:name="android.intent.action.BOOT_COMPLETED"/></intent-filter>
+        </receiver>
+    </application>
+    <instrumentation android:name=".ServiceChecks" android:targetPackage="cn.zenghome.flashstudio" android:label="Green2 headless checks"/>
+</manifest>

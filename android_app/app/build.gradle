@@ -1,0 +1,43 @@
+plugins { id 'com.android.application' }
+
+def srtAar = providers.gradleProperty('green2SrtAar').orElse(providers.environmentVariable('GREEN2_SRT_AAR')).getOrElse("${rootDir}/prebuilts/srtdroid-core-1.9.5.aar")
+def srtInclude = providers.gradleProperty('green2SrtInclude').orElse(providers.environmentVariable('GREEN2_SRT_INCLUDE')).getOrElse("${rootDir}/prebuilts/srt-include")
+def extracted = layout.buildDirectory.dir('green2-prebuilt/jniLibs')
+def prepareSrt = tasks.register('prepareGreen2Srt', Sync) {
+    doFirst { if (!file(srtAar).isFile()) throw new GradleException('Supply GREEN2_SRT_AAR / -Pgreen2SrtAar with the pinned prebuilt AAR') }
+    from({ zipTree(file(srtAar)) }) { include 'jni/arm64-v8a/libsrtdroid.so'; eachFile { path = path.replaceFirst('jni/', '') }; includeEmptyDirs = false }
+    into extracted
+}
+android {
+    namespace 'cn.zenghome.flashstudio'
+    compileSdk 36
+    buildToolsVersion '36.0.0'
+    ndkVersion '26.2.11394342'
+    defaultConfig {
+        applicationId 'cn.zenghome.flashstudio'
+        minSdk 34
+        targetSdk 36
+        versionCode 1
+        versionName '1.0'
+        ndk { abiFilters 'arm64-v8a' }
+        externalNativeBuild {
+            cmake {
+                cppFlags '-std=c++17 -Os'
+                arguments '-DANDROID_STL=c++_static',
+                    "-DGREEN2_SRT_INCLUDE=${file(srtInclude).absolutePath}",
+                    "-DGREEN2_SRT_LIBRARY=${extracted.get().asFile.absolutePath}/arm64-v8a/libsrtdroid.so"
+            }
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path file('src/main/cpp/CMakeLists.txt')
+            if (providers.gradleProperty('green2CmakeVersion').isPresent()) version providers.gradleProperty('green2CmakeVersion').get()
+        }
+    }
+    sourceSets { main { jniLibs.srcDirs = [extracted.get().asFile] } }
+    packaging { jniLibs { useLegacyPackaging = true; pickFirsts += ['**/libsrtdroid.so'] } }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+    buildTypes { release { minifyEnabled false } }
+}
+tasks.configureEach { if (name == 'preBuild' || name.startsWith('configureCMake') || name.startsWith('buildCMake')) dependsOn prepareSrt }

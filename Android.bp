@@ -1,25 +1,17 @@
-// Soong exports files for platform integration; Kbuild compiles the .ko.
+// Soong file exports; kernel modules themselves are compiled by Kbuild/Kleaf.
 filegroup {
     name: "green2_whc_kernel_sources",
     visibility: ["//visibility:public"],
-    srcs: [
-        "Kbuild",
-        "Makefile",
-        "configs/*_defconfig",
-        "src/**/*.c",
-        "src/**/*.h",
-        "src/**/Kbuild",
-        "include/**/*.h",
-    ],
+    srcs: ["driver/Kbuild", "driver/Makefile", "driver/configs/*_defconfig", "driver/**/*.c", "driver/**/*.h", "driver/**/Kbuild", "shared/include/*.h"],
 }
 cc_library_headers {
     name: "green2_whc_public_headers",
     vendor_available: true,
     visibility: ["//visibility:public"],
-    export_include_dirs: ["include"],
+    export_include_dirs: ["shared/include", "cli_tool/include"],
 }
 filegroup {
     name: "green2_pasn_core_sources",
     visibility: ["//visibility:public"],
-    srcs: ["app/wifi_nan_utility/pasn_probe/core/green2_pasn.c"],
+    srcs: ["cli_tool/src/pasn/pasn_engine.c", "shared/src/protocol_common.c"],
 }

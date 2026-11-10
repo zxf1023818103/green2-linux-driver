@@ -1,0 +1,10 @@
+; Green2 public nl80211 + RTNL backend; only observed interface ioctls.
+(allow hal_wifi_default self (netlink_route_socket (create bind read write getattr setopt getopt nlmsg_read nlmsg_write)))
+(allow hal_wifi_default self (udp_socket (ioctl)))
+(allowx hal_wifi_default self (ioctl udp_socket (0x8913 0x8914 0x8924 0x8927)))
+; Green2 private pairing cache: HAL only; app receives Android-managed keys.
+(type green2_wifi_data_file)
+(typeattributeset file_type (green2_wifi_data_file))
+(typeattributeset data_file_type (green2_wifi_data_file))
+(allow hal_wifi_default green2_wifi_data_file (dir (create open read write search add_name remove_name getattr setattr)))
+(allow hal_wifi_default green2_wifi_data_file (file (create open read write getattr setattr rename unlink)))
