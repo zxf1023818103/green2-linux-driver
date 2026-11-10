@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "layout": [
     "shared",
     "driver",
@@ -48,7 +48,7 @@
       "SRT_JPEG_multipart_timestamps": "PASS, synthetic loopback",
       "BLE_advertisement_connection_GATT_read_write_notify": "PASS, physical Green2 USB peer to onboard 88W8997",
       "SGTL5000_ALSA_card": "enumerated; no new acoustic loopback test",
-      "iPhone_NAN_PING_throughput_on_new_image": "PENDING phone result; pairing and NDP passed, actual TCP/throughput not yet confirmed",
+      "iPhone_NAN_PING_throughput_on_new_image": "PASS: user completed bidirectional throughput test",
       "iPhone_PIN_pairing_and_cached_verification": "PASS in board logs after Green2 radio reset and fresh phone pairing",
       "iPhone_NDP_establishment": "PASS in board logs"
     },
@@ -58,6 +58,20 @@
       "whc_usb.ko": "d2fcbf0c52a5a5fb89dfeff2bdc266bcb6d3ed109341007a0644117a73ff05b6",
       "libgreen2pasn.so": "04a23bd6d60bdab0f5cb6d80aa1075d2285ae2d15eea616953d7dd0589627018",
       "FlashStudio.apk": "906b750a0d7c98f4348f4ffe2bddd60c2ea871fc8487bf5f8ac98bd9c3dd7ecd"
+    },
+    "phone_test_interface_counters": {
+      "rx_bytes": 34841632,
+      "tx_bytes": 42456303,
+      "rx_errors": 0,
+      "tx_errors": 0,
+      "rx_dropped": 0,
+      "tx_dropped": 0,
+      "meaning": "Cumulative NAN interface traffic after phone test; includes overhead and is not a goodput/rate measurement"
+    },
+    "phone_goodput_mbps": {
+      "upload": 24,
+      "download": 30,
+      "source": "User-reported iPhone result on the flashed image; rounded display values, not reconstructed from interface counters"
     }
   },
   "ubuntu_core26": {
@@ -71,13 +85,41 @@
     "first_boot_and_reboot": "PASS, VMware EFI",
     "ssh_key_only": "PASS",
     "failed_systemd_units": 0,
-    "whc_module_load_and_ABI": "PASS, without USB device",
-    "snap_services": "enabled and active; waiting for hardware",
+    "whc_module_load_and_ABI": "PASS with real Green2 USB interface 2",
+    "snap_services": "PASS: enabled and active, dual NAN publisher, TCP listener and BLE advertisement",
     "PASN_crypto_cache_callbacks_atomic_files": "PASS in Core 26 VM",
     "SAE_setup_220_truncations_negative_cases": "PASS in Core 26 VM",
     "PASN_retransmit": "PASS in Core 26 VM",
-    "Green2_USB_NAN_BLE_physical": "PENDING operator USB transfer after Android test",
-    "image_sha256": "9df1e1d87b0fc9d5adb69ef4e2d1507f30c03f4167093a76a93ecbd116e1abd8"
+    "Green2_USB_NAN_BLE_physical": "PASS: physical NAN PIN pairing, cached NIRA verification, NDP and bidirectional TCP throughput. Physical BLE controller and advertisement verified; BLE GATT end-to-end not re-tested on Core 26.",
+    "image_sha256": "9df1e1d87b0fc9d5adb69ef4e2d1507f30c03f4167093a76a93ecbd116e1abd8",
+    "phone_goodput_mbps": {
+      "upload": 19.019,
+      "download": 25.881,
+      "source": "User-reported iPhone received-goodput display"
+    },
+    "server_goodput": {
+      "upload": {
+        "bytes": 23986176,
+        "seconds": 10.089387868000017,
+        "mbps": 19.018934598461183,
+        "counter": "received"
+      },
+      "download": {
+        "bytes": 32833536,
+        "seconds": 10.034143561999997,
+        "mbps": 26.177449662444854,
+        "counter": "submitted"
+      }
+    },
+    "phone_test_interface_counters": {
+      "rx_bytes": 27202446,
+      "tx_bytes": 36628761,
+      "rx_errors": 0,
+      "tx_errors": 0,
+      "rx_dropped": 0,
+      "tx_dropped": 0
+    },
+    "radio_profile": "2GHz default; Android enabled 2GHz/5GHz; not a controlled cross-platform performance comparison"
   },
   "known_issues": [
     {
@@ -89,6 +131,11 @@
       "name": "Android_pairing_cache_after_framework_restart",
       "status": "LIMITATION",
       "details": "AOSP framework NPKSA maps are volatile; a fresh phone pairing may be needed after reboot."
+    },
+    {
+      "name": "USB_host_transfer_requires_radio_reset",
+      "status": "RECOVERY_REQUIRED",
+      "details": "After moving the running Green2 from Android to the PC, the Core 26 WHC probe timed out on firmware API 0x7. A COM41 RTS reset restored USB probing, NAN publication and BLE advertising. This was a runtime module reset; no firmware update was performed."
     }
   ],
   "not_validated": [
@@ -96,6 +143,9 @@
     "Windows WiFiCx/NetAdapterCx",
     "SDIO/SPI/GSPI or other kernel ABIs",
     "actual camera capture/video over wireless",
-    "production image signing and confinement"
-  ]
+    "production image signing and confinement",
+    "Core 26 BLE GATT end-to-end; hardware controller and advertising verified only"
+  ],
+  "build_date": "2026-11-10",
+  "timezone": "Asia/Shanghai"
 }
