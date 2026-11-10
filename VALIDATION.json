@@ -1,0 +1,30 @@
+{
+  "kernel_module_build": "PASS: standalone sources against prepared YM6252 Android 6.12.23 GKI output",
+  "host_tool_compilation": false,
+  "prebuilt_tools": "LLVM / kernel build helpers / NDK / ADB",
+  "android_consumer_build": "PASS: HAL and PASN adapter consume the standalone repository via GREEN2_DRIVER_DIR",
+  "target_tests": {
+    "crypto_and_cache_api": "PASS",
+    "storage_callbacks_and_atomic_files": "PASS",
+    "SAE_setup_and_220_truncations": "PASS",
+    "PASN_retransmission": "PASS",
+    "Linux_CLI_cross_build_and_empty_input": "PASS (ARM Android runtime; not a glibc native test)"
+  },
+  "module_sha256": "43c598517daa53a464e2326f1ec593b03c147da64f0683729a37747f98573c1c",
+  "integration_only_flags": [
+    "CONFIG_MODULE_SIG_PROTECT=",
+    "CONFIG_MODULE_SCMVERSION=",
+    "CONFIG_BASIC_MODVERSIONS=",
+    "CONFIG_EXTENDED_MODVERSIONS=",
+    "CONFIG_GENDWARFKSYMS=",
+    "KCFLAGS=-DCONFIG_CFG80211_MODULE=1",
+    "KBUILD_EXTRA_SYMBOLS=<matching cfg80211.symvers>"
+  ],
+  "not_validated": [
+    "full AOSP Soong/Kleaf build",
+    "Linux/glibc native execution",
+    "other kernel versions and buses",
+    "replacement of the live HAL/module after shared-core extraction"
+  ],
+  "device_flashed": false
+}

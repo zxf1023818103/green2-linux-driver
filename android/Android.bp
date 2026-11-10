@@ -1,0 +1,12 @@
+// Source exports for device/vendor consumers; do not compile kernel code as cc_library.
+filegroup {
+    name: "green2_whc_android_sources",
+    visibility: ["//visibility:public"],
+    srcs: [":green2_whc_kernel_sources"],
+}
+cc_defaults {
+    name: "green2_pasn_android_defaults",
+    vendor: true,
+    header_libs: ["green2_whc_public_headers"],
+    cflags: ["-DCONFIG_SAE", "-DCONFIG_PASN", "-DCONFIG_NAN", "-D_GNU_SOURCE"],
+}

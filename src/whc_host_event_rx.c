@@ -1,0 +1,174 @@
+// SPDX-License-Identifier: GPL-2.0-only
+#include "internal.h"
+
+u8 whc_host_event_scan_report_indicate(u32 *param_buf)
+{
+	u32 channel = param_buf[0];
+	u32 frame_is_bcn = param_buf[1];
+	s32 rssi = (s32)param_buf[2];
+	u32 ie_len = param_buf[3];
+	unsigned char *mac_addr = (u8 *) &param_buf[4];
+	unsigned char *IEs = mac_addr + ETH_ALEN;
+
+	whc_host_inform_bss(channel, frame_is_bcn, rssi, mac_addr, IEs, ie_len);
+	return 0;
+}
+
+u8 whc_host_event_update_regd_indicate(u32 *param_buf)
+{
+	struct rtw_country_code_table *ptab = (struct rtw_country_code_table *)&param_buf[0];
+
+	whc_host_regd_update(ptab);
+	return 0;
+}
+
+u8 whc_host_event_set_acs_info(u32 *param_buf)
+{
+	whc_host_acs_info_hdl((struct rtw_acs_mntr_rpt *)&param_buf[0]);
+	return 0;
+}
+
+u8 whc_host_event_join_status_indicate(u32 *param_buf)
+{
+	u32 event = (u32)param_buf[0];
+	char *evt_info = (char *)&param_buf[2];
+
+	whc_host_join_status_hdl(event, evt_info);
+	return 0;
+}
+
+u8 whc_host_event_set_netif_info(u32 *param_buf)
+{
+	whc_host_set_netif_info_hdl((int)param_buf[0], (u8 *)&param_buf[1]);
+	return 0;
+}
+
+u8 whc_host_event_get_network_info(u32 *param_buf)
+{
+	/* NOT support for whc non-ipc mode.
+	Host would update network info through WHC_WIFI_TEST_NETWORK_INFO_UPDATE. */
+	return 0;
+}
+
+#ifdef CONFIG_NAN
+u8 whc_host_event_nan_match_indicate(u32 *param_buf)
+{
+	u8 type = param_buf[0];
+	u8 inst_id = param_buf[1];
+	u8 peer_inst_id = param_buf[2];
+	u32 info_len = param_buf[3];
+	u64 cookie = ((u64)param_buf[5] << 32) | param_buf[4];
+	unsigned char *mac_addr = (u8 *)&param_buf[6];
+	unsigned char *IEs = mac_addr + ETH_ALEN;
+
+	whc_host_nan_handle_sdf(type, inst_id, peer_inst_id, mac_addr, info_len, IEs, cookie);
+	return 0;
+}
+
+u8 whc_host_event_nan_cfgvendor_event_indicate(u32 *param_buf)
+{
+	u8 event_id = param_buf[0];
+	u32 size = param_buf[1];
+	unsigned char *event_addr = (u8 *)&param_buf[2];
+
+	whc_host_cfgvendor_nan_event_indication(event_id, event_addr, size);
+	return 0;
+}
+
+u8 whc_host_event_nan_cfgvendor_cmd_reply(u32 *param_buf)
+{
+	u32 size = param_buf[0];
+	unsigned char *data_addr = (u8 *)&param_buf[1];
+
+	whc_host_cfgvendor_send_cmd_reply(data_addr, size);
+	return 0;
+}
+
+#ifdef CONFIG_WHCH
+u8 whc_host_event_nan_ndp_status_indicate(u32 *param_buf)
+{
+	struct rtw_event_nan_ndp_status_info *info =
+		(struct rtw_event_nan_ndp_status_info *)&param_buf[2];
+
+	if (info->status) {
+		whch_host_nan_ndp_established(info);
+	} else {
+		whch_host_nan_ndp_terminated(info);
+	}
+	return 0;
+}
+#endif /* CONFIG_WHCH */
+#endif
+
+static void whc_host_event_handle(struct sk_buff *pskb)
+{
+	struct whc_api_info *p_recv_msg = (struct whc_api_info *)(pskb->data + SIZE_RX_DESC);
+	u32 *param_buf = (u32 *)(p_recv_msg + 1);
+	u32 api_id = p_recv_msg->api_id;
+
+	dev_dbg(global_idev.pwhc_dev, "-----DEVICE CALLING API %x START\n", api_id);
+
+	whc_host_internal_event_handle(api_id, param_buf);
+
+	kfree_skb(pskb);
+
+	dev_dbg(global_idev.pwhc_dev, "-----DEVICE CALLING API %x END\n", api_id);
+
+	return;
+}
+
+void whc_host_event_task(struct work_struct *data)
+{
+	struct event_priv_t *event_priv = &global_idev.event_priv;
+	struct sk_buff *pskb;
+
+	/* drain the queue: API_CALLs queued while this work is running are
+	 * handled here in order instead of waiting for the next schedule */
+	while ((pskb = skb_dequeue(&event_priv->rx_api_queue)) != NULL) {
+		whc_host_event_handle(pskb);
+	}
+}
+
+int whc_host_event_init(struct whc_device *idev)
+{
+	struct event_priv_t	*event_priv = &global_idev.event_priv;
+
+	/* initialize the mutex to send event_priv message. */
+	mutex_init(&(event_priv->send_mutex));
+	init_completion(&event_priv->api_ret_sema);
+	spin_lock_init(&event_priv->api_ret_lock);
+	event_priv->b_waiting_for_ret = 0;
+	event_priv->rx_api_ret_msg = NULL;
+	skb_queue_head_init(&event_priv->rx_api_queue);
+
+	/* initialize event tasklet */
+	INIT_WORK(&(event_priv->api_work), whc_host_event_task);
+
+	return 0;
+}
+
+void whc_host_event_deinit(void)
+{
+	struct event_priv_t *event_priv = &global_idev.event_priv;
+	struct sk_buff *pskb_ret;
+
+	cancel_work_sync(&event_priv->api_work);
+	skb_queue_purge(&event_priv->rx_api_queue);
+
+	/* deinitialize the mutex to send event_priv message. */
+	mutex_destroy(&(event_priv->send_mutex));
+
+	complete_release(&event_priv->api_ret_sema);
+
+	/* under the lock: the rx thread is stopped only after this */
+	spin_lock(&event_priv->api_ret_lock);
+	pskb_ret = event_priv->rx_api_ret_msg;
+	event_priv->rx_api_ret_msg = NULL;
+	spin_unlock(&event_priv->api_ret_lock);
+
+	if (pskb_ret) {
+		kfree_skb(pskb_ret);
+	}
+
+	return;
+}

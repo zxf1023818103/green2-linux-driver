@@ -29,3 +29,5 @@ __pycache__/
 *.pyc
 nik_cache
 pasn_npk
+
+/tests/out/

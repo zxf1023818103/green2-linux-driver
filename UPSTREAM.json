@@ -6,1162 +6,1394 @@
     {
       "path": ".gitignore",
       "source": "component/wifi/whc/whc_host_linux/.gitignore",
-      "sha256": "2fbf8cbc5a3f11a87eb65d0948c6c13b40bd167f27d00d82afcc5ccc60b603c4"
+      "sha256": "2fbf8cbc5a3f11a87eb65d0948c6c13b40bd167f27d00d82afcc5ccc60b603c4",
+      "path_at_import": ".gitignore"
     },
     {
       "path": "Kconfig",
       "source": "component/wifi/whc/whc_host_linux/Kconfig",
-      "sha256": "6d660c909f429ba1ddfc0b177bc03d6230aebca56f8c287bf7df3bea68abf4b8"
+      "sha256": "6d660c909f429ba1ddfc0b177bc03d6230aebca56f8c287bf7df3bea68abf4b8",
+      "path_at_import": "Kconfig"
     },
     {
       "path": "Makefile",
       "source": "component/wifi/whc/whc_host_linux/Makefile",
-      "sha256": "734f47c320ec2f0723d8567e018df658c3cbd8538a5c1f3da78a15884fdf5ef3"
+      "sha256": "734f47c320ec2f0723d8567e018df658c3cbd8538a5c1f3da78a15884fdf5ef3",
+      "path_at_import": "Makefile"
     },
     {
       "path": "app/rtw_cli/Makefile",
       "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/Makefile",
-      "sha256": "d7a715c5215dbedd059e44e67fc7082d43da1d797180883dd798004fcccf8230"
+      "sha256": "d7a715c5215dbedd059e44e67fc7082d43da1d797180883dd798004fcccf8230",
+      "path_at_import": "app/rtw_cli/Makefile"
     },
     {
       "path": "app/rtw_cli/rtw_cli.c",
       "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli.c",
-      "sha256": "84fa0234f30eb6b5cbd79f1d4ab6b189b39eb3aa6f70ba05357fdeeb547ea97a"
+      "sha256": "84fa0234f30eb6b5cbd79f1d4ab6b189b39eb3aa6f70ba05357fdeeb547ea97a",
+      "path_at_import": "app/rtw_cli/rtw_cli.c"
     },
     {
       "path": "app/rtw_cli/rtw_cli_api.c",
       "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_api.c",
-      "sha256": "8f5365e4760c7d0f3837b8e703d6d82287c83a08a118d81ba22bc08dc4b39cee"
+      "sha256": "8f5365e4760c7d0f3837b8e703d6d82287c83a08a118d81ba22bc08dc4b39cee",
+      "path_at_import": "app/rtw_cli/rtw_cli_api.c"
     },
     {
       "path": "app/rtw_cli/rtw_cli_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_api.h",
-      "sha256": "262f6048b5dff34d2ea96b752db1645d91ef8df3df878477cdcbb4cdc1bbf77e"
+      "sha256": "262f6048b5dff34d2ea96b752db1645d91ef8df3df878477cdcbb4cdc1bbf77e",
+      "path_at_import": "app/rtw_cli/rtw_cli_api.h"
     },
     {
       "path": "app/rtw_cli/rtw_cli_netlink.c",
       "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_netlink.c",
-      "sha256": "dfbe67e5faf8117f28235bb2bf1a4547b633f1dd2a18f775332e1664a2edabd4"
+      "sha256": "dfbe67e5faf8117f28235bb2bf1a4547b633f1dd2a18f775332e1664a2edabd4",
+      "path_at_import": "app/rtw_cli/rtw_cli_netlink.c"
     },
     {
       "path": "app/rtw_cli/rtw_cli_netlink.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_netlink.h",
-      "sha256": "14f3779a6a40de352afa644b79030780cfe4d79b03493dbb8d4bafc4973ab4d1"
+      "sha256": "14f3779a6a40de352afa644b79030780cfe4d79b03493dbb8d4bafc4973ab4d1",
+      "path_at_import": "app/rtw_cli/rtw_cli_netlink.h"
     },
     {
       "path": "app/rtw_cli/rtw_cli_wifi_types.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_wifi_types.h",
-      "sha256": "4a70222114ff9a75ec7dfd1a37a09203027a063fbeabb0786c78ad87b9d05abb"
+      "sha256": "4a70222114ff9a75ec7dfd1a37a09203027a063fbeabb0786c78ad87b9d05abb",
+      "path_at_import": "app/rtw_cli/rtw_cli_wifi_types.h"
     },
     {
       "path": "app/rtwpriv/Android.mk",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/Android.mk",
-      "sha256": "62f773d7329a4427f43fbcf5cd250da0bc436e25453a90ccf3ec17e08cee7de8"
+      "sha256": "62f773d7329a4427f43fbcf5cd250da0bc436e25453a90ccf3ec17e08cee7de8",
+      "path_at_import": "app/rtwpriv/Android.mk"
     },
     {
       "path": "app/rtwpriv/Makefile",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/Makefile",
-      "sha256": "932cd87865e15ec9176fb5fdb517487f4fa29f963e25f5e15871f68d9c81fd4d"
+      "sha256": "932cd87865e15ec9176fb5fdb517487f4fa29f963e25f5e15871f68d9c81fd4d",
+      "path_at_import": "app/rtwpriv/Makefile"
     },
     {
       "path": "app/rtwpriv/cra/ARCHITECTURE.md",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/ARCHITECTURE.md",
-      "sha256": "2730f8128109029e87b800a0c94600a3ba81994fbfc1d9b551a2ba067cd87214"
+      "sha256": "2730f8128109029e87b800a0c94600a3ba81994fbfc1d9b551a2ba067cd87214",
+      "path_at_import": "app/rtwpriv/cra/ARCHITECTURE.md"
     },
     {
       "path": "app/rtwpriv/cra/EU_DECLARATION_OF_CONFORMITY.md",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/EU_DECLARATION_OF_CONFORMITY.md",
-      "sha256": "0c5d8811a94196ef88d4d9587c11123f5157c980bfa40b71791cbbf6bdcf0dbe"
+      "sha256": "0c5d8811a94196ef88d4d9587c11123f5157c980bfa40b71791cbbf6bdcf0dbe",
+      "path_at_import": "app/rtwpriv/cra/EU_DECLARATION_OF_CONFORMITY.md"
     },
     {
       "path": "app/rtwpriv/cra/SECURITY.md",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/SECURITY.md",
-      "sha256": "20a808ee8cc6df3006457d636e15abe1eb4bf5d80c58a06ce83cd93d1a3a7def"
+      "sha256": "20a808ee8cc6df3006457d636e15abe1eb4bf5d80c58a06ce83cd93d1a3a7def",
+      "path_at_import": "app/rtwpriv/cra/SECURITY.md"
     },
     {
       "path": "app/rtwpriv/cra/bom.json",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/bom.json",
-      "sha256": "6f6118c977db876cfa971dbe7858fd0dbf650c09c22f61bd7e34f243923ddc21"
+      "sha256": "6f6118c977db876cfa971dbe7858fd0dbf650c09c22f61bd7e34f243923ddc21",
+      "path_at_import": "app/rtwpriv/cra/bom.json"
     },
     {
       "path": "app/rtwpriv/cra/bom.spdx.json",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/bom.spdx.json",
-      "sha256": "a13fbbdffa6a1a46ca0d905d9619f2a2f7ed40701d65e5726654876b0c6c27da"
+      "sha256": "a13fbbdffa6a1a46ca0d905d9619f2a2f7ed40701d65e5726654876b0c6c27da",
+      "path_at_import": "app/rtwpriv/cra/bom.spdx.json"
     },
     {
       "path": "app/rtwpriv/cra/scan-cve.sh",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/scan-cve.sh",
-      "sha256": "cc66e3ff117db419057a27b9f8f4bc16f896ba7841d2bd0b4d64f634ae85463b"
+      "sha256": "cc66e3ff117db419057a27b9f8f4bc16f896ba7841d2bd0b4d64f634ae85463b",
+      "path_at_import": "app/rtwpriv/cra/scan-cve.sh"
     },
     {
       "path": "app/rtwpriv/readme.txt",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/readme.txt",
-      "sha256": "14d34654eab99fd2caabb3c86954e2b5df3c948fba1c79d39d6ab09e8d15390c"
+      "sha256": "14d34654eab99fd2caabb3c86954e2b5df3c948fba1c79d39d6ab09e8d15390c",
+      "path_at_import": "app/rtwpriv/readme.txt"
     },
     {
       "path": "app/rtwpriv/rtw_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_api.h",
-      "sha256": "8fe53ffabfcc34cfb7ed9aa0fb0a0db4c95c11a92e568a374edfd7644d95359a"
+      "sha256": "8fe53ffabfcc34cfb7ed9aa0fb0a0db4c95c11a92e568a374edfd7644d95359a",
+      "path_at_import": "app/rtwpriv/rtw_api.h"
     },
     {
       "path": "app/rtwpriv/rtw_hwtx.cpp",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_hwtx.cpp",
-      "sha256": "9924d5f70d58edd48ab62261b6e70c9d66f2552982c0868e3bca2472aacb1ed3"
+      "sha256": "9924d5f70d58edd48ab62261b6e70c9d66f2552982c0868e3bca2472aacb1ed3",
+      "path_at_import": "app/rtwpriv/rtw_hwtx.cpp"
     },
     {
       "path": "app/rtwpriv/rtw_hwtx.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_hwtx.h",
-      "sha256": "cbdff2984cd24281faf874dc8caab5d0773590f8d27630dd9b3028d48305c413"
+      "sha256": "cbdff2984cd24281faf874dc8caab5d0773590f8d27630dd9b3028d48305c413",
+      "path_at_import": "app/rtwpriv/rtw_hwtx.h"
     },
     {
       "path": "app/rtwpriv/rtw_ioctl.cpp",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_ioctl.cpp",
-      "sha256": "15ed2267b11b99cb52762fa7083b5cc72b3f7928e48faa50b5ecd29deee5cbac"
+      "sha256": "15ed2267b11b99cb52762fa7083b5cc72b3f7928e48faa50b5ecd29deee5cbac",
+      "path_at_import": "app/rtwpriv/rtw_ioctl.cpp"
     },
     {
       "path": "app/rtwpriv/rtw_ioctl.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_ioctl.h",
-      "sha256": "4061ece9c80effa288c868b2e89d92295aaa18db63d2b2af766b67493cc81534"
+      "sha256": "4061ece9c80effa288c868b2e89d92295aaa18db63d2b2af766b67493cc81534",
+      "path_at_import": "app/rtwpriv/rtw_ioctl.h"
     },
     {
       "path": "app/rtwpriv/rtw_nl.cpp",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl.cpp",
-      "sha256": "e9c723d0ed1df2bf5a4a1ecc936da4c22bf5fb7626aa5937d4039d628ad9c1e8"
+      "sha256": "e9c723d0ed1df2bf5a4a1ecc936da4c22bf5fb7626aa5937d4039d628ad9c1e8",
+      "path_at_import": "app/rtwpriv/rtw_nl.cpp"
     },
     {
       "path": "app/rtwpriv/rtw_nl.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl.h",
-      "sha256": "be39e231c6f0a249607d981448be2a5f1950daafa2a125bdf74f7a632540f58a"
+      "sha256": "be39e231c6f0a249607d981448be2a5f1950daafa2a125bdf74f7a632540f58a",
+      "path_at_import": "app/rtwpriv/rtw_nl.h"
     },
     {
       "path": "app/rtwpriv/rtw_nl_cmd.cpp",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl_cmd.cpp",
-      "sha256": "d502cc9437efdec46a04ca7cf139617d292cc9fba0b011687d54fa22be01d72d"
+      "sha256": "d502cc9437efdec46a04ca7cf139617d292cc9fba0b011687d54fa22be01d72d",
+      "path_at_import": "app/rtwpriv/rtw_nl_cmd.cpp"
     },
     {
       "path": "app/rtwpriv/rtw_nl_cmd.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl_cmd.h",
-      "sha256": "9d60264f2fe335d83f4424317a9e88539ef798c1fd847395ca9036aa49a7ec41"
+      "sha256": "9d60264f2fe335d83f4424317a9e88539ef798c1fd847395ca9036aa49a7ec41",
+      "path_at_import": "app/rtwpriv/rtw_nl_cmd.h"
     },
     {
       "path": "app/rtwpriv/rtw_parse.cpp",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_parse.cpp",
-      "sha256": "064069a3cb9131c630f63397497fadc732ceaf340ef454257ca590dc8cc340d0"
+      "sha256": "064069a3cb9131c630f63397497fadc732ceaf340ef454257ca590dc8cc340d0",
+      "path_at_import": "app/rtwpriv/rtw_parse.cpp"
     },
     {
       "path": "app/rtwpriv/rtw_parse.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_parse.h",
-      "sha256": "83567b36e6e61542d671d76135e123543f975cd99670ae87ac7e0f76db6cbc42"
+      "sha256": "83567b36e6e61542d671d76135e123543f975cd99670ae87ac7e0f76db6cbc42",
+      "path_at_import": "app/rtwpriv/rtw_parse.h"
     },
     {
       "path": "app/rtwpriv/rtw_transport.cpp",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_transport.cpp",
-      "sha256": "d72914d1f3628d8e0a1396f8e2090749f14f9d1d389d9d58240b12030e179535"
+      "sha256": "d72914d1f3628d8e0a1396f8e2090749f14f9d1d389d9d58240b12030e179535",
+      "path_at_import": "app/rtwpriv/rtw_transport.cpp"
     },
     {
       "path": "app/rtwpriv/rtw_transport.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_transport.h",
-      "sha256": "e90829c28cab15d3a927aa8f3087ce1fcadb9aca0b1b4d414299e8a1cc5e9dcc"
+      "sha256": "e90829c28cab15d3a927aa8f3087ce1fcadb9aca0b1b4d414299e8a1cc5e9dcc",
+      "path_at_import": "app/rtwpriv/rtw_transport.h"
     },
     {
       "path": "app/rtwpriv/rtw_udpsrv.cpp",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_udpsrv.cpp",
-      "sha256": "d596f15f4b47e6a61bf52be43381ba24dee5c457201cdd7004d7a906a2fc3551"
+      "sha256": "d596f15f4b47e6a61bf52be43381ba24dee5c457201cdd7004d7a906a2fc3551",
+      "path_at_import": "app/rtwpriv/rtw_udpsrv.cpp"
     },
     {
       "path": "app/rtwpriv/rtw_udpsrv.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_udpsrv.h",
-      "sha256": "d98d35031cbaa248dadb8504b705f7e4b349c26669cbdae0cd11856161784344"
+      "sha256": "d98d35031cbaa248dadb8504b705f7e4b349c26669cbdae0cd11856161784344",
+      "path_at_import": "app/rtwpriv/rtw_udpsrv.h"
     },
     {
       "path": "app/rtwpriv/rtwpriv.cpp",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtwpriv.cpp",
-      "sha256": "ec3f188040fd466b111195b030e3e20d9927c0e6d91feb9a5294a3edcf7d81c9"
+      "sha256": "ec3f188040fd466b111195b030e3e20d9927c0e6d91feb9a5294a3edcf7d81c9",
+      "path_at_import": "app/rtwpriv/rtwpriv.cpp"
     },
     {
       "path": "app/rtwpriv/rtwpriv.h",
       "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtwpriv.h",
-      "sha256": "60e91bbcc7cbfdca7d3ecbf353e6fbfc275ac64437667c61e48b377a3d827976"
+      "sha256": "60e91bbcc7cbfdca7d3ecbf353e6fbfc275ac64437667c61e48b377a3d827976",
+      "path_at_import": "app/rtwpriv/rtwpriv.h"
     },
     {
       "path": "app/whc_cust_path_demo/Makefile",
       "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/Makefile",
-      "sha256": "9315dc55ec096ea68c7933a0672ba0fdb8efeb454d6d4694ebcf23e588f3a997"
+      "sha256": "9315dc55ec096ea68c7933a0672ba0fdb8efeb454d6d4694ebcf23e588f3a997",
+      "path_at_import": "app/whc_cust_path_demo/Makefile"
     },
     {
       "path": "app/whc_cust_path_demo/whc_host_app.c",
       "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app.c",
-      "sha256": "b712b3b22a5c17b72f5b8bce0e810199dbada751c79c19048f714136e231232f"
+      "sha256": "b712b3b22a5c17b72f5b8bce0e810199dbada751c79c19048f714136e231232f",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app.c"
     },
     {
       "path": "app/whc_cust_path_demo/whc_host_app_api.c",
       "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_api.c",
-      "sha256": "d92530693fe40406737b915c58e8a87a0252a6f6cf6783137931d9c5735087f0"
+      "sha256": "d92530693fe40406737b915c58e8a87a0252a6f6cf6783137931d9c5735087f0",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app_api.c"
     },
     {
       "path": "app/whc_cust_path_demo/whc_host_app_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_api.h",
-      "sha256": "2750451b569a80a39ed1ea3d5fdbce1668f61102f8423daa60a1e1a05e1d28bc"
+      "sha256": "2750451b569a80a39ed1ea3d5fdbce1668f61102f8423daa60a1e1a05e1d28bc",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app_api.h"
     },
     {
       "path": "app/whc_cust_path_demo/whc_host_app_ota.c",
       "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_ota.c",
-      "sha256": "6a88116d6d70d0ad31e7e3fc34986e12bffc8ba784623f96f08a5a0edfa4be2d"
+      "sha256": "6a88116d6d70d0ad31e7e3fc34986e12bffc8ba784623f96f08a5a0edfa4be2d",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app_ota.c"
     },
     {
       "path": "app/whc_cust_path_demo/whc_host_app_ota.h",
       "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_ota.h",
-      "sha256": "d4233a0cd8bf863e0f8cf34663d773f2f45d24a23e98c6dfdcafe534ab155402"
+      "sha256": "d4233a0cd8bf863e0f8cf34663d773f2f45d24a23e98c6dfdcafe534ab155402",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app_ota.h"
     },
     {
       "path": "app/wifi_nan_utility/Makefile",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/Makefile",
-      "sha256": "4c02ca9259b2ff6eee46ebae8242c5c38c0ed728222c70ff98cff746afb4fdda"
+      "sha256": "4c02ca9259b2ff6eee46ebae8242c5c38c0ed728222c70ff98cff746afb4fdda",
+      "path_at_import": "app/wifi_nan_utility/Makefile"
     },
     {
       "path": "app/wifi_nan_utility/pasn_probe/.gitignore",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/.gitignore",
-      "sha256": "7258521d782e66ebe19b84fb6d8a2fba30996f14e8a88d1cf2fc11eb990e4f26"
+      "sha256": "7258521d782e66ebe19b84fb6d8a2fba30996f14e8a88d1cf2fc11eb990e4f26",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/.gitignore"
     },
     {
       "path": "app/wifi_nan_utility/pasn_probe/Makefile",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/Makefile",
-      "sha256": "03cd3a83f080b63e4d735b6a78080329791c6c5639bd38748e4d47d6d2d03cd7"
+      "sha256": "03cd3a83f080b63e4d735b6a78080329791c6c5639bd38748e4d47d6d2d03cd7",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/Makefile"
     },
     {
       "path": "app/wifi_nan_utility/pasn_probe/README.md",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/README.md",
-      "sha256": "2951acf3d42649cd444cb286a24fda2f1f4a8544c2c0eafab64b84c4171aaa69"
+      "sha256": "2951acf3d42649cd444cb286a24fda2f1f4a8544c2c0eafab64b84c4171aaa69",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/README.md"
     },
     {
       "path": "app/wifi_nan_utility/pasn_probe/live_auth2.sh",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/live_auth2.sh",
-      "sha256": "62f38a17878fd33244335ca2871a3af718b9a4550fb2508f72f601c2839a309e"
+      "sha256": "62f38a17878fd33244335ca2871a3af718b9a4550fb2508f72f601c2839a309e",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/live_auth2.sh"
     },
     {
       "path": "app/wifi_nan_utility/pasn_probe/live_pasn.sh",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/live_pasn.sh",
-      "sha256": "a3ed59127b7cc6dd4ac4d006b59de84ca727d04d437ef04e45c19fbaaf2c159c"
+      "sha256": "a3ed59127b7cc6dd4ac4d006b59de84ca727d04d437ef04e45c19fbaaf2c159c",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/live_pasn.sh"
     },
     {
       "path": "app/wifi_nan_utility/pasn_probe/pasn_live.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/pasn_live.c",
-      "sha256": "f83c96951889b17d9b36d36ab6660b09f38a443deb2b71d20c9051dcf8b7457c"
+      "sha256": "f83c96951889b17d9b36d36ab6660b09f38a443deb2b71d20c9051dcf8b7457c",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/pasn_live.c"
     },
     {
       "path": "app/wifi_nan_utility/pasn_probe/pasn_probe.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/pasn_probe.c",
-      "sha256": "df6bc8db11e8f4c93e656dd93ea4d92faaa9262edd0bde345c0eefd996f5722b"
+      "sha256": "df6bc8db11e8f4c93e656dd93ea4d92faaa9262edd0bde345c0eefd996f5722b",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/pasn_probe.c"
     },
     {
       "path": "app/wifi_nan_utility/pasn_probe/pasn_vendor_events.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/pasn_vendor_events.c",
-      "sha256": "c879e583b23c5b44defa025535f3d68e5948b1bad3ca7de44f8357eeed1705d5"
+      "sha256": "c879e583b23c5b44defa025535f3d68e5948b1bad3ca7de44f8357eeed1705d5",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/pasn_vendor_events.c"
     },
     {
       "path": "app/wifi_nan_utility/pasn_probe/send_auth2.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/send_auth2.c",
-      "sha256": "d54a868acf63d57a2012d7024b848abe99aab1c88bb3b916b43f0a84e0030b02"
+      "sha256": "d54a868acf63d57a2012d7024b848abe99aab1c88bb3b916b43f0a84e0030b02",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/send_auth2.c"
     },
     {
       "path": "app/wifi_nan_utility/rtw_aware/Makefile",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/Makefile",
-      "sha256": "a869e91c373279c267b15c79e0ef24c0d3f2822272b97c06430087a7df1d44eb"
+      "sha256": "a869e91c373279c267b15c79e0ef24c0d3f2822272b97c06430087a7df1d44eb",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/Makefile"
     },
     {
       "path": "app/wifi_nan_utility/rtw_aware/aware.conf",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/aware.conf",
-      "sha256": "dea0b258e529f837d3b2abfc2db1148837b09e3460a390b7e6ae29edf1b83d67"
+      "sha256": "dea0b258e529f837d3b2abfc2db1148837b09e3460a390b7e6ae29edf1b83d67",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/aware.conf"
     },
     {
       "path": "app/wifi_nan_utility/rtw_aware/hooks.sh",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/hooks.sh",
-      "sha256": "dc121fd88b44fe8fb94fea554908f3a86c5c3506e63322fd0ddd61c0843baacf"
+      "sha256": "dc121fd88b44fe8fb94fea554908f3a86c5c3506e63322fd0ddd61c0843baacf",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/hooks.sh"
     },
     {
       "path": "app/wifi_nan_utility/rtw_aware/nan_supplicant.conf",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/nan_supplicant.conf",
-      "sha256": "a32c0d960515fc7a9afc3a51eab6ca1cdcb618cc44d2d43c4d1fee0156d3d163"
+      "sha256": "a32c0d960515fc7a9afc3a51eab6ca1cdcb618cc44d2d43c4d1fee0156d3d163",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/nan_supplicant.conf"
     },
     {
       "path": "app/wifi_nan_utility/rtw_aware/rtw_aware.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_aware.c",
-      "sha256": "b5783a4a97ddac9785bda39d39465bf3dcf1484954dad5865892109b1bd27d69"
+      "sha256": "b5783a4a97ddac9785bda39d39465bf3dcf1484954dad5865892109b1bd27d69",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_aware.c"
     },
     {
       "path": "app/wifi_nan_utility/rtw_aware/rtw_nan_cmd_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_nan_cmd_api.h",
-      "sha256": "f561294670806cfeb654da8b406e312f178ae06e4bf3dc1f7851cbbf47c58e38"
+      "sha256": "f561294670806cfeb654da8b406e312f178ae06e4bf3dc1f7851cbbf47c58e38",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_nan_cmd_api.h"
     },
     {
       "path": "app/wifi_nan_utility/rtw_aware/rtw_nan_scenario_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_nan_scenario_api.h",
-      "sha256": "2c81a9072f5a23f654e60000ef6e12617ab5e74733155729e4b6c2e614697dee"
+      "sha256": "2c81a9072f5a23f654e60000ef6e12617ab5e74733155729e4b6c2e614697dee",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_nan_scenario_api.h"
     },
     {
       "path": "app/wifi_nan_utility/rtw_aware/rtw_nan_struct.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_nan_struct.h",
-      "sha256": "acbcceadf19629450ed66f04b377a399b39629a6465e82bf25e39ccaac22c43d"
+      "sha256": "acbcceadf19629450ed66f04b377a399b39629a6465e82bf25e39ccaac22c43d",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_nan_struct.h"
     },
     {
       "path": "app/wifi_nan_utility/rtw_aware/start_rtw_aware.sh",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/start_rtw_aware.sh",
-      "sha256": "37c6896fc2723344894fd02bbb0a6edad2a1cf8297681f650dae92157ee129fa"
+      "sha256": "37c6896fc2723344894fd02bbb0a6edad2a1cf8297681f650dae92157ee129fa",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/start_rtw_aware.sh"
     },
     {
       "path": "app/wifi_nan_utility/script/nan_test",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/script/nan_test",
-      "sha256": "fb20ed731d9ce6f740124d10b50532c7aa4a1f1875cab2a727dfc8cd2199142a"
+      "sha256": "fb20ed731d9ce6f740124d10b50532c7aa4a1f1875cab2a727dfc8cd2199142a",
+      "path_at_import": "app/wifi_nan_utility/script/nan_test"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/Makefile",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/Makefile",
-      "sha256": "d98b4b7b08a0886108d7373a61717176790853c046deb84f0d383fa847143feb"
+      "sha256": "d98b4b7b08a0886108d7373a61717176790853c046deb84f0d383fa847143feb",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/Makefile"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/nan_cache_file.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_cache_file.h",
-      "sha256": "ac125d445be6e36edb0ba29b6d424b496ef69b1f3ec0cad488ad01bf89cb237f"
+      "sha256": "ac125d445be6e36edb0ba29b6d424b496ef69b1f3ec0cad488ad01bf89cb237f",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_cache_file.h"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/nan_event.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_event.c",
-      "sha256": "9121b7782eb6921d2a6441b5a1d794ed62d8707c298b6a0af054165f61c897a4"
+      "sha256": "9121b7782eb6921d2a6441b5a1d794ed62d8707c298b6a0af054165f61c897a4",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_event.c"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/nan_event.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_event.h",
-      "sha256": "81e3161a4119f52444c826371b7d6999e22013c006dc9f2e726ad90b33b18e2f"
+      "sha256": "81e3161a4119f52444c826371b7d6999e22013c006dc9f2e726ad90b33b18e2f",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_event.h"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/nan_scenario.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_scenario.c",
-      "sha256": "5ecb26ed3ec03fcd7edc627fe1b26ac6f3dc8473c9fade928e188a381ee0f33b"
+      "sha256": "5ecb26ed3ec03fcd7edc627fe1b26ac6f3dc8473c9fade928e188a381ee0f33b",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_scenario.c"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.c",
-      "sha256": "65d1c076505a5afa7fbdedca311341ab658bc01f8bec9e94e1b2be2069ee82bf"
+      "sha256": "65d1c076505a5afa7fbdedca311341ab658bc01f8bec9e94e1b2be2069ee82bf",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.c"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.h",
-      "sha256": "aba8e042f97ecffa7c096104a560bf4e098a7c309ff14888e14bb6679985f06d"
+      "sha256": "aba8e042f97ecffa7c096104a560bf4e098a7c309ff14888e14bb6679985f06d",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.h"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd_api.h",
-      "sha256": "4a5275e917c6cb6b75dc715e922744acb4225bbea2eb542727f19758b0702cba"
+      "sha256": "4a5275e917c6cb6b75dc715e922744acb4225bbea2eb542727f19758b0702cba",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd_api.h"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_scenario_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_scenario_api.h",
-      "sha256": "2c81a9072f5a23f654e60000ef6e12617ab5e74733155729e4b6c2e614697dee"
+      "sha256": "2c81a9072f5a23f654e60000ef6e12617ab5e74733155729e4b6c2e614697dee",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_scenario_api.h"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_struct.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_struct.h",
-      "sha256": "acbcceadf19629450ed66f04b377a399b39629a6465e82bf25e39ccaac22c43d"
+      "sha256": "acbcceadf19629450ed66f04b377a399b39629a6465e82bf25e39ccaac22c43d",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_struct.h"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_vendor_def.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_vendor_def.h",
-      "sha256": "8ce7c1e433218575c84df22568c2e2fd2538a12f23830e9f0cb45385d3d8a5e8"
+      "sha256": "8ce7c1e433218575c84df22568c2e2fd2538a12f23830e9f0cb45385d3d8a5e8",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_vendor_def.h"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/sha256.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/sha256.c",
-      "sha256": "41d59ba45cafdaa24d0f6b286a05b5fe300762deb23635f05a651885136508ae"
+      "sha256": "41d59ba45cafdaa24d0f6b286a05b5fe300762deb23635f05a651885136508ae",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/sha256.c"
     },
     {
       "path": "app/wifi_nan_utility/src/rtw_nan_api/sha256.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/sha256.h",
-      "sha256": "1fa30e8473d7ea44e939b8859b98655a2478bdba21a119ee5f3a6e1909446063"
+      "sha256": "1fa30e8473d7ea44e939b8859b98655a2478bdba21a119ee5f3a6e1909446063",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/sha256.h"
     },
     {
       "path": "app/wifi_nan_utility/src/vendor_wrapper/nan_vendor_wrapper.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/nan_vendor_wrapper.c",
-      "sha256": "56580fd679ff40a214367a9bd7456fd8a098ec267493fa432ae781651e426b84"
+      "sha256": "56580fd679ff40a214367a9bd7456fd8a098ec267493fa432ae781651e426b84",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/nan_vendor_wrapper.c"
     },
     {
       "path": "app/wifi_nan_utility/src/vendor_wrapper/phl_nan_def_ioctl.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/phl_nan_def_ioctl.h",
-      "sha256": "51c41b079f766d6f829db73b9552afcb147a5073576540b07c0748f5b07f187d"
+      "sha256": "51c41b079f766d6f829db73b9552afcb147a5073576540b07c0748f5b07f187d",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/phl_nan_def_ioctl.h"
     },
     {
       "path": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_ioctrl_struc.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_ioctrl_struc.h",
-      "sha256": "17996283744ed2fc657f909e8f5074ccf6aca32a1b1ff2f254dfb10592d0766f"
+      "sha256": "17996283744ed2fc657f909e8f5074ccf6aca32a1b1ff2f254dfb10592d0766f",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_ioctrl_struc.h"
     },
     {
       "path": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_osdep.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_osdep.h",
-      "sha256": "7002b68a4188e9930f7f864f1a5e5c18c071e8ee548771a2037d6a4b8ff888c5"
+      "sha256": "7002b68a4188e9930f7f864f1a5e5c18c071e8ee548771a2037d6a4b8ff888c5",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_osdep.h"
     },
     {
       "path": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vendor_def.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vendor_def.h",
-      "sha256": "771ca34eb331a41b8ce1b2a5cc2ee76b3267a501c39831343365470f0324ab92"
+      "sha256": "771ca34eb331a41b8ce1b2a5cc2ee76b3267a501c39831343365470f0324ab92",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vendor_def.h"
     },
     {
       "path": "app/wifi_nan_utility/src/vendor_wrapper/user_os_info.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/user_os_info.h",
-      "sha256": "3447327f1fd6fcb51f863f266599c527b0e7bfc5b9cd5126ac41cd0bc85298f2"
+      "sha256": "3447327f1fd6fcb51f863f266599c527b0e7bfc5b9cd5126ac41cd0bc85298f2",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/user_os_info.h"
     },
     {
       "path": "configs/amebadplus_spi_wpaod_defconfig",
       "source": "component/wifi/whc/whc_host_linux/configs/amebadplus_spi_wpaod_defconfig",
-      "sha256": "eb8ced1d4ec9dceaac15b31f062ce806bc2131603211b35fc8a50f3d230a434e"
+      "sha256": "eb8ced1d4ec9dceaac15b31f062ce806bc2131603211b35fc8a50f3d230a434e",
+      "path_at_import": "configs/amebadplus_spi_wpaod_defconfig"
     },
     {
       "path": "configs/amebagreen2_gspi_wpaoh_fwdl_defconfig",
       "source": "component/wifi/whc/whc_host_linux/configs/amebagreen2_gspi_wpaoh_fwdl_defconfig",
-      "sha256": "15fe53cd3766ac19f8be670ee84172a8a691a1c71b2018b853b9f89d0a8fabec"
+      "sha256": "15fe53cd3766ac19f8be670ee84172a8a691a1c71b2018b853b9f89d0a8fabec",
+      "path_at_import": "configs/amebagreen2_gspi_wpaoh_fwdl_defconfig"
     },
     {
       "path": "configs/amebagreen2_sdio_nan_defconfig",
       "source": "component/wifi/whc/whc_host_linux/configs/amebagreen2_sdio_nan_defconfig",
-      "sha256": "d511f6782f7377fe580d45922e219178d228499c3282c3d3944555dc623a3778"
+      "sha256": "d511f6782f7377fe580d45922e219178d228499c3282c3d3944555dc623a3778",
+      "path_at_import": "configs/amebagreen2_sdio_nan_defconfig"
     },
     {
       "path": "configs/amebagreen2_sdio_wpaoh_defconfig",
       "source": "component/wifi/whc/whc_host_linux/configs/amebagreen2_sdio_wpaoh_defconfig",
-      "sha256": "6351f03c2f5d1fc8339df102bac1994d4d957631e38c7cd38c3b4d127abd931a"
+      "sha256": "6351f03c2f5d1fc8339df102bac1994d4d957631e38c7cd38c3b4d127abd931a",
+      "path_at_import": "configs/amebagreen2_sdio_wpaoh_defconfig"
     },
     {
       "path": "configs/amebagreen2_usb_nan_bulk2048_defconfig",
       "source": "component/wifi/whc/whc_host_linux/configs/amebagreen2_usb_nan_bulk2048_defconfig",
-      "sha256": "7bd45a99e17f7c58d0edcc5794e51551d2cf1193685a21a6e1381e35c46e37f7"
+      "sha256": "7bd45a99e17f7c58d0edcc5794e51551d2cf1193685a21a6e1381e35c46e37f7",
+      "path_at_import": "configs/amebagreen2_usb_nan_bulk2048_defconfig"
     },
     {
       "path": "configs/amebagreen2_usb_nan_defconfig",
       "source": "component/wifi/whc/whc_host_linux/configs/amebagreen2_usb_nan_defconfig",
-      "sha256": "7846622d49b6f5638317dbe5bd94183c5dff8d2eaf318d6d40b2cc8ab99c3365"
+      "sha256": "7846622d49b6f5638317dbe5bd94183c5dff8d2eaf318d6d40b2cc8ab99c3365",
+      "path_at_import": "configs/amebagreen2_usb_nan_defconfig"
     },
     {
       "path": "configs/amebagreen2_usb_wpaoh_fwdl_defconfig",
       "source": "component/wifi/whc/whc_host_linux/configs/amebagreen2_usb_wpaoh_fwdl_defconfig",
-      "sha256": "9e74b0c7c1639a02cb617fe7580f82d887871eb0d0452a5dd42fad08944a4dd5"
+      "sha256": "9e74b0c7c1639a02cb617fe7580f82d887871eb0d0452a5dd42fad08944a4dd5",
+      "path_at_import": "configs/amebagreen2_usb_wpaoh_fwdl_defconfig"
     },
     {
       "path": "configs/amebax_spi_wpaoh_defconfig",
       "source": "component/wifi/whc/whc_host_linux/configs/amebax_spi_wpaoh_defconfig",
-      "sha256": "ff11be0f4146155181080e26e7f1725651a7fbfe1df22a39f849df5b160588f0"
+      "sha256": "ff11be0f4146155181080e26e7f1725651a7fbfe1df22a39f849df5b160588f0",
+      "path_at_import": "configs/amebax_spi_wpaoh_defconfig"
     },
     {
-      "path": "driver/fwdl/Kbuild",
+      "path": "src/fwdl/Kbuild",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/Kbuild",
-      "sha256": "fb85c81127d0063995faf9e33008e70ba16bcb46e37eccfc2ba8b337014bc015"
+      "sha256": "fb85c81127d0063995faf9e33008e70ba16bcb46e37eccfc2ba8b337014bc015",
+      "path_at_import": "driver/fwdl/Kbuild"
     },
     {
-      "path": "driver/fwdl/whc_gspi_host_fwdl.c",
+      "path": "src/fwdl/whc_gspi_host_fwdl.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_gspi_host_fwdl.c",
-      "sha256": "c873fb9a7e2f640d930c92e837c2168e74102b2696375015c428e8cca9710e85"
+      "sha256": "c873fb9a7e2f640d930c92e837c2168e74102b2696375015c428e8cca9710e85",
+      "path_at_import": "driver/fwdl/whc_gspi_host_fwdl.c"
     },
     {
-      "path": "driver/fwdl/whc_gspi_host_xfer.c",
+      "path": "src/fwdl/whc_gspi_host_xfer.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_gspi_host_xfer.c",
-      "sha256": "009c7d6e7524e4c6da2bee51a2ab473814642d8c2ed72aabfa1730f2cb632999"
+      "sha256": "009c7d6e7524e4c6da2bee51a2ab473814642d8c2ed72aabfa1730f2cb632999",
+      "path_at_import": "driver/fwdl/whc_gspi_host_xfer.c"
     },
     {
-      "path": "driver/fwdl/whc_hal.h",
+      "path": "src/fwdl/whc_hal.h",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_hal.h",
-      "sha256": "01c3141e98ef7d741b3392d1d226bc1966f706b39d2503336cc318ded78374b0"
+      "sha256": "01c3141e98ef7d741b3392d1d226bc1966f706b39d2503336cc318ded78374b0",
+      "path_at_import": "driver/fwdl/whc_hal.h"
     },
     {
-      "path": "driver/fwdl/whc_hal_rtl8720f.c",
+      "path": "src/fwdl/whc_hal_rtl8720f.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_hal_rtl8720f.c",
-      "sha256": "b9044e87b678d4a04445d9ba6ea614e88984f563e412eac3212a60e1ee43d24a"
+      "sha256": "b9044e87b678d4a04445d9ba6ea614e88984f563e412eac3212a60e1ee43d24a",
+      "path_at_import": "driver/fwdl/whc_hal_rtl8720f.c"
     },
     {
-      "path": "driver/fwdl/whc_hal_rtl8721f.c",
+      "path": "src/fwdl/whc_hal_rtl8721f.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_hal_rtl8721f.c",
-      "sha256": "faa86328add443139f94970690a0b8c160bcfbaec0a99b52e576fbfef268df67"
+      "sha256": "faa86328add443139f94970690a0b8c160bcfbaec0a99b52e576fbfef268df67",
+      "path_at_import": "driver/fwdl/whc_hal_rtl8721f.c"
     },
     {
-      "path": "driver/fwdl/whc_host_xfer.c",
+      "path": "src/fwdl/whc_host_xfer.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_host_xfer.c",
-      "sha256": "2994850c7de502238713a8140e9b1f2465af069db2548b4aeb52f519de1594df"
+      "sha256": "2994850c7de502238713a8140e9b1f2465af069db2548b4aeb52f519de1594df",
+      "path_at_import": "driver/fwdl/whc_host_xfer.c"
     },
     {
-      "path": "driver/fwdl/whc_host_xfer.h",
+      "path": "src/fwdl/whc_host_xfer.h",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_host_xfer.h",
-      "sha256": "2e6b090770185a62d902b21c47dd4ddc5dde5327b64287e8b67ec63eac3aef6c"
+      "sha256": "2e6b090770185a62d902b21c47dd4ddc5dde5327b64287e8b67ec63eac3aef6c",
+      "path_at_import": "driver/fwdl/whc_host_xfer.h"
     },
     {
-      "path": "driver/fwdl/whc_host_xfer_dl.c",
+      "path": "src/fwdl/whc_host_xfer_dl.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_host_xfer_dl.c",
-      "sha256": "38de7aaea9766f759500357ce52bd335e5edd70fb5b6641cb764bfb442a8bf47"
+      "sha256": "38de7aaea9766f759500357ce52bd335e5edd70fb5b6641cb764bfb442a8bf47",
+      "path_at_import": "driver/fwdl/whc_host_xfer_dl.c"
     },
     {
-      "path": "driver/fwdl/whc_sdio_host_fwdl.c",
+      "path": "src/fwdl/whc_sdio_host_fwdl.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_sdio_host_fwdl.c",
-      "sha256": "c647664007fd5510627c8ad1f49d8d76a97aa491a72961654359be13a4e9bcac"
+      "sha256": "c647664007fd5510627c8ad1f49d8d76a97aa491a72961654359be13a4e9bcac",
+      "path_at_import": "driver/fwdl/whc_sdio_host_fwdl.c"
     },
     {
-      "path": "driver/fwdl/whc_sdio_host_rom.c",
+      "path": "src/fwdl/whc_sdio_host_rom.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_sdio_host_rom.c",
-      "sha256": "64df882f8a66ceec9250acc6747f4f9d46d20b574ceb31fecf27624dacb5b9b3"
+      "sha256": "64df882f8a66ceec9250acc6747f4f9d46d20b574ceb31fecf27624dacb5b9b3",
+      "path_at_import": "driver/fwdl/whc_sdio_host_rom.c"
     },
     {
-      "path": "driver/fwdl/whc_sdio_host_xfer.c",
+      "path": "src/fwdl/whc_sdio_host_xfer.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_sdio_host_xfer.c",
-      "sha256": "d412fa77de757bad680b108a00c365a1f9a22a9e5d0f31f3f82d78d227d955df"
+      "sha256": "d412fa77de757bad680b108a00c365a1f9a22a9e5d0f31f3f82d78d227d955df",
+      "path_at_import": "driver/fwdl/whc_sdio_host_xfer.c"
     },
     {
-      "path": "driver/fwdl/whc_usb_host_fwdl.c",
+      "path": "src/fwdl/whc_usb_host_fwdl.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_usb_host_fwdl.c",
-      "sha256": "e302edade1cf21ae736cf624f028fdff4d4ade5739f44324b82a4b1c1cf78a67"
+      "sha256": "e302edade1cf21ae736cf624f028fdff4d4ade5739f44324b82a4b1c1cf78a67",
+      "path_at_import": "driver/fwdl/whc_usb_host_fwdl.c"
     },
     {
-      "path": "driver/fwdl/whc_usb_host_xfer.c",
+      "path": "src/fwdl/whc_usb_host_xfer.c",
       "source": "component/wifi/whc/whc_host_linux/driver/fwdl/whc_usb_host_xfer.c",
-      "sha256": "4bc8237344ae76d1e1b4c52705d3bc7846f346ed837c75a80c70b4eb88c84bfe"
+      "sha256": "4bc8237344ae76d1e1b4c52705d3bc7846f346ed837c75a80c70b4eb88c84bfe",
+      "path_at_import": "driver/fwdl/whc_usb_host_xfer.c"
     },
     {
-      "path": "driver/gspi/Kbuild",
+      "path": "src/gspi/Kbuild",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/Kbuild",
-      "sha256": "2b0e2d188b5e19ceca0e54e225bf17dfc0878c19bc3370a38bd007716a9cce8b"
+      "sha256": "2b0e2d188b5e19ceca0e54e225bf17dfc0878c19bc3370a38bd007716a9cce8b",
+      "path_at_import": "driver/gspi/Kbuild"
     },
     {
-      "path": "driver/gspi/README_gspi.md",
+      "path": "src/gspi/README_gspi.md",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/README_gspi.md",
-      "sha256": "ba7c51ab498dea03b298d875a2c5fb227f22c5e1c8df5caec267428c6fe09343"
+      "sha256": "ba7c51ab498dea03b298d875a2c5fb227f22c5e1c8df5caec267428c6fe09343",
+      "path_at_import": "driver/gspi/README_gspi.md"
     },
     {
-      "path": "driver/gspi/gspidev-overlay.dts",
+      "path": "src/gspi/gspidev-overlay.dts",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/gspidev-overlay.dts",
-      "sha256": "e6a1c4f7f816a7af8eeee2ee097446ac48a4f53501a95e0169ab2ead5d7b6c1d"
+      "sha256": "e6a1c4f7f816a7af8eeee2ee097446ac48a4f53501a95e0169ab2ead5d7b6c1d",
+      "path_at_import": "driver/gspi/gspidev-overlay.dts"
     },
     {
-      "path": "driver/gspi/whc_gspi_host.h",
+      "path": "src/gspi/whc_gspi_host.h",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/whc_gspi_host.h",
-      "sha256": "9f5d27af6216142f0835f3e93edb467513e1b6579be63a4d523a4372adc95f98"
+      "sha256": "9f5d27af6216142f0835f3e93edb467513e1b6579be63a4d523a4372adc95f98",
+      "path_at_import": "driver/gspi/whc_gspi_host.h"
     },
     {
-      "path": "driver/gspi/whc_gspi_host_drvio.c",
+      "path": "src/gspi/whc_gspi_host_drvio.c",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/whc_gspi_host_drvio.c",
-      "sha256": "78cc0f8b66544747f9f38fe1ad7112906fe99a6731946caed215b6aebf0fa0a0"
+      "sha256": "78cc0f8b66544747f9f38fe1ad7112906fe99a6731946caed215b6aebf0fa0a0",
+      "path_at_import": "driver/gspi/whc_gspi_host_drvio.c"
     },
     {
-      "path": "driver/gspi/whc_gspi_host_drvio.h",
+      "path": "src/gspi/whc_gspi_host_drvio.h",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/whc_gspi_host_drvio.h",
-      "sha256": "d7efe2b68d4ffd75a65cc75c762b211363652287aed842afc62ebd33e8ec7d39"
+      "sha256": "d7efe2b68d4ffd75a65cc75c762b211363652287aed842afc62ebd33e8ec7d39",
+      "path_at_import": "driver/gspi/whc_gspi_host_drvio.h"
     },
     {
-      "path": "driver/gspi/whc_gspi_host_init.c",
+      "path": "src/gspi/whc_gspi_host_init.c",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/whc_gspi_host_init.c",
-      "sha256": "e13327cdf02e98535120bf959fe0c25ccc6a137a29ddc188f078a3f61ead1072"
+      "sha256": "e13327cdf02e98535120bf959fe0c25ccc6a137a29ddc188f078a3f61ead1072",
+      "path_at_import": "driver/gspi/whc_gspi_host_init.c"
     },
     {
-      "path": "driver/gspi/whc_gspi_host_ops.c",
+      "path": "src/gspi/whc_gspi_host_ops.c",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/whc_gspi_host_ops.c",
-      "sha256": "4f27740035074956d1fb22060f90d2df1a99aedef6187deb1d5bd44076e116a6"
+      "sha256": "4f27740035074956d1fb22060f90d2df1a99aedef6187deb1d5bd44076e116a6",
+      "path_at_import": "driver/gspi/whc_gspi_host_ops.c"
     },
     {
-      "path": "driver/gspi/whc_gspi_host_probe.c",
+      "path": "src/gspi/whc_gspi_host_probe.c",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/whc_gspi_host_probe.c",
-      "sha256": "afc1a01654e7df43ed8d03dd573a5df77447520cd7e8248eed8772713124a3ae"
+      "sha256": "afc1a01654e7df43ed8d03dd573a5df77447520cd7e8248eed8772713124a3ae",
+      "path_at_import": "driver/gspi/whc_gspi_host_probe.c"
     },
     {
-      "path": "driver/gspi/whc_gspi_host_reg.h",
+      "path": "src/gspi/whc_gspi_host_reg.h",
       "source": "component/wifi/whc/whc_host_linux/driver/gspi/whc_gspi_host_reg.h",
-      "sha256": "fd966936ff47d47364d063d6b0d5f8d98d843842819a70acd0c3d3e0d44312d1"
+      "sha256": "fd966936ff47d47364d063d6b0d5f8d98d843842819a70acd0c3d3e0d44312d1",
+      "path_at_import": "driver/gspi/whc_gspi_host_reg.h"
     },
     {
-      "path": "driver/ipc/Kbuild",
+      "path": "src/ipc/Kbuild",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/Kbuild",
-      "sha256": "9a00546b1a7020d4bfb3458c9eb50033bcc4b181bd0b199f6e56ab2f191828bc"
+      "sha256": "9a00546b1a7020d4bfb3458c9eb50033bcc4b181bd0b199f6e56ab2f191828bc",
+      "path_at_import": "driver/ipc/Kbuild"
     },
     {
-      "path": "driver/ipc/ameba_wificfg.c",
+      "path": "src/ipc/ameba_wificfg.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/ameba_wificfg.c",
-      "sha256": "8c8eff134ec26500cf3cadb5be80018078e8d19e1d4a7bf9c1e7bcdd24051565"
+      "sha256": "8c8eff134ec26500cf3cadb5be80018078e8d19e1d4a7bf9c1e7bcdd24051565",
+      "path_at_import": "driver/ipc/ameba_wificfg.c"
     },
     {
-      "path": "driver/ipc/ameba_wificfg_common.h",
+      "path": "src/ipc/ameba_wificfg_common.h",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/ameba_wificfg_common.h",
-      "sha256": "b554331041db1a385e11230a33033a3a82525755588ba54cbc7cd739f8b32880"
+      "sha256": "b554331041db1a385e11230a33033a3a82525755588ba54cbc7cd739f8b32880",
+      "path_at_import": "driver/ipc/ameba_wificfg_common.h"
     },
     {
-      "path": "driver/ipc/whc_ipc_host.h",
+      "path": "src/ipc/whc_ipc_host.h",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host.h",
-      "sha256": "793220806e322ffab921efdc18334d0df55302b12b1195d0a4a78e84ea56cc0b"
+      "sha256": "793220806e322ffab921efdc18334d0df55302b12b1195d0a4a78e84ea56cc0b",
+      "path_at_import": "driver/ipc/whc_ipc_host.h"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_event_rx.c",
+      "path": "src/ipc/whc_ipc_host_event_rx.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_event_rx.c",
-      "sha256": "423fce94f87823f073d9fbb17957e12495157db013106678a164609e9b60ee0c"
+      "sha256": "423fce94f87823f073d9fbb17957e12495157db013106678a164609e9b60ee0c",
+      "path_at_import": "driver/ipc/whc_ipc_host_event_rx.c"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_event_test.c",
+      "path": "src/ipc/whc_ipc_host_event_test.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_event_test.c",
-      "sha256": "28cd95c3c74d55eb0f5bdb0b935589f44cd0df969dfd9f970cd9daaa9be64336"
+      "sha256": "28cd95c3c74d55eb0f5bdb0b935589f44cd0df969dfd9f970cd9daaa9be64336",
+      "path_at_import": "driver/ipc/whc_ipc_host_event_test.c"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_event_test.h",
+      "path": "src/ipc/whc_ipc_host_event_test.h",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_event_test.h",
-      "sha256": "22850785ab28c670a3066e8c7b5f7fcb4e778bd8dc4104f2458b411bbc01c790"
+      "sha256": "22850785ab28c670a3066e8c7b5f7fcb4e778bd8dc4104f2458b411bbc01c790",
+      "path_at_import": "driver/ipc/whc_ipc_host_event_test.h"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_event_tx.c",
+      "path": "src/ipc/whc_ipc_host_event_tx.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_event_tx.c",
-      "sha256": "578922255ec8a5ec4cf95697c427e3e2b81354477ef4e464c4e7f7c10ee479de"
+      "sha256": "578922255ec8a5ec4cf95697c427e3e2b81354477ef4e464c4e7f7c10ee479de",
+      "path_at_import": "driver/ipc/whc_ipc_host_event_tx.c"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_hci.c",
+      "path": "src/ipc/whc_ipc_host_hci.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_hci.c",
-      "sha256": "fe67f683371991977dea98c472b3c8c24cfe1335906cef3c6f12614b7f6b7da4"
+      "sha256": "fe67f683371991977dea98c472b3c8c24cfe1335906cef3c6f12614b7f6b7da4",
+      "path_at_import": "driver/ipc/whc_ipc_host_hci.c"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_mem.c",
+      "path": "src/ipc/whc_ipc_host_mem.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_mem.c",
-      "sha256": "579f40f177c1440539d9c5de23fcea7993da8d75d535e687d52ec070410bdc39"
+      "sha256": "579f40f177c1440539d9c5de23fcea7993da8d75d535e687d52ec070410bdc39",
+      "path_at_import": "driver/ipc/whc_ipc_host_mem.c"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_mem.h",
+      "path": "src/ipc/whc_ipc_host_mem.h",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_mem.h",
-      "sha256": "70781abacbf9ae7a2962f0fc25ed64d22d4223d377e5fad54b990c7ed5c236db"
+      "sha256": "70781abacbf9ae7a2962f0fc25ed64d22d4223d377e5fad54b990c7ed5c236db",
+      "path_at_import": "driver/ipc/whc_ipc_host_mem.h"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_msg.c",
+      "path": "src/ipc/whc_ipc_host_msg.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_msg.c",
-      "sha256": "40928b1d0f85d6891b97f247d3d8b41b7846638301d775f6ead568bbc4e07de5"
+      "sha256": "40928b1d0f85d6891b97f247d3d8b41b7846638301d775f6ead568bbc4e07de5",
+      "path_at_import": "driver/ipc/whc_ipc_host_msg.c"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_msg.h",
+      "path": "src/ipc/whc_ipc_host_msg.h",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_msg.h",
-      "sha256": "c24ca9529bac8fca7faa6090c4170ccc5a2a10d3541c3436d01b6c238c28fc40"
+      "sha256": "c24ca9529bac8fca7faa6090c4170ccc5a2a10d3541c3436d01b6c238c28fc40",
+      "path_at_import": "driver/ipc/whc_ipc_host_msg.h"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_probe.c",
+      "path": "src/ipc/whc_ipc_host_probe.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_probe.c",
-      "sha256": "2c3e2490110e0a02e3e3dd8d4ba07da70078c9814ffa69658941da33adf5758f"
+      "sha256": "2c3e2490110e0a02e3e3dd8d4ba07da70078c9814ffa69658941da33adf5758f",
+      "path_at_import": "driver/ipc/whc_ipc_host_probe.c"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_recv.c",
+      "path": "src/ipc/whc_ipc_host_recv.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_recv.c",
-      "sha256": "7fc0405910e43b4ef382e4a02a2d29398693ebd5ccd2441d41305b5318f1dae7"
+      "sha256": "7fc0405910e43b4ef382e4a02a2d29398693ebd5ccd2441d41305b5318f1dae7",
+      "path_at_import": "driver/ipc/whc_ipc_host_recv.c"
     },
     {
-      "path": "driver/ipc/whc_ipc_host_xmit.c",
+      "path": "src/ipc/whc_ipc_host_xmit.c",
       "source": "component/wifi/whc/whc_host_linux/driver/ipc/whc_ipc_host_xmit.c",
-      "sha256": "3bf4f9d9ebec6bc66823558cb381e5c16c7ab743b0f0fa3e5797ef1747f10811"
+      "sha256": "3bf4f9d9ebec6bc66823558cb381e5c16c7ab743b0f0fa3e5797ef1747f10811",
+      "path_at_import": "driver/ipc/whc_ipc_host_xmit.c"
     },
     {
-      "path": "driver/netdev/whc_host_ethtool_ops.c",
+      "path": "src/netdev/whc_host_ethtool_ops.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_ethtool_ops.c",
-      "sha256": "0c30d0371bbccecb4a1cbc94d15ca22ffeb0a69c7f53e20acdac21cc68956001"
+      "sha256": "0c30d0371bbccecb4a1cbc94d15ca22ffeb0a69c7f53e20acdac21cc68956001",
+      "path_at_import": "driver/netdev/whc_host_ethtool_ops.c"
     },
     {
-      "path": "driver/netdev/whc_host_ethtool_ops.h",
+      "path": "src/netdev/whc_host_ethtool_ops.h",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_ethtool_ops.h",
-      "sha256": "2f19040c5ad7738b8cdff82cf45a489cbbdea07eb7a1d9674c8a0fe1ce3f650f"
+      "sha256": "2f19040c5ad7738b8cdff82cf45a489cbbdea07eb7a1d9674c8a0fe1ce3f650f",
+      "path_at_import": "driver/netdev/whc_host_ethtool_ops.h"
     },
     {
-      "path": "driver/netdev/whc_host_netdev_ops.c",
+      "path": "src/netdev/whc_host_netdev_ops.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_netdev_ops.c",
-      "sha256": "4b73eb3636de2a5c82ad44ac5a4693e0977c94ba2298bf98e06278f8ca9d7e6a"
+      "sha256": "4b73eb3636de2a5c82ad44ac5a4693e0977c94ba2298bf98e06278f8ca9d7e6a",
+      "path_at_import": "driver/netdev/whc_host_netdev_ops.c"
     },
     {
-      "path": "driver/netdev/whc_host_netdev_ops.h",
+      "path": "src/netdev/whc_host_netdev_ops.h",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_netdev_ops.h",
-      "sha256": "0fea664d1c5fd486bff6272552403b083eaeb989f8a8accd17dd045ad729fba0"
+      "sha256": "0fea664d1c5fd486bff6272552403b083eaeb989f8a8accd17dd045ad729fba0",
+      "path_at_import": "driver/netdev/whc_host_netdev_ops.h"
     },
     {
-      "path": "driver/netdev/whc_host_netdev_ops_p2p.c",
+      "path": "src/netdev/whc_host_netdev_ops_p2p.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_netdev_ops_p2p.c",
-      "sha256": "b29c55c0ef41f5ad468479cf4f701943def63e1cde82c5e01dc8b49ba3eeecab"
+      "sha256": "b29c55c0ef41f5ad468479cf4f701943def63e1cde82c5e01dc8b49ba3eeecab",
+      "path_at_import": "driver/netdev/whc_host_netdev_ops_p2p.c"
     },
     {
-      "path": "driver/netdev/whc_host_ops.c",
+      "path": "src/netdev/whc_host_ops.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_ops.c",
-      "sha256": "274e065ac0548fa233a6a136332d4419180b7029ae659b31cd4c00ec43981c7d"
+      "sha256": "274e065ac0548fa233a6a136332d4419180b7029ae659b31cd4c00ec43981c7d",
+      "path_at_import": "driver/netdev/whc_host_ops.c"
     },
     {
-      "path": "driver/netdev/whc_host_ops_ap.c",
+      "path": "src/netdev/whc_host_ops_ap.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_ops_ap.c",
-      "sha256": "9f7112145c7352c137dcccaaa9df7d342843e7bfb4f5fbf3b865d1ca21311324"
+      "sha256": "9f7112145c7352c137dcccaaa9df7d342843e7bfb4f5fbf3b865d1ca21311324",
+      "path_at_import": "driver/netdev/whc_host_ops_ap.c"
     },
     {
-      "path": "driver/netdev/whc_host_ops_key.c",
+      "path": "src/netdev/whc_host_ops_key.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_ops_key.c",
-      "sha256": "4d0f68e6ca1f2f42906ccffc648c53fe28d116375c6f7ab9d6a4beb233415158"
+      "sha256": "4d0f68e6ca1f2f42906ccffc648c53fe28d116375c6f7ab9d6a4beb233415158",
+      "path_at_import": "driver/netdev/whc_host_ops_key.c"
     },
     {
-      "path": "driver/netdev/whc_host_ops_nan.c",
+      "path": "src/netdev/whc_host_ops_nan.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_ops_nan.c",
-      "sha256": "8eb5f22343d3baa35636619a65c5e445d0689246394c6180d7dda0c152564450"
+      "sha256": "8eb5f22343d3baa35636619a65c5e445d0689246394c6180d7dda0c152564450",
+      "path_at_import": "driver/netdev/whc_host_ops_nan.c"
     },
     {
-      "path": "driver/netdev/whc_host_ops_p2p.c",
+      "path": "src/netdev/whc_host_ops_p2p.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_ops_p2p.c",
-      "sha256": "a7225ab0704e320f8361ff2b31fef0cbf3ad56e2e973b33945986e46fae0a615"
+      "sha256": "a7225ab0704e320f8361ff2b31fef0cbf3ad56e2e973b33945986e46fae0a615",
+      "path_at_import": "driver/netdev/whc_host_ops_p2p.c"
     },
     {
-      "path": "driver/netdev/whc_host_ops_sta.c",
+      "path": "src/netdev/whc_host_ops_sta.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_ops_sta.c",
-      "sha256": "a19f1ff33b0a7f1c3f21025e04991e3a3f2fd1b0b629d7f0d5a44885cda2c0d2"
+      "sha256": "a19f1ff33b0a7f1c3f21025e04991e3a3f2fd1b0b629d7f0d5a44885cda2c0d2",
+      "path_at_import": "driver/netdev/whc_host_ops_sta.c"
     },
     {
-      "path": "driver/netdev/whc_host_wiphy.c",
+      "path": "src/netdev/whc_host_wiphy.c",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_wiphy.c",
-      "sha256": "70e530657ad2e9fa5b0b4c5941d5ec3c1cf5e285866c8e78391607609544aa37"
+      "sha256": "70e530657ad2e9fa5b0b4c5941d5ec3c1cf5e285866c8e78391607609544aa37",
+      "path_at_import": "driver/netdev/whc_host_wiphy.c"
     },
     {
-      "path": "driver/netdev/whc_host_wiphy.h",
+      "path": "src/netdev/whc_host_wiphy.h",
       "source": "component/wifi/whc/whc_host_linux/driver/netdev/whc_host_wiphy.h",
-      "sha256": "2376bb09b7d442f41dbf816cad4e68c9d921d1b42ac337be30a83d00833c7fa1"
+      "sha256": "2376bb09b7d442f41dbf816cad4e68c9d921d1b42ac337be30a83d00833c7fa1",
+      "path_at_import": "driver/netdev/whc_host_wiphy.h"
     },
     {
-      "path": "driver/sdio/Kbuild",
+      "path": "src/sdio/Kbuild",
       "source": "component/wifi/whc/whc_host_linux/driver/sdio/Kbuild",
-      "sha256": "cbb9d539e0ac5c61a57fb1116870f6f8e311f612854a24da8a668039b654e713"
+      "sha256": "cbb9d539e0ac5c61a57fb1116870f6f8e311f612854a24da8a668039b654e713",
+      "path_at_import": "driver/sdio/Kbuild"
     },
     {
-      "path": "driver/sdio/whc_sdio_host.h",
+      "path": "src/sdio/whc_sdio_host.h",
       "source": "component/wifi/whc/whc_host_linux/driver/sdio/whc_sdio_host.h",
-      "sha256": "520a26995007fdc2b462bb5672bae8f4e709326c82b25468281f677552d35f65"
+      "sha256": "520a26995007fdc2b462bb5672bae8f4e709326c82b25468281f677552d35f65",
+      "path_at_import": "driver/sdio/whc_sdio_host.h"
     },
     {
-      "path": "driver/sdio/whc_sdio_host_drvio.c",
+      "path": "src/sdio/whc_sdio_host_drvio.c",
       "source": "component/wifi/whc/whc_host_linux/driver/sdio/whc_sdio_host_drvio.c",
-      "sha256": "f7c08204e0e12400344af1cef52ef45abf89e9e550452b429fb29b3a79ef1c8e"
+      "sha256": "f7c08204e0e12400344af1cef52ef45abf89e9e550452b429fb29b3a79ef1c8e",
+      "path_at_import": "driver/sdio/whc_sdio_host_drvio.c"
     },
     {
-      "path": "driver/sdio/whc_sdio_host_drvio.h",
+      "path": "src/sdio/whc_sdio_host_drvio.h",
       "source": "component/wifi/whc/whc_host_linux/driver/sdio/whc_sdio_host_drvio.h",
-      "sha256": "783f6a7525f14c78036b7a3e72d9c6f00388be8a964e00427b98579f12641182"
+      "sha256": "783f6a7525f14c78036b7a3e72d9c6f00388be8a964e00427b98579f12641182",
+      "path_at_import": "driver/sdio/whc_sdio_host_drvio.h"
     },
     {
-      "path": "driver/sdio/whc_sdio_host_init.c",
+      "path": "src/sdio/whc_sdio_host_init.c",
       "source": "component/wifi/whc/whc_host_linux/driver/sdio/whc_sdio_host_init.c",
-      "sha256": "be32f039cf73b706751b12b0bc559bfd45f4502dc7fd5a3fddecaee782149439"
+      "sha256": "be32f039cf73b706751b12b0bc559bfd45f4502dc7fd5a3fddecaee782149439",
+      "path_at_import": "driver/sdio/whc_sdio_host_init.c"
     },
     {
-      "path": "driver/sdio/whc_sdio_host_ops.c",
+      "path": "src/sdio/whc_sdio_host_ops.c",
       "source": "component/wifi/whc/whc_host_linux/driver/sdio/whc_sdio_host_ops.c",
-      "sha256": "0c858a0220d743f96fc2a679af4f097e32de1392dd69cfc64b5067c5c6021917"
+      "sha256": "0c858a0220d743f96fc2a679af4f097e32de1392dd69cfc64b5067c5c6021917",
+      "path_at_import": "driver/sdio/whc_sdio_host_ops.c"
     },
     {
-      "path": "driver/sdio/whc_sdio_host_probe.c",
+      "path": "src/sdio/whc_sdio_host_probe.c",
       "source": "component/wifi/whc/whc_host_linux/driver/sdio/whc_sdio_host_probe.c",
-      "sha256": "fe4f4e358a65a62cade3a60b5be4790a97b6d28a6300bbf0469e6a0ef1b052ce"
+      "sha256": "fe4f4e358a65a62cade3a60b5be4790a97b6d28a6300bbf0469e6a0ef1b052ce",
+      "path_at_import": "driver/sdio/whc_sdio_host_probe.c"
     },
     {
-      "path": "driver/sdio/whc_sdio_host_reg.h",
+      "path": "src/sdio/whc_sdio_host_reg.h",
       "source": "component/wifi/whc/whc_host_linux/driver/sdio/whc_sdio_host_reg.h",
-      "sha256": "49bf958ec11274828e713a0a9f4ae8dc88919135c1cf9be32619f808c3a51ff1"
+      "sha256": "49bf958ec11274828e713a0a9f4ae8dc88919135c1cf9be32619f808c3a51ff1",
+      "path_at_import": "driver/sdio/whc_sdio_host_reg.h"
     },
     {
-      "path": "driver/spi/Kbuild",
+      "path": "src/spi/Kbuild",
       "source": "component/wifi/whc/whc_host_linux/driver/spi/Kbuild",
-      "sha256": "c8696a9dbe67d30c719ed694fe7bd5fb94960b829c2966b64ba735cd75c3aa76"
+      "sha256": "c8696a9dbe67d30c719ed694fe7bd5fb94960b829c2966b64ba735cd75c3aa76",
+      "path_at_import": "driver/spi/Kbuild"
     },
     {
-      "path": "driver/spi/spidev-overlay.dts",
+      "path": "src/spi/spidev-overlay.dts",
       "source": "component/wifi/whc/whc_host_linux/driver/spi/spidev-overlay.dts",
-      "sha256": "e6a1c4f7f816a7af8eeee2ee097446ac48a4f53501a95e0169ab2ead5d7b6c1d"
+      "sha256": "e6a1c4f7f816a7af8eeee2ee097446ac48a4f53501a95e0169ab2ead5d7b6c1d",
+      "path_at_import": "driver/spi/spidev-overlay.dts"
     },
     {
-      "path": "driver/spi/whc_spi_host.h",
+      "path": "src/spi/whc_spi_host.h",
       "source": "component/wifi/whc/whc_host_linux/driver/spi/whc_spi_host.h",
-      "sha256": "e338595df9adf6d1110ab4c9407f0f7b13c76e03c868e4a2d7c53e546aebbc73"
+      "sha256": "e338595df9adf6d1110ab4c9407f0f7b13c76e03c868e4a2d7c53e546aebbc73",
+      "path_at_import": "driver/spi/whc_spi_host.h"
     },
     {
-      "path": "driver/spi/whc_spi_host_ops.c",
+      "path": "src/spi/whc_spi_host_ops.c",
       "source": "component/wifi/whc/whc_host_linux/driver/spi/whc_spi_host_ops.c",
-      "sha256": "e70d7e32a42a61126a8003f2ce8182771daaba702e11a4c95abcecab8d6b06b8"
+      "sha256": "e70d7e32a42a61126a8003f2ce8182771daaba702e11a4c95abcecab8d6b06b8",
+      "path_at_import": "driver/spi/whc_spi_host_ops.c"
     },
     {
-      "path": "driver/spi/whc_spi_host_probe.c",
+      "path": "src/spi/whc_spi_host_probe.c",
       "source": "component/wifi/whc/whc_host_linux/driver/spi/whc_spi_host_probe.c",
-      "sha256": "72bf9c25639cc07546257e9436cb1430d0f599e6f2ce46f5f1571584a227d962"
+      "sha256": "72bf9c25639cc07546257e9436cb1430d0f599e6f2ce46f5f1571584a227d962",
+      "path_at_import": "driver/spi/whc_spi_host_probe.c"
     },
     {
-      "path": "driver/usb/Kbuild",
+      "path": "src/usb/Kbuild",
       "source": "component/wifi/whc/whc_host_linux/driver/usb/Kbuild",
-      "sha256": "532224e0f8445121dd2045115210ff59c1149833ef18902e4422724871fd5228"
+      "sha256": "532224e0f8445121dd2045115210ff59c1149833ef18902e4422724871fd5228",
+      "path_at_import": "driver/usb/Kbuild"
     },
     {
-      "path": "driver/usb/whc_usb_host.h",
+      "path": "src/usb/whc_usb_host.h",
       "source": "component/wifi/whc/whc_host_linux/driver/usb/whc_usb_host.h",
-      "sha256": "16ce2fd51f7ac1802bcb7f62d094e14383e730ff6c72d8297e493d89edc984fc"
+      "sha256": "16ce2fd51f7ac1802bcb7f62d094e14383e730ff6c72d8297e493d89edc984fc",
+      "path_at_import": "driver/usb/whc_usb_host.h"
     },
     {
-      "path": "driver/usb/whc_usb_host_ops.c",
+      "path": "src/hw_ops.c",
       "source": "component/wifi/whc/whc_host_linux/driver/usb/whc_usb_host_ops.c",
-      "sha256": "a5f322d794df0ff40bb3e52ca108f19b39de361ca97f9817f0552f73abc0cd02"
+      "sha256": "a5f322d794df0ff40bb3e52ca108f19b39de361ca97f9817f0552f73abc0cd02",
+      "path_at_import": "driver/usb/whc_usb_host_ops.c"
     },
     {
-      "path": "driver/usb/whc_usb_host_probe.c",
+      "path": "src/core.c",
       "source": "component/wifi/whc/whc_host_linux/driver/usb/whc_usb_host_probe.c",
-      "sha256": "09d22a9afe2a0cfb1b9d4ba372b8da2d5acd9014e635b2eca116b27809d46709"
+      "sha256": "09d22a9afe2a0cfb1b9d4ba372b8da2d5acd9014e635b2eca116b27809d46709",
+      "path_at_import": "driver/usb/whc_usb_host_probe.c"
     },
     {
-      "path": "driver/whc_host_acs.c",
+      "path": "src/whc_host_acs.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_acs.c",
-      "sha256": "99425b5df630edff7b5458c9c6e0a41f189962b4ddecb4e4aecb510c15eb334f"
+      "sha256": "99425b5df630edff7b5458c9c6e0a41f189962b4ddecb4e4aecb510c15eb334f",
+      "path_at_import": "driver/whc_host_acs.c"
     },
     {
-      "path": "driver/whc_host_acs.h",
+      "path": "src/whc_host_acs.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_acs.h",
-      "sha256": "ca41271ccd842aa36b975db2b11f0d6ae074e4978a09b021440a30866d857430"
+      "sha256": "ca41271ccd842aa36b975db2b11f0d6ae074e4978a09b021440a30866d857430",
+      "path_at_import": "driver/whc_host_acs.h"
     },
     {
-      "path": "driver/whc_host_cfgvendor.c",
+      "path": "src/whc_host_cfgvendor.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_cfgvendor.c",
-      "sha256": "906268b2fc1ce10babe16f6fded1d5955b98ee584bb9e0d979a7380e45281430"
+      "sha256": "906268b2fc1ce10babe16f6fded1d5955b98ee584bb9e0d979a7380e45281430",
+      "path_at_import": "driver/whc_host_cfgvendor.c"
     },
     {
-      "path": "driver/whc_host_cfgvendor.h",
+      "path": "src/whc_host_cfgvendor.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_cfgvendor.h",
-      "sha256": "13a656bc55908fcb09be3b9fbdd1f5364a5391544ad1cf39f01f9e2d8b0bea85"
+      "sha256": "13a656bc55908fcb09be3b9fbdd1f5364a5391544ad1cf39f01f9e2d8b0bea85",
+      "path_at_import": "driver/whc_host_cfgvendor.h"
     },
     {
-      "path": "driver/whc_host_cmd_path_api.h",
+      "path": "src/whc_host_cmd_path_api.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_cmd_path_api.h",
-      "sha256": "becade87d85c6cf59eccfdcdc9486a89da72ead6381f87be969af694efe6d999"
+      "sha256": "becade87d85c6cf59eccfdcdc9486a89da72ead6381f87be969af694efe6d999",
+      "path_at_import": "driver/whc_host_cmd_path_api.h"
     },
     {
-      "path": "driver/whc_host_cmd_path_tx.c",
+      "path": "src/whc_host_cmd_path_tx.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_cmd_path_tx.c",
-      "sha256": "ebe62171931b40618aac4a6e47cb3f3090e702abaa4421cca4b04fd5a0b5c40a"
+      "sha256": "ebe62171931b40618aac4a6e47cb3f3090e702abaa4421cca4b04fd5a0b5c40a",
+      "path_at_import": "driver/whc_host_cmd_path_tx.c"
     },
     {
-      "path": "driver/whc_host_event.h",
+      "path": "src/whc_host_event.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_event.h",
-      "sha256": "7a319a265e224e6961a78bdda832b6476690007559a7883e8fc604339c67d948"
+      "sha256": "7a319a265e224e6961a78bdda832b6476690007559a7883e8fc604339c67d948",
+      "path_at_import": "driver/whc_host_event.h"
     },
     {
-      "path": "driver/whc_host_event_hdl.c",
+      "path": "src/whc_host_event_hdl.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_event_hdl.c",
-      "sha256": "5643f19de74ab839abe8419d95fca6f3d0b612c63eddb5848ac0909e1e244e4e"
+      "sha256": "5643f19de74ab839abe8419d95fca6f3d0b612c63eddb5848ac0909e1e244e4e",
+      "path_at_import": "driver/whc_host_event_hdl.c"
     },
     {
-      "path": "driver/whc_host_event_rx.c",
+      "path": "src/whc_host_event_rx.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_event_rx.c",
-      "sha256": "a87a0691be7bb1483f0fe302b6b4266cf2b329f5d03d1628e7cf96f48c8652d7"
+      "sha256": "a87a0691be7bb1483f0fe302b6b4266cf2b329f5d03d1628e7cf96f48c8652d7",
+      "path_at_import": "driver/whc_host_event_rx.c"
     },
     {
-      "path": "driver/whc_host_event_tx.c",
+      "path": "src/whc_host_event_tx.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_event_tx.c",
-      "sha256": "92531d8e16a4bad566fe927dae8af3bd38cd7d3a6c1e25f03c6c54f8a58539ac"
+      "sha256": "92531d8e16a4bad566fe927dae8af3bd38cd7d3a6c1e25f03c6c54f8a58539ac",
+      "path_at_import": "driver/whc_host_event_tx.c"
     },
     {
-      "path": "driver/whc_host_ft.c",
+      "path": "src/whc_host_ft.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_ft.c",
-      "sha256": "32a293480f34e8ed9ada6da5937140ced96c5bce6843efcc8629d3e01eac655c"
+      "sha256": "32a293480f34e8ed9ada6da5937140ced96c5bce6843efcc8629d3e01eac655c",
+      "path_at_import": "driver/whc_host_ft.c"
     },
     {
-      "path": "driver/whc_host_ft.h",
+      "path": "src/whc_host_ft.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_ft.h",
-      "sha256": "c1b9f72f7c9d2a3a523cd869e6b8c7cdd4634e00c381b97e5c5df3fd1ee7257b"
+      "sha256": "c1b9f72f7c9d2a3a523cd869e6b8c7cdd4634e00c381b97e5c5df3fd1ee7257b",
+      "path_at_import": "driver/whc_host_ft.h"
     },
     {
-      "path": "driver/whc_host_function.h",
+      "path": "src/whc_host_function.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_function.h",
-      "sha256": "2339963aa2cbf0ee93add1a53c6de16362ebfead64f16dd1408a9a2b141d46ce"
+      "sha256": "2339963aa2cbf0ee93add1a53c6de16362ebfead64f16dd1408a9a2b141d46ce",
+      "path_at_import": "driver/whc_host_function.h"
     },
     {
-      "path": "driver/whc_host_hci.c",
+      "path": "src/whc_host_hci.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_hci.c",
-      "sha256": "4c0bfcc0c50fe32fa0b5d8d544d77741bac8dea74df170a6af53807f89ef7f90"
+      "sha256": "4c0bfcc0c50fe32fa0b5d8d544d77741bac8dea74df170a6af53807f89ef7f90",
+      "path_at_import": "driver/whc_host_hci.c"
     },
     {
-      "path": "driver/whc_host_hci.h",
+      "path": "src/whc_host_hci.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_hci.h",
-      "sha256": "41c25d80e574075ced33802f86d34618789ef4b32f2d5679a72b443dc0d51db2"
+      "sha256": "41c25d80e574075ced33802f86d34618789ef4b32f2d5679a72b443dc0d51db2",
+      "path_at_import": "driver/whc_host_hci.h"
     },
     {
-      "path": "driver/whc_host_linux.h",
+      "path": "src/internal.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_linux.h",
-      "sha256": "90f55a4916bafa12c2a622b9ff68813a9b8b88d750e01986c9a57827d7b62004"
+      "sha256": "90f55a4916bafa12c2a622b9ff68813a9b8b88d750e01986c9a57827d7b62004",
+      "path_at_import": "driver/whc_host_linux.h"
     },
     {
-      "path": "driver/whc_host_log_fwd.c",
+      "path": "src/whc_host_log_fwd.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_log_fwd.c",
-      "sha256": "616b1591bb6762969c78b8957b2a16d3f0b40214a8bc115150c7bcf227dba55a"
+      "sha256": "616b1591bb6762969c78b8957b2a16d3f0b40214a8bc115150c7bcf227dba55a",
+      "path_at_import": "driver/whc_host_log_fwd.c"
     },
     {
-      "path": "driver/whc_host_log_fwd.h",
+      "path": "src/whc_host_log_fwd.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_log_fwd.h",
-      "sha256": "e19520adcb4c10756770c8b3d3cb3146a77bf8e396a302f90ae77fef8688dc6e"
+      "sha256": "e19520adcb4c10756770c8b3d3cb3146a77bf8e396a302f90ae77fef8688dc6e",
+      "path_at_import": "driver/whc_host_log_fwd.h"
     },
     {
-      "path": "driver/whc_host_memory.c",
+      "path": "src/whc_host_memory.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_memory.c",
-      "sha256": "34c4bbe7a7d186b6c3ae2d491ee7d9d61a043c07025517080a4f5c2652c9f895"
+      "sha256": "34c4bbe7a7d186b6c3ae2d491ee7d9d61a043c07025517080a4f5c2652c9f895",
+      "path_at_import": "driver/whc_host_memory.c"
     },
     {
-      "path": "driver/whc_host_netlink.c",
+      "path": "src/whc_host_netlink.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_netlink.c",
-      "sha256": "edc0ca2f0b502b5e327c7c84d8d745182388877f0511536db8ef54705c2295de"
+      "sha256": "edc0ca2f0b502b5e327c7c84d8d745182388877f0511536db8ef54705c2295de",
+      "path_at_import": "driver/whc_host_netlink.c"
     },
     {
-      "path": "driver/whc_host_netlink.h",
+      "path": "src/whc_host_netlink.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_netlink.h",
-      "sha256": "7520099ad68476ff73eb041cd655d7c063e307ef07a79dd0eec9b44fb30fac94"
+      "sha256": "7520099ad68476ff73eb041cd655d7c063e307ef07a79dd0eec9b44fb30fac94",
+      "path_at_import": "driver/whc_host_netlink.h"
     },
     {
-      "path": "driver/whc_host_pkt_rx.c",
+      "path": "src/whc_host_pkt_rx.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_pkt_rx.c",
-      "sha256": "53ca2caf1df01e82b4bff85b816dda119a3f4c556af51d6531d1cfa063563f65"
+      "sha256": "53ca2caf1df01e82b4bff85b816dda119a3f4c556af51d6531d1cfa063563f65",
+      "path_at_import": "driver/whc_host_pkt_rx.c"
     },
     {
-      "path": "driver/whc_host_pkt_tx.c",
+      "path": "src/whc_host_pkt_tx.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_pkt_tx.c",
-      "sha256": "5b9bc1cdb09eb28eedc846a5edaf71ddd7011e7a3ee5605511fd8a1e271692c6"
+      "sha256": "5b9bc1cdb09eb28eedc846a5edaf71ddd7011e7a3ee5605511fd8a1e271692c6",
+      "path_at_import": "driver/whc_host_pkt_tx.c"
     },
     {
-      "path": "driver/whc_host_proc.c",
+      "path": "src/whc_host_proc.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_proc.c",
-      "sha256": "6e235895dc24c841ef87e4e48535c6d1c64c440371eef791a3a0d841ed5d82cb"
+      "sha256": "6e235895dc24c841ef87e4e48535c6d1c64c440371eef791a3a0d841ed5d82cb",
+      "path_at_import": "driver/whc_host_proc.c"
     },
     {
-      "path": "driver/whc_host_proc.h",
+      "path": "src/whc_host_proc.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_proc.h",
-      "sha256": "1513a7c382e2d2481646f7dec276a250438819fb0e18775e93725a6e785e208b"
+      "sha256": "1513a7c382e2d2481646f7dec276a250438819fb0e18775e93725a6e785e208b",
+      "path_at_import": "driver/whc_host_proc.h"
     },
     {
-      "path": "driver/whc_host_promisc.c",
+      "path": "src/whc_host_promisc.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_promisc.c",
-      "sha256": "9e1d5f115e6508ec16359d82a69f4f556153cbe8c4c499f7a5bf84cbcd6da612"
+      "sha256": "9e1d5f115e6508ec16359d82a69f4f556153cbe8c4c499f7a5bf84cbcd6da612",
+      "path_at_import": "driver/whc_host_promisc.c"
     },
     {
-      "path": "driver/whc_host_promisc.h",
+      "path": "src/whc_host_promisc.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_promisc.h",
-      "sha256": "c137e42e49bf1af4b296ff595ef2359905366e279c3f903e3a95200cf44f84f2"
+      "sha256": "c137e42e49bf1af4b296ff595ef2359905366e279c3f903e3a95200cf44f84f2",
+      "path_at_import": "driver/whc_host_promisc.h"
     },
     {
-      "path": "driver/whc_host_protocal_offload.c",
+      "path": "src/whc_host_protocal_offload.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_protocal_offload.c",
-      "sha256": "7e14104b2ab4db0dd5f8d401098f3d25ccfdc1de6cb14ae12e1624a1f485e238"
+      "sha256": "7e14104b2ab4db0dd5f8d401098f3d25ccfdc1de6cb14ae12e1624a1f485e238",
+      "path_at_import": "driver/whc_host_protocal_offload.c"
     },
     {
-      "path": "driver/whc_host_protocal_offload.h",
+      "path": "src/whc_host_protocal_offload.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_protocal_offload.h",
-      "sha256": "0432f23efcd6add1c1a44979dbd8dcb304190d81e9c06042d571f58dfa15b33c"
+      "sha256": "0432f23efcd6add1c1a44979dbd8dcb304190d81e9c06042d571f58dfa15b33c",
+      "path_at_import": "driver/whc_host_protocal_offload.h"
     },
     {
-      "path": "driver/whc_host_regd.c",
+      "path": "src/whc_host_regd.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_regd.c",
-      "sha256": "21c2e01b0bc1cb4af4bb89ee7568fa942039c083e4e419099ca2c40a35f9e987"
+      "sha256": "21c2e01b0bc1cb4af4bb89ee7568fa942039c083e4e419099ca2c40a35f9e987",
+      "path_at_import": "driver/whc_host_regd.c"
     },
     {
-      "path": "driver/whc_host_regd.h",
+      "path": "src/whc_host_regd.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_regd.h",
-      "sha256": "dbae1bc9df7340924b6dba28cf881b46cc8cc2a2376685479fe1971dc32ca9c3"
+      "sha256": "dbae1bc9df7340924b6dba28cf881b46cc8cc2a2376685479fe1971dc32ca9c3",
+      "path_at_import": "driver/whc_host_regd.h"
     },
     {
-      "path": "driver/whc_host_rtw_cli/whc_host_rtw_cli_api.c",
+      "path": "src/whc_host_rtw_cli/whc_host_rtw_cli_api.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_rtw_cli/whc_host_rtw_cli_api.c",
-      "sha256": "014bb0cbbb1d2f4bab3a3032808f603cfc2f2ee65d32987a6a03c28691a01fc1"
+      "sha256": "014bb0cbbb1d2f4bab3a3032808f603cfc2f2ee65d32987a6a03c28691a01fc1",
+      "path_at_import": "driver/whc_host_rtw_cli/whc_host_rtw_cli_api.c"
     },
     {
-      "path": "driver/whc_host_rtw_cli/whc_host_rtw_cli_api.h",
+      "path": "src/whc_host_rtw_cli/whc_host_rtw_cli_api.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_rtw_cli/whc_host_rtw_cli_api.h",
-      "sha256": "db6ea5ae21775e91372d6312f545a4432dbe8926463959761b31c285a2f6c0a4"
+      "sha256": "db6ea5ae21775e91372d6312f545a4432dbe8926463959761b31c285a2f6c0a4",
+      "path_at_import": "driver/whc_host_rtw_cli/whc_host_rtw_cli_api.h"
     },
     {
-      "path": "driver/whc_host_rtw_cli/whc_host_rtw_cli_custom_netlink.c",
+      "path": "src/whc_host_rtw_cli/whc_host_rtw_cli_custom_netlink.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_rtw_cli/whc_host_rtw_cli_custom_netlink.c",
-      "sha256": "e44d405e7af4845e8d253bc614d3c7c64ef36e8cac011c4abc931d957d932849"
+      "sha256": "e44d405e7af4845e8d253bc614d3c7c64ef36e8cac011c4abc931d957d932849",
+      "path_at_import": "driver/whc_host_rtw_cli/whc_host_rtw_cli_custom_netlink.c"
     },
     {
-      "path": "driver/whc_host_rtw_cli/whc_host_rtw_cli_custom_netlink.h",
+      "path": "src/whc_host_rtw_cli/whc_host_rtw_cli_custom_netlink.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_rtw_cli/whc_host_rtw_cli_custom_netlink.h",
-      "sha256": "a3d587514d6f0bf1a6010f92739b05401615f4a24639cc909acb3c58f70a9989"
+      "sha256": "a3d587514d6f0bf1a6010f92739b05401615f4a24639cc909acb3c58f70a9989",
+      "path_at_import": "driver/whc_host_rtw_cli/whc_host_rtw_cli_custom_netlink.h"
     },
     {
-      "path": "driver/whc_host_trx.c",
+      "path": "src/whc_host_trx.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_trx.c",
-      "sha256": "ea0f12bd5636a48cbb477819159fbb3ee1716840e6e86196e79a78d22cfa30b6"
+      "sha256": "ea0f12bd5636a48cbb477819159fbb3ee1716840e6e86196e79a78d22cfa30b6",
+      "path_at_import": "driver/whc_host_trx.c"
     },
     {
-      "path": "driver/whc_host_trx.h",
+      "path": "src/whc_host_trx.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whc_host_trx.h",
-      "sha256": "7f7d69d71f69ac376ace898a39b8ebbf152a5a031a07e4360b8846dfc8575df9"
+      "sha256": "7f7d69d71f69ac376ace898a39b8ebbf152a5a031a07e4360b8846dfc8575df9",
+      "path_at_import": "driver/whc_host_trx.h"
     },
     {
-      "path": "driver/whch/hal/rtl8721f/whch_host_hal_rate.c",
+      "path": "src/whch/hal/rtl8721f/whch_host_hal_rate.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/hal/rtl8721f/whch_host_hal_rate.c",
-      "sha256": "7069ec15672b9675fd4fb08d4f01f012a2cde786835444310fa83ddd5c9b41c2"
+      "sha256": "7069ec15672b9675fd4fb08d4f01f012a2cde786835444310fa83ddd5c9b41c2",
+      "path_at_import": "driver/whch/hal/rtl8721f/whch_host_hal_rate.c"
     },
     {
-      "path": "driver/whch/hal/rtl8721f/whch_host_hal_recv.c",
+      "path": "src/whch/hal/rtl8721f/whch_host_hal_recv.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/hal/rtl8721f/whch_host_hal_recv.c",
-      "sha256": "d81f4890431dc455e79d393cb13c32c5f3de328776ee5faafba07e9f94485685"
+      "sha256": "d81f4890431dc455e79d393cb13c32c5f3de328776ee5faafba07e9f94485685",
+      "path_at_import": "driver/whch/hal/rtl8721f/whch_host_hal_recv.c"
     },
     {
-      "path": "driver/whch/hal/rtl8721f/whch_host_hal_structs.h",
+      "path": "src/whch/hal/rtl8721f/whch_host_hal_structs.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/hal/rtl8721f/whch_host_hal_structs.h",
-      "sha256": "bb8598dc723c6d1254aa5a5820ed67a1282f7daf72d4df545e89fc7a1f28e7b5"
+      "sha256": "bb8598dc723c6d1254aa5a5820ed67a1282f7daf72d4df545e89fc7a1f28e7b5",
+      "path_at_import": "driver/whch/hal/rtl8721f/whch_host_hal_structs.h"
     },
     {
-      "path": "driver/whch/hal/rtl8721f/whch_host_hal_xmit.c",
+      "path": "src/whch/hal/rtl8721f/whch_host_hal_xmit.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/hal/rtl8721f/whch_host_hal_xmit.c",
-      "sha256": "fa5519ded7e2ae0f598410f74f62f5ab74d8e2193c03b7e05f42f384eec00de4"
+      "sha256": "fa5519ded7e2ae0f598410f74f62f5ab74d8e2193c03b7e05f42f384eec00de4",
+      "path_at_import": "driver/whch/hal/rtl8721f/whch_host_hal_xmit.c"
     },
     {
-      "path": "driver/whch/hal/whch_host_hal.h",
+      "path": "src/whch/hal/whch_host_hal.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/hal/whch_host_hal.h",
-      "sha256": "df1e9eb4d4f79d9c1f5cddf929948fcddccbe749afd9cb39dd0038dceeb83e47"
+      "sha256": "df1e9eb4d4f79d9c1f5cddf929948fcddccbe749afd9cb39dd0038dceeb83e47",
+      "path_at_import": "driver/whch/hal/whch_host_hal.h"
     },
     {
-      "path": "driver/whch/hal/whch_host_hal_recv_com.c",
+      "path": "src/whch/hal/whch_host_hal_recv_com.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/hal/whch_host_hal_recv_com.c",
-      "sha256": "42b22fbe37b3fbcf8aa9e2fc26cc3ba0f1fc8e10d9a2e43357a570537bcfd2c3"
+      "sha256": "42b22fbe37b3fbcf8aa9e2fc26cc3ba0f1fc8e10d9a2e43357a570537bcfd2c3",
+      "path_at_import": "driver/whch/hal/whch_host_hal_recv_com.c"
     },
     {
-      "path": "driver/whch/hal/whch_host_hal_xmit_com.c",
+      "path": "src/whch/hal/whch_host_hal_xmit_com.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/hal/whch_host_hal_xmit_com.c",
-      "sha256": "2ada123551626635e815d82dffc10d83bcb79cd466dc729c838931b918f95e9e"
+      "sha256": "2ada123551626635e815d82dffc10d83bcb79cd466dc729c838931b918f95e9e",
+      "path_at_import": "driver/whch/hal/whch_host_hal_xmit_com.c"
     },
     {
-      "path": "driver/whch/whch_host_80211spec_macro.h",
+      "path": "src/whch/whch_host_80211spec_macro.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_80211spec_macro.h",
-      "sha256": "22c73a41266463659e9cac62ddedf70dcf17ee2c7e438976ae28f6d4296173b2"
+      "sha256": "22c73a41266463659e9cac62ddedf70dcf17ee2c7e438976ae28f6d4296173b2",
+      "path_at_import": "driver/whch/whch_host_80211spec_macro.h"
     },
     {
-      "path": "driver/whch/whch_host_adapter.h",
+      "path": "src/whch/whch_host_adapter.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_adapter.h",
-      "sha256": "5d326fc06948e61c08ce2b25ad7ae0ec54b168f8557230082476e018d5e1f867"
+      "sha256": "5d326fc06948e61c08ce2b25ad7ae0ec54b168f8557230082476e018d5e1f867",
+      "path_at_import": "driver/whch/whch_host_adapter.h"
     },
     {
-      "path": "driver/whch/whch_host_addba.c",
+      "path": "src/whch/whch_host_addba.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_addba.c",
-      "sha256": "3f536fa1f00ba58d1e53d3e661e2bc459a34196f7fcd6715cc5544d704f93a28"
+      "sha256": "3f536fa1f00ba58d1e53d3e661e2bc459a34196f7fcd6715cc5544d704f93a28",
+      "path_at_import": "driver/whch/whch_host_addba.c"
     },
     {
-      "path": "driver/whch/whch_host_arc4.c",
+      "path": "src/whch/whch_host_arc4.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_arc4.c",
-      "sha256": "f87a87f5d749b0cd759733e0315820d8a3e7a66ea83e2d4eb302e0c019bdf792"
+      "sha256": "f87a87f5d749b0cd759733e0315820d8a3e7a66ea83e2d4eb302e0c019bdf792",
+      "path_at_import": "driver/whch/whch_host_arc4.c"
     },
     {
-      "path": "driver/whch/whch_host_mlme.c",
+      "path": "src/whch/whch_host_mlme.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_mlme.c",
-      "sha256": "a95cee6a180d67274984a6d4cb0e9c5cae1879f51b253110c6f2b0172388be30"
+      "sha256": "a95cee6a180d67274984a6d4cb0e9c5cae1879f51b253110c6f2b0172388be30",
+      "path_at_import": "driver/whch/whch_host_mlme.c"
     },
     {
-      "path": "driver/whch/whch_host_nan.c",
+      "path": "src/whch/whch_host_nan.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_nan.c",
-      "sha256": "d9a13cb492feecc4a7461af97bdc477d5f79280c1898dac6bfd9a910964c7a06"
+      "sha256": "d9a13cb492feecc4a7461af97bdc477d5f79280c1898dac6bfd9a910964c7a06",
+      "path_at_import": "driver/whch/whch_host_nan.c"
     },
     {
-      "path": "driver/whch/whch_host_nan.h",
+      "path": "src/whch/whch_host_nan.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_nan.h",
-      "sha256": "dfde0114fc9155e50cc5c671ad3dc854b980dd01bdfad77146a19d1cb7ddf971"
+      "sha256": "dfde0114fc9155e50cc5c671ad3dc854b980dd01bdfad77146a19d1cb7ddf971",
+      "path_at_import": "driver/whch/whch_host_nan.h"
     },
     {
-      "path": "driver/whch/whch_host_pkt_rx_proc.c",
+      "path": "src/whch/whch_host_pkt_rx_proc.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_pkt_rx_proc.c",
-      "sha256": "a54d99a0eacf5fc17cdfb471e9d0b69d420316dae87eb323c85cc011001b6cb5"
+      "sha256": "a54d99a0eacf5fc17cdfb471e9d0b69d420316dae87eb323c85cc011001b6cb5",
+      "path_at_import": "driver/whch/whch_host_pkt_rx_proc.c"
     },
     {
-      "path": "driver/whch/whch_host_pkt_tx_proc.c",
+      "path": "src/whch/whch_host_pkt_tx_proc.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_pkt_tx_proc.c",
-      "sha256": "9afe17802fd549ae41c72ba36a770ed22c96165b4bb838efeebbb2c912204858"
+      "sha256": "9afe17802fd549ae41c72ba36a770ed22c96165b4bb838efeebbb2c912204858",
+      "path_at_import": "driver/whch/whch_host_pkt_tx_proc.c"
     },
     {
-      "path": "driver/whch/whch_host_security.c",
+      "path": "src/whch/whch_host_security.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_security.c",
-      "sha256": "43939caf712ab53e1e96ce7e77485eb3d8aeeb8eaa36bcbbd118bcacab90b58b"
+      "sha256": "43939caf712ab53e1e96ce7e77485eb3d8aeeb8eaa36bcbbd118bcacab90b58b",
+      "path_at_import": "driver/whch/whch_host_security.c"
     },
     {
-      "path": "driver/whch/whch_host_security.h",
+      "path": "src/whch/whch_host_security.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_security.h",
-      "sha256": "740003d755c1e007f25001430bd060f511d8b342b571b7108b24b781201629fe"
+      "sha256": "740003d755c1e007f25001430bd060f511d8b342b571b7108b24b781201629fe",
+      "path_at_import": "driver/whch/whch_host_security.h"
     },
     {
-      "path": "driver/whch/whch_host_sta_mgt.c",
+      "path": "src/whch/whch_host_sta_mgt.c",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_sta_mgt.c",
-      "sha256": "0df271dfb61f92ff5fa7813acae33e76c6e16453743edee44365adfd9b8414c4"
+      "sha256": "0df271dfb61f92ff5fa7813acae33e76c6e16453743edee44365adfd9b8414c4",
+      "path_at_import": "driver/whch/whch_host_sta_mgt.c"
     },
     {
-      "path": "driver/whch/whch_host_sta_mgt.h",
+      "path": "src/whch/whch_host_sta_mgt.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_sta_mgt.h",
-      "sha256": "411f760fc7763fe9abb97509f0d391e3f5270ee1b1b091fedace39e0eaaab92f"
+      "sha256": "411f760fc7763fe9abb97509f0d391e3f5270ee1b1b091fedace39e0eaaab92f",
+      "path_at_import": "driver/whch/whch_host_sta_mgt.h"
     },
     {
-      "path": "driver/whch/whch_host_trx.h",
+      "path": "src/whch/whch_host_trx.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_trx.h",
-      "sha256": "24ac61e46f190f9ef38f95f80c8072e7738a3f9501d398836db06b1ab11805b5"
+      "sha256": "24ac61e46f190f9ef38f95f80c8072e7738a3f9501d398836db06b1ab11805b5",
+      "path_at_import": "driver/whch/whch_host_trx.h"
     },
     {
-      "path": "driver/whch/whch_host_trx_structs.h",
+      "path": "src/whch/whch_host_trx_structs.h",
       "source": "component/wifi/whc/whc_host_linux/driver/whch/whch_host_trx_structs.h",
-      "sha256": "dd058b41e8d219cd7de0385ee87404d8856d298e1112c8151c284fba464dd885"
+      "sha256": "dd058b41e8d219cd7de0385ee87404d8856d298e1112c8151c284fba464dd885",
+      "path_at_import": "driver/whch/whch_host_trx_structs.h"
     },
     {
       "path": "whc_setup.sh",
       "source": "component/wifi/whc/whc_host_linux/whc_setup.sh",
-      "sha256": "a3085854ab77359edd3a1194bbb528f7258c00a7f1e7567d30aab778ad6ec3d2"
+      "sha256": "a3085854ab77359edd3a1194bbb528f7258c00a7f1e7567d30aab778ad6ec3d2",
+      "path_at_import": "whc_setup.sh"
     },
     {
-      "path": "driver/include/rtw_wifi_common.h",
+      "path": "include/sdk/rtw_wifi_common.h",
       "source": "component/wifi/common/rtw_wifi_common.h",
-      "sha256": "3725aff2cc96210394c95c3a1525ec6e43d1b6e31b4e940bb7668de2fdf51d6b"
+      "sha256": "3725aff2cc96210394c95c3a1525ec6e43d1b6e31b4e940bb7668de2fdf51d6b",
+      "path_at_import": "driver/include/rtw_wifi_common.h"
     },
     {
-      "path": "driver/include/rtw_inic_common.h",
+      "path": "include/sdk/rtw_inic_common.h",
       "source": "component/wifi/common/rtw_inic_common.h",
-      "sha256": "479c0726889870f610e07a8221f94609ddccb5318146834bb449eea1b8417dac"
+      "sha256": "479c0726889870f610e07a8221f94609ddccb5318146834bb449eea1b8417dac",
+      "path_at_import": "driver/include/rtw_inic_common.h"
     },
     {
-      "path": "driver/include/whc_def.h",
+      "path": "include/sdk/whc_def.h",
       "source": "component/wifi/whc/whc_common/whc_def.h",
-      "sha256": "8a60eb7697a3f28db1647ceac877cde9c0ea82644636abc88825e972228a39db"
+      "sha256": "8a60eb7697a3f28db1647ceac877cde9c0ea82644636abc88825e972228a39db",
+      "path_at_import": "driver/include/whc_def.h"
     },
     {
-      "path": "driver/include/wifi_api_types.h",
+      "path": "include/sdk/wifi_api_types.h",
       "source": "component/wifi/api/wifi_api_types.h",
-      "sha256": "9468927ce3363abb86551bf9935f37c0fd4c4c805630a5e05f4d988dc19bf110"
+      "sha256": "9468927ce3363abb86551bf9935f37c0fd4c4c805630a5e05f4d988dc19bf110",
+      "path_at_import": "driver/include/wifi_api_types.h"
     },
     {
-      "path": "driver/include/wifi_api_event.h",
+      "path": "include/sdk/wifi_api_event.h",
       "source": "component/wifi/api/wifi_api_event.h",
-      "sha256": "f384d585f99c6762428564fc243c5ad7d63263b989a2f24abb973973b0ef6ca0"
+      "sha256": "f384d585f99c6762428564fc243c5ad7d63263b989a2f24abb973973b0ef6ca0",
+      "path_at_import": "driver/include/wifi_api_event.h"
     },
     {
-      "path": "driver/include/wifi_intf_drv_to_app_internal.h",
+      "path": "include/sdk/wifi_intf_drv_to_app_internal.h",
       "source": "component/wifi/driver/intf/wifi_intf_drv_to_app_internal.h",
-      "sha256": "c1ed529453368b31dcbbf340b991c977479b80c3043168a356225cfce1453730"
+      "sha256": "c1ed529453368b31dcbbf340b991c977479b80c3043168a356225cfce1453730",
+      "path_at_import": "driver/include/wifi_intf_drv_to_app_internal.h"
     },
     {
-      "path": "driver/include/ameba_wificfg_common.h",
+      "path": "include/sdk/ameba_wificfg_common.h",
       "source": "component/soc/usrcfg/common/ameba_wificfg_common.h",
-      "sha256": "b554331041db1a385e11230a33033a3a82525755588ba54cbc7cd739f8b32880"
+      "sha256": "b554331041db1a385e11230a33033a3a82525755588ba54cbc7cd739f8b32880",
+      "path_at_import": "driver/include/ameba_wificfg_common.h"
     },
     {
-      "path": "driver/include/bt_inic_defs.h",
+      "path": "include/sdk/bt_inic_defs.h",
       "source": "component/bluetooth/driver/bt_inic/bt_inic_defs.h",
-      "sha256": "3c8aab23b754a6456cafca11d1d7a793e0698f5641cc3b90124b6255763e154b"
+      "sha256": "3c8aab23b754a6456cafca11d1d7a793e0698f5641cc3b90124b6255763e154b",
+      "path_at_import": "driver/include/bt_inic_defs.h"
     },
     {
-      "path": "driver/include/ameba_inic.h",
+      "path": "include/sdk/ameba_inic.h",
       "source": "component/soc/amebagreen2/fwlib/include/ameba_inic.h",
-      "sha256": "4bb0322b8fcff7129222426239a20aadcb22cef6e808cd7aa3382207fa7d03aa"
+      "sha256": "4bb0322b8fcff7129222426239a20aadcb22cef6e808cd7aa3382207fa7d03aa",
+      "path_at_import": "driver/include/ameba_inic.h"
     },
     {
-      "path": "driver/spi/rtb_spi.c",
+      "path": "src/spi/rtb_spi.c",
       "source": "component/bluetooth/example/bt_host/linux_driver/spi/rtb_spi.c",
-      "sha256": "78aed1a6eb87eae142b9cafc7b62a0469d505eeef559205fc36f112ae26a74bc"
+      "sha256": "78aed1a6eb87eae142b9cafc7b62a0469d505eeef559205fc36f112ae26a74bc",
+      "path_at_import": "driver/spi/rtb_spi.c"
     },
     {
-      "path": "driver/spi/rtb_spi.h",
+      "path": "src/spi/rtb_spi.h",
       "source": "component/bluetooth/example/bt_host/linux_driver/spi/rtb_spi.h",
-      "sha256": "b42867e557a51dd2e36f0876cd3a8d7ac8f609b19eb57ed41dda3331a260db15"
+      "sha256": "b42867e557a51dd2e36f0876cd3a8d7ac8f609b19eb57ed41dda3331a260db15",
+      "path_at_import": "driver/spi/rtb_spi.h"
     },
     {
-      "path": "driver/sdio/rtb_sdio.c",
+      "path": "src/sdio/rtb_sdio.c",
       "source": "component/bluetooth/example/bt_host/linux_driver/sdio_dplus/rtb_sdio.c",
-      "sha256": "897d71a617149a01a5173de95958b6eb82a63fbe19c7ec1ecaebd99b24c8e733"
+      "sha256": "897d71a617149a01a5173de95958b6eb82a63fbe19c7ec1ecaebd99b24c8e733",
+      "path_at_import": "driver/sdio/rtb_sdio.c"
     },
     {
-      "path": "driver/sdio/rtb_sdio.h",
+      "path": "src/sdio/rtb_sdio.h",
       "source": "component/bluetooth/example/bt_host/linux_driver/sdio_dplus/rtb_sdio.h",
-      "sha256": "ccd1c394f02ec813e9d74b3c1155479e718a62dd15a19155d85dcc6322d66800"
+      "sha256": "ccd1c394f02ec813e9d74b3c1155479e718a62dd15a19155d85dcc6322d66800",
+      "path_at_import": "driver/sdio/rtb_sdio.h"
     }
   ],
   "omitted": [
@@ -1170,5 +1402,13 @@
     "build products",
     "firmware images",
     "device logs and pairing caches"
+  ],
+  "hashes_describe": "Source contents at initial import; current paths may include the documented fixes and layout changes.",
+  "local_changes": [
+    "generic RX skb lifetime fix",
+    "NAN command error propagation and allocation checks",
+    "shared PASN C library with configurable storage/log/completion callbacks",
+    "per-handshake cache delta identity selection and NIRA checks",
+    "standalone source layout and Linux/Android integration"
   ]
 }

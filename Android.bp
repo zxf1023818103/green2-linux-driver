@@ -1,0 +1,25 @@
+// Soong exports files for platform integration; Kbuild compiles the .ko.
+filegroup {
+    name: "green2_whc_kernel_sources",
+    visibility: ["//visibility:public"],
+    srcs: [
+        "Kbuild",
+        "Makefile",
+        "configs/*_defconfig",
+        "src/**/*.c",
+        "src/**/*.h",
+        "src/**/Kbuild",
+        "include/**/*.h",
+    ],
+}
+cc_library_headers {
+    name: "green2_whc_public_headers",
+    vendor_available: true,
+    visibility: ["//visibility:public"],
+    export_include_dirs: ["include"],
+}
+filegroup {
+    name: "green2_pasn_core_sources",
+    visibility: ["//visibility:public"],
+    srcs: ["app/wifi_nan_utility/pasn_probe/core/green2_pasn.c"],
+}
