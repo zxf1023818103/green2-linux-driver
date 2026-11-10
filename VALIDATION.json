@@ -174,5 +174,15 @@
     "kernel_module_changed": false,
     "original_failure_transaction_trace_available": false,
     "secondary_observation": "Core 26 BLE application retained its old adapter registration after hotplug; service restart restored advertisement. NAN publisher recovered automatically."
+  },
+  "btusb_direct_integration": {
+    "source_directory": "driver/platforms/linux_android/bluetooth",
+    "kernel": "7.0.0-38-generic",
+    "source_package": "Ubuntu linux-source-7.0.0 7.0.0-38.38",
+    "external_patch_required": false,
+    "whole_kernel_source_package_required": false,
+    "module_build": "PASS with existing precompiled GCC 15 and matching kernel headers",
+    "comparison_with_previously_tested_module": "btusb.c and four private headers byte-identical; .text section byte-identical",
+    "runtime_replacement": "Not performed: integration-only change, previously tested code retained"
   }
 }

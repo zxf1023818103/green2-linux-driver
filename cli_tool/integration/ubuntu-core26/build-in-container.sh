@@ -16,10 +16,9 @@ cmp /work/pc-kernel-tree/config-$kver "$kdir/.config"
 
 cd /work
 if [[ ${1:-all} == all ]]; then
-tar -xf /usr/src/linux-source-7.0.0.tar.bz2 linux-source-7.0.0/drivers/bluetooth
-patch -d linux-source-7.0.0 -p1 < /repo/cli_tool/integration/ubuntu-core26/patches/0001-btusb-green2-flash-boot.patch
-printf 'obj-m += btusb.o\n' > linux-source-7.0.0/drivers/bluetooth/Makefile
-make -C "$kdir" M=/work/linux-source-7.0.0/drivers/bluetooth CC=gcc-15 -j8 modules
+mkdir -p /work/btusb-kbuild
+cp /repo/driver/platforms/linux_android/bluetooth/{btusb.c,btintel.h,btbcm.h,btrtl.h,btmtk.h,Kbuild,Makefile} /work/btusb-kbuild/
+make -C /work/btusb-kbuild KDIR="$kdir" CC=gcc-15 -j4
 make -C /work/driver/driver amebagreen2_usb_nan_bulk2048_defconfig
 make -C "$kdir" M=/work/driver/driver clean
 make -C /work/driver/driver KDIR="$kdir" CC=gcc-15 -j4
@@ -27,7 +26,7 @@ make -C /work/driver/driver KDIR="$kdir" CC=gcc-15 -j4
 # top-level updates/ is reserved for kernel-module components and is not mapped.
 install -Dm644 driver/driver/whc_usb.ko "pc-kernel-tree/modules/$kver/kernel/drivers/net/wireless/realtek/whc_usb.ko"
 rm -f "pc-kernel-tree/modules/$kver/kernel/drivers/bluetooth/btusb.ko.zst"
-install -Dm644 linux-source-7.0.0/drivers/bluetooth/btusb.ko "pc-kernel-tree/modules/$kver/kernel/drivers/bluetooth/btusb.ko"
+install -Dm644 btusb-kbuild/btusb.ko "pc-kernel-tree/modules/$kver/kernel/drivers/bluetooth/btusb.ko"
 # depmod expects /lib/modules; the kernel snap's runtime mount uses /modules.
 mkdir -p pc-kernel-tree/lib
 ln -s ../modules pc-kernel-tree/lib/modules

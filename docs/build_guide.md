@@ -77,3 +77,11 @@ HAL 在 android_app/hal/，需要设备匹配的生成 AIDL 头文件及 vendor 
   hostap 和内核版本构建开发镜像；SSH 公钥是本地输入，不提交镜像或个人配置。
 
 完整设备测试使用构建产物的 SHA-256 区分旧运行版本、候选镜像和实际启动版本。
+
+## Green2 USB Bluetooth
+
+Green2 的 btusb 例外规则已直接合入
+`driver/platforms/linux_android/bluetooth/btusb.c`。Core 26 从该目录构建
+btusb.ko，不再提取整包内核源码或应用单独的 patch。四个私有头文件与内核
+版本、原始摘要一并固定。该模块是独立的内核集成组件，当前 Android 的板载
+UART 蓝牙 HAL 路径不需要构建它。

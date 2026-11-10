@@ -1,3 +1,3 @@
 Licensing is determined by each file's retained copyright and license notices.
-The kernel driver includes GPL-2.0-only code; upstream SDK files retain their original notices.
+The kernel driver includes GPL-2.0-only and GPL-2.0-or-later code; upstream SDK files retain their original notices.
 License texts are in LICENSES/. This repository does not relicense third-party code.

@@ -1411,5 +1411,14 @@
     "per-handshake cache delta identity selection and NIRA checks",
     "standalone source layout and Linux/Android integration"
   ],
-  "layout": "shared / driver / cli_tool / android_app / docs"
+  "layout": "shared / driver / cli_tool / android_app / docs",
+  "additional_sources": [
+    {
+      "path": "driver/platforms/linux_android/bluetooth",
+      "manifest": "driver/platforms/linux_android/bluetooth/UPSTREAM.json",
+      "source_package": "Ubuntu linux-source-7.0.0",
+      "version": "7.0.0-38.38",
+      "local_change": "Direct Green2 Bluetooth interface exception in btusb.c; no external patch"
+    }
+  ]
 }
