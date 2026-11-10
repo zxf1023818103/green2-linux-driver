@@ -1,12 +1,13 @@
 # Green2 Wi-Fi project
 
 AmebaGreen2 的 Linux / Android 共用驱动、协议核心、CLI 与 Android 无屏服务。
-仓库按五层组织：
+仓库按模块组织：
 
 ```text
 shared/       协议头文件与纯 C 算法
 driver/       内核驱动、USB/SDIO 总线、Linux/Android 接入
-cli_tool/     CMake CLI/PASN 库、Linux 服务、Ubuntu Core 26 镜像集成
+cli_tool/     展平的 CLI/PASN/NAN 源码、头文件、测试和 CMake 构建
+services/     Linux 服务、配置和 Ubuntu Core 26 镜像集成
 android_app/  Gradle + NDK CMake APK、独立 AIDL HAL、Android 镜像打包
 docs/         架构、构建、调试和回归说明
 ```
@@ -29,5 +30,6 @@ Windows 接入目录目前为移植说明，尚无 WiFiCx/NetAdapterCx 实现。
 配对缓存和签名私钥不进入 Git。构建、系统启动与真实无线测试分别记录，避免
 将目录重排或编译通过等同于设备回归完成。
 
-NAN 发布程序、库和配置已迁入 cli_tool/src/publisher/、src/nan/、include/nan/
-和 config/；公共协议及纯 C SHA-256 在 shared/。仓库不再保留 legacy/ 旧工具目录。
+CLI 自有源码、头文件和测试全部放在 cli_tool/ 根目录。服务脚本在 services/common/，
+构建配置在 services/config/，Core 26 集成在 services/ubuntu-core26/。
+公共协议及纯 C 算法继续位于 shared/，由 CLI 和 Android HAL 共用。

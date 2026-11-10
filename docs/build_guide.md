@@ -35,8 +35,8 @@ ctest --test-dir /path/to/cli-build --output-on-failure
 ```
 
 主要产物：green2_cli、pasn_live、pasn_vendor_events、libgreen2pasn.so。
-Linux NAN 发布程序为 src/publisher/rtw_aware.c，libnanapi 源码为 src/nan/，
-公共接口为 include/nan/；hostap 配置位于 config/hostap-pasn.config。
+Linux NAN 发布程序为 cli_tool/rtw_aware.c；libnanapi 的源码与公共头文件
+同样直接放在 cli_tool/。hostap 配置位于 services/config/hostap-pasn.config。
 共享 NANDOW 协议头文件与纯 C SHA-256 位于 shared/。未使用的旧诊断工具已删除。
 CLI 的两种入口：`green2_cli events nan0`、`green2_cli pasn nan0 2437`。
 事件流含握手材料，应直接通过管道送入 PASN 处理，不作为公开日志保存。
@@ -75,7 +75,7 @@ HAL 在 android_app/hal/，需要设备匹配的生成 AIDL 头文件及 vendor 
 - Android：android_app/images/package_image.py 使用调用方提供的合法基线镜像、
   HAL、库、模块、APK 和签名输入，生成 AVB 校验的 vendor/super 候选；
   verify_image.py 做 LP 布局与逻辑镜像回读比对。脚本本身不刷机。
-- Ubuntu Core 26：cli_tool/integration/ubuntu-core26/，以固定 Canonical snap、
+- Ubuntu Core 26：services/ubuntu-core26/，以固定 Canonical snap、
   hostap 和内核版本构建开发镜像；SSH 公钥是本地输入，不提交镜像或个人配置。
 
 完整设备测试使用构建产物的 SHA-256 区分旧运行版本、候选镜像和实际启动版本。

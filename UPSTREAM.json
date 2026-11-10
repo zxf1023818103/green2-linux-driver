@@ -22,91 +22,91 @@
       "path_at_import": "Makefile"
     },
     {
-      "path": "cli_tool/src/main.c",
+      "path": "cli_tool/main.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/pasn_live.c",
       "sha256": "f83c96951889b17d9b36d36ab6660b09f38a443deb2b71d20c9051dcf8b7457c",
       "path_at_import": "app/wifi_nan_utility/pasn_probe/pasn_live.c"
     },
     {
-      "path": "cli_tool/src/comm_helper.c",
+      "path": "cli_tool/comm_helper.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/pasn_vendor_events.c",
       "sha256": "c879e583b23c5b44defa025535f3d68e5948b1bad3ca7de44f8357eeed1705d5",
       "path_at_import": "app/wifi_nan_utility/pasn_probe/pasn_vendor_events.c"
     },
     {
-      "path": "cli_tool/src/publisher/rtw_aware.c",
+      "path": "cli_tool/rtw_aware.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_aware.c",
       "sha256": "b5783a4a97ddac9785bda39d39465bf3dcf1484954dad5865892109b1bd27d69",
       "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_aware.c"
     },
     {
-      "path": "cli_tool/include/nan/rtw_nan_cmd_api.h",
+      "path": "cli_tool/rtw_nan_cmd_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_nan_cmd_api.h",
       "sha256": "f561294670806cfeb654da8b406e312f178ae06e4bf3dc1f7851cbbf47c58e38",
       "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_nan_cmd_api.h"
     },
     {
-      "path": "cli_tool/include/nan/rtw_nan_scenario_api.h",
+      "path": "cli_tool/rtw_nan_scenario_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_nan_scenario_api.h",
       "sha256": "2c81a9072f5a23f654e60000ef6e12617ab5e74733155729e4b6c2e614697dee",
       "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_nan_scenario_api.h"
     },
     {
-      "path": "cli_tool/include/nan/rtw_nan_struct.h",
+      "path": "cli_tool/rtw_nan_struct.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_nan_struct.h",
       "sha256": "acbcceadf19629450ed66f04b377a399b39629a6465e82bf25e39ccaac22c43d",
       "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_nan_struct.h"
     },
     {
-      "path": "cli_tool/src/nan/nan_cache_file.h",
+      "path": "cli_tool/nan_cache_file.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_cache_file.h",
       "sha256": "ac125d445be6e36edb0ba29b6d424b496ef69b1f3ec0cad488ad01bf89cb237f",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_cache_file.h"
     },
     {
-      "path": "cli_tool/src/nan/nan_event.c",
+      "path": "cli_tool/nan_event.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_event.c",
       "sha256": "9121b7782eb6921d2a6441b5a1d794ed62d8707c298b6a0af054165f61c897a4",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_event.c"
     },
     {
-      "path": "cli_tool/src/nan/nan_event.h",
+      "path": "cli_tool/nan_event.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_event.h",
       "sha256": "81e3161a4119f52444c826371b7d6999e22013c006dc9f2e726ad90b33b18e2f",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_event.h"
     },
     {
-      "path": "cli_tool/src/nan/nan_scenario.c",
+      "path": "cli_tool/nan_scenario.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_scenario.c",
       "sha256": "5ecb26ed3ec03fcd7edc627fe1b26ac6f3dc8473c9fade928e188a381ee0f33b",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_scenario.c"
     },
     {
-      "path": "cli_tool/src/nan/rtw_nan_cmd.c",
+      "path": "cli_tool/rtw_nan_cmd.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.c",
       "sha256": "65d1c076505a5afa7fbdedca311341ab658bc01f8bec9e94e1b2be2069ee82bf",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.c"
     },
     {
-      "path": "cli_tool/src/nan/rtw_nan_cmd.h",
+      "path": "cli_tool/rtw_nan_cmd.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.h",
       "sha256": "aba8e042f97ecffa7c096104a560bf4e098a7c309ff14888e14bb6679985f06d",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.h"
     },
     {
-      "path": "cli_tool/include/nan/rtw_nan_cmd_api.h",
+      "path": "cli_tool/rtw_nan_cmd_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd_api.h",
       "sha256": "4a5275e917c6cb6b75dc715e922744acb4225bbea2eb542727f19758b0702cba",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd_api.h"
     },
     {
-      "path": "cli_tool/include/nan/rtw_nan_scenario_api.h",
+      "path": "cli_tool/rtw_nan_scenario_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_scenario_api.h",
       "sha256": "2c81a9072f5a23f654e60000ef6e12617ab5e74733155729e4b6c2e614697dee",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_scenario_api.h"
     },
     {
-      "path": "cli_tool/include/nan/rtw_nan_struct.h",
+      "path": "cli_tool/rtw_nan_struct.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_struct.h",
       "sha256": "acbcceadf19629450ed66f04b377a399b39629a6465e82bf25e39ccaac22c43d",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_struct.h"
@@ -1051,7 +1051,7 @@
     "per-handshake cache delta identity selection and NIRA checks",
     "standalone source layout and Linux/Android integration"
   ],
-  "layout": "shared / driver / cli_tool / android_app / docs",
+  "layout": "shared / driver / cli_tool / services / android_app / docs",
   "additional_sources": [
     {
       "path": "driver/platforms/linux_android/bluetooth",

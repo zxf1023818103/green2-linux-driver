@@ -8,10 +8,10 @@ cc_library_headers {
     name: "green2_whc_public_headers",
     vendor_available: true,
     visibility: ["//visibility:public"],
-    export_include_dirs: ["shared/include", "cli_tool/include"],
+    export_include_dirs: ["shared/include", "cli_tool"],
 }
 filegroup {
     name: "green2_pasn_core_sources",
     visibility: ["//visibility:public"],
-    srcs: ["cli_tool/src/pasn/pasn_engine.c", "shared/src/protocol_common.c"],
+    srcs: ["cli_tool/pasn_engine.c", "shared/src/protocol_common.c"],
 }

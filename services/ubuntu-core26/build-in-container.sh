@@ -2,7 +2,7 @@
 # Run in an Ubuntu 26.04 builder; /repo is read-only and /work is disposable.
 set -euo pipefail
 export DEBIAN_FRONTEND=noninteractive
-source_dir=/repo/cli_tool/integration/ubuntu-core26
+source_dir=/repo/services/ubuntu-core26
 case ${1:-all} in
     all|userspace) ;;
     *) echo "usage: $0 [all|userspace]" >&2; exit 2 ;;
@@ -50,7 +50,7 @@ mkdir -p app-tree/services app-tree/meta app-tree/bin
 c++ -std=c++17 -O2 -Wall -Wextra -Werror "$source_dir/camera-srt.cpp" \
     -o app-tree/bin/camera-srt $(pkg-config --cflags --libs srt) -pthread
 cp -a services/. app-tree/services/
-cp /repo/cli_tool/integration/ubuntu-core26/services/ble_gatt.py app-tree/services/
+cp /repo/services/common/ble_gatt.py app-tree/services/
 cp "$source_dir/snap.yaml" app-tree/meta/snap.yaml
 install -D -m 755 "$source_dir/configure" app-tree/meta/hooks/configure
 for script in environment run-nan run-ble run-camera status; do

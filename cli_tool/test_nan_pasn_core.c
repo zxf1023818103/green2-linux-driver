@@ -1,7 +1,7 @@
 /* Shared cache/identity API and storage adapters; no radio traffic. */
 #include <assert.h>
 #include <sys/stat.h>
-#include "../src/pasn/pasn_engine.c"
+#include "pasn_engine.c"
 
 struct fixture {
     unsigned writes, reads, logs;

@@ -11,4 +11,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends cmake ninja-bui
 WORKDIR /work
 # stage-runtime.py uses apt-cache to resolve runtime dependencies.
 # Refresh package indexes before running the build if this layer was cleaned.
-CMD ["/bin/bash", "-c", "apt-get update && bash /repo/cli_tool/integration/ubuntu-core26/build-in-container.sh"]
+CMD ["/bin/bash", "-c", "apt-get update && bash /repo/services/ubuntu-core26/build-in-container.sh"]

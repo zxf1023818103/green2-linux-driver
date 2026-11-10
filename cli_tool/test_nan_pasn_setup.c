@@ -1,7 +1,7 @@
 /* Classification/attribute repair; no frame transmission or pairing caches. */
 #include <assert.h>
 #define main pasn_live_main
-#include "../src/pasn/pasn_engine.c"
+#include "pasn_engine.c"
 #undef main
 
 int main(void)

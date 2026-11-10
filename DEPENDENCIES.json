@@ -2,7 +2,7 @@
   "hostap_reference": {
     "repository": "https://github.com/zephyrproject-rtos/hostap",
     "commit": "1ce844ea5a9d8860d8690a125925fcc7274461df",
-    "config": "cli_tool/config/hostap-pasn.config"
+    "config": "services/config/hostap-pasn.config"
   },
   "userspace": [
     "compatible libpasn.so",

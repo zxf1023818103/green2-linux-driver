@@ -1,12 +1,13 @@
 # Architecture
 
-五层分工如下：
+模块分工如下：
 
 | 目录 | 职责 | 当前实现边界 |
 | --- | --- | --- |
 | shared | 固定宽度协议结构、NANDOW ABI、纯 C NIRA/缓存逻辑与 SHA-256 | 无 Binder、hostap、Netlink、文件或线程依赖 |
 | driver | 内核模块、WHC 收发、USB/SDIO 绑定和 cfg80211 接入 | Linux / Android 共享；现有 core 仍使用 Linux 内核 API |
-| cli_tool | 用户态 CLI、PASN 引擎、Linux 发布服务和 Core 26 镜像集成 | CMake；依赖匹配的 hostap、OpenSSL 与 libnl |
+| cli_tool | 展平的 CLI、PASN/NAN 库、发布程序及测试 | CMake；依赖匹配的 hostap、OpenSSL 与 libnl |
+| services | Linux 服务、配置与 Core 26 镜像集成 | 使用 cli_tool 构建产物 |
 | android_app | Gradle/NDK APK、独立 AIDL HAL、Android 镜像打包 | 包名 cn.zenghome.flashstudio；HAL 与 APK 分别构建/部署 |
 | docs | 架构、构建、调试、验证说明 | 记录已测范围及未实现项目 |
 
@@ -41,7 +42,6 @@ Android 必须在握手、密钥安装和本次 NIK 交换完成后向 framework
 数据链路建立/结束时配置和清理 IPv6 邻居；TCP 在服务发布前绑定 NAN 地址，
 避免 iPhone 的首个 SYN 早于应用网络回调。配对密钥保留在平台私有存储中。
 
-NAN 发布程序在 cli_tool/src/publisher/，用户态 NAN 库在 cli_tool/src/nan/，
-公共 API 在 cli_tool/include/nan/。Linux 服务使用这些正式构建目标；Android HAL
-复用 shared/ 的 NANDOW 定义和 SHA-256。旧诊断工具已删除，来源及删除记录
-仍保留在 UPSTREAM.json 和 Git 历史中。
+CLI 源码、头文件、测试在 cli_tool/ 同一层；跨平台协议和算法保留在 shared/。
+服务与配置集中在 services/，Core 26 脚本从 ../cli_tool 构建程序并打包公共服务。
+Android HAL 从 cli_tool/ 引用 PASN 公共接口，复用 shared/ 的协议及 SHA-256。

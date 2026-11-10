@@ -3,7 +3,7 @@
 #define nl_send_auto test_nl_send_auto
 #define nl_wait_for_ack test_nl_wait_for_ack
 #define main pasn_live_main
-#include "../src/pasn/pasn_engine.c"
+#include "pasn_engine.c"
 #undef main
 
 static u8 expected_auth2[30];

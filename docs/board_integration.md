@@ -50,6 +50,6 @@ SDIO 板级配置应按实际接线单独处理，本轮未验证。
 
 仅加载模块不会自动提供 WifiAwareManager。设备需另行提供 Wi-Fi AIDL HAL、
 服务与能力声明、SELinux 策略及应用接入。
-公共 PASN 头文件为 cli_tool/include/green2_pasn.h；Android 适配层提供缓存路径与日志回调。
+公共 PASN 头文件为 cli_tool/green2_pasn.h；Android 适配层提供缓存路径与日志回调。
 原应用网络生命周期、IPv6 邻居维护和提前 TCP 监听逻辑继续由平台接入层管理。
 镜像构建和实际设备回归状态记录在根目录 VALIDATION.json；公共库与 HAL 需一起部署。
