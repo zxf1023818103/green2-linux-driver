@@ -133,9 +133,9 @@
       "details": "AOSP framework NPKSA maps are volatile; a fresh phone pairing may be needed after reboot."
     },
     {
-      "name": "USB_host_transfer_requires_radio_reset",
-      "status": "RECOVERY_REQUIRED",
-      "details": "After moving the running Green2 from Android to the PC, the Core 26 WHC probe timed out on firmware API 0x7. A COM41 RTS reset restored USB probing, NAN publication and BLE advertising. This was a runtime module reset; no firmware update was performed."
+      "name": "USB_host_transfer_initial_API_timeout_once",
+      "status": "INTERMITTENT_NOT_REPRODUCED",
+      "details": "One initial Android-to-PC handoff timed out waiting for WHC_API_WIFI_SET_USR_CFG (0x7), and RTS reset recovered it. Follow-up passed 3 interface rebinds, 3 device reauthorizations, 3 USB bus resets, 1 Windows-to-VM handoff, and a physical PC-to-YM6252-to-PC round trip, all without MCU/RTS reset. Mandatory reset on host transfer is not established; the original timeout root cause remains unknown."
     }
   ],
   "not_validated": [
@@ -147,5 +147,32 @@
     "Core 26 BLE GATT end-to-end; hardware controller and advertising verified only"
   ],
   "build_date": "2026-11-10",
-  "timezone": "Asia/Shanghai"
+  "timezone": "Asia/Shanghai",
+  "usb_handoff_investigation": {
+    "date": "2026-11-11",
+    "interface_rebind": {
+      "passed": 3,
+      "attempted": 3
+    },
+    "device_reauthorize": {
+      "passed": 3,
+      "attempted": 3
+    },
+    "usb_bus_reset": {
+      "passed": 3,
+      "attempted": 3
+    },
+    "windows_to_vm_handoff": {
+      "passed": 1,
+      "attempted": 1
+    },
+    "physical_handoff": {
+      "PC_to_YM6252": "PASS without RTS/MCU reset",
+      "YM6252_to_PC": "PASS without RTS/MCU reset"
+    },
+    "firmware_changed": false,
+    "kernel_module_changed": false,
+    "original_failure_transaction_trace_available": false,
+    "secondary_observation": "Core 26 BLE application retained its old adapter registration after hotplug; service restart restored advertisement. NAN publisher recovered automatically."
+  }
 }

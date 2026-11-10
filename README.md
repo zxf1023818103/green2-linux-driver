@@ -16,6 +16,7 @@ docs/         架构、构建、调试和回归说明
 - [调试指南](docs/debugging.md)
 - [Android 板级集成](docs/board_integration.md)
 - [实测结果和未解决问题](VALIDATION.json)
+- [USB 换主机调查](docs/usb_handoff.md)
 
 APK 保留包名 cn.zenghome.flashstudio，经 WifiAwareManager 使用系统 Wi-Fi 栈。
 Windows 接入目录目前为移植说明，尚无 WiFiCx/NetAdapterCx 实现。
