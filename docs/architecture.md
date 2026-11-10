@@ -5,7 +5,7 @@
 | 目录 | 职责 | 当前实现边界 |
 | --- | --- | --- |
 | shared | 固定宽度协议结构、NANDOW ABI、纯 C NIRA/缓存逻辑与 SHA-256 | 无 Binder、hostap、Netlink、文件或线程依赖 |
-| driver | 内核模块、WHC 收发、USB/SDIO 绑定和 cfg80211 接入 | Linux / Android 共享；现有 core 仍使用 Linux 内核 API |
+| driver | 展平的内核源码、总线实现和 cfg80211 接入 | Linux / Android 共享；仍使用 Linux 内核 API |
 | cli_tool | 展平的 CLI、PASN/NAN 库、发布程序及测试 | CMake；依赖匹配的 hostap、OpenSSL 与 libnl |
 | services | Linux 服务、配置与 Core 26 镜像集成 | 使用 cli_tool 构建产物 |
 | android_app | Gradle/NDK APK、独立 AIDL HAL、Android 镜像打包 | 包名 cn.zenghome.flashstudio；HAL 与 APK 分别构建/部署 |
@@ -45,3 +45,7 @@ Android 必须在握手、密钥安装和本次 NIK 交换完成后向 framework
 CLI 源码、头文件、测试在 cli_tool/ 同一层；跨平台协议和算法保留在 shared/。
 服务与配置集中在 services/，Core 26 脚本从 ../cli_tool 构建程序并打包公共服务。
 Android HAL 从 cli_tool/ 引用 PASN 公共接口，复用 shared/ 的协议及 SHA-256。
+
+驱动自有 C/H（含总线、WHC、cfg80211 和 btusb）统一位于 driver/ 根目录。
+Kbuild 按 driver/configs/kbuild/ 中的模块片段选择编译对象；默认构建 WHC，
+显式 btusb 目标只构建 USB 蓝牙模块。IPC 等未验证接口的支持边界保持原状。

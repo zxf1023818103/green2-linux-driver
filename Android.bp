@@ -2,7 +2,7 @@
 filegroup {
     name: "green2_whc_kernel_sources",
     visibility: ["//visibility:public"],
-    srcs: ["driver/Kbuild", "driver/Makefile", "driver/configs/*_defconfig", "driver/**/*.c", "driver/**/*.h", "driver/**/Kbuild", "shared/include/*.h"],
+    srcs: ["driver/Kbuild", "driver/Makefile", "driver/configs/*_defconfig", "driver/*.c", "driver/*.h", "driver/configs/kbuild/*.mk", "shared/include/*.h"],
 }
 cc_library_headers {
     name: "green2_whc_public_headers",

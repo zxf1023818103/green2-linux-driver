@@ -1,2 +1,2 @@
 # Preserve the imported Ubuntu btusb source byte-for-byte, including upstream indentation.
-driver/platforms/linux_android/bluetooth/btusb.c whitespace=-space-before-tab
+driver/btusb.c whitespace=-space-before-tab

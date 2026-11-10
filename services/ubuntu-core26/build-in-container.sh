@@ -16,17 +16,15 @@ cmp /work/pc-kernel-tree/config-$kver "$kdir/.config"
 
 cd /work
 if [[ ${1:-all} == all ]]; then
-mkdir -p /work/btusb-kbuild
-cp /repo/driver/platforms/linux_android/bluetooth/{btusb.c,btintel.h,btbcm.h,btrtl.h,btmtk.h,Kbuild,Makefile} /work/btusb-kbuild/
-make -C /work/btusb-kbuild KDIR="$kdir" CC=gcc-15 -j4
 make -C /work/driver/driver amebagreen2_usb_nan_bulk2048_defconfig
 make -C "$kdir" M=/work/driver/driver clean
 make -C /work/driver/driver KDIR="$kdir" CC=gcc-15 -j4
+make -C /work/driver/driver KDIR="$kdir" CC=gcc-15 -j4 btusb
 # Core's generated drivers tree maps the kernel/ directory from the kernel snap;
 # top-level updates/ is reserved for kernel-module components and is not mapped.
 install -Dm644 driver/driver/whc_usb.ko "pc-kernel-tree/modules/$kver/kernel/drivers/net/wireless/realtek/whc_usb.ko"
 rm -f "pc-kernel-tree/modules/$kver/kernel/drivers/bluetooth/btusb.ko.zst"
-install -Dm644 btusb-kbuild/btusb.ko "pc-kernel-tree/modules/$kver/kernel/drivers/bluetooth/btusb.ko"
+install -Dm644 driver/driver/btusb.ko "pc-kernel-tree/modules/$kver/kernel/drivers/bluetooth/btusb.ko"
 # depmod expects /lib/modules; the kernel snap's runtime mount uses /modules.
 mkdir -p pc-kernel-tree/lib
 ln -s ../modules pc-kernel-tree/lib/modules

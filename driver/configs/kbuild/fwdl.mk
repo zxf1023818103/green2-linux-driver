@@ -1,8 +1,7 @@
 # Kbuild for WHC firmware download module (COMMON LIBRARY)
 
 ifeq ($(CONFIG_FW_DOWNLOAD), y)
-# Include paths
-ccflags-y += -I$(src)/core -I$(src)/include/sdk
+# Sources and headers are in the module root.
 
 # Common XFER files
 FWDL_OBJS := \

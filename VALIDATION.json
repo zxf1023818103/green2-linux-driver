@@ -177,7 +177,7 @@
     "secondary_observation": "Core 26 BLE application retained its old adapter registration after hotplug; service restart restored advertisement. NAN publisher recovered automatically."
   },
   "btusb_direct_integration": {
-    "source_directory": "driver/platforms/linux_android/bluetooth",
+    "source_directory": "driver",
     "kernel": "7.0.0-38-generic",
     "source_package": "Ubuntu linux-source-7.0.0 7.0.0-38.38",
     "external_patch_required": false,
@@ -219,5 +219,25 @@
     "service_shell_syntax": "PASS",
     "runtime_services_replaced": false,
     "images_repacked": false
+  },
+  "driver_flatten": {
+    "date": "2026-11-11",
+    "linux_android_C_H_paths_flattened": 138,
+    "unique_C_H_files": 137,
+    "identical_header_deduplicated": "ameba_wificfg_common.h",
+    "source_root": "driver",
+    "bus_module_kbuild_fragments": "driver/configs/kbuild",
+    "device_tree_material": "driver/configs/device-tree",
+    "build_scripts": "driver/scripts",
+    "btusb_source_root": "driver",
+    "btusb_build_target": "make -C driver KDIR=<matching kernel headers> btusb",
+    "windows_modified": false,
+    "android_6_12_whc_usb_build": "PASS",
+    "core26_7_0_whc_usb_build": "PASS",
+    "core26_7_0_btusb_build": "PASS",
+    "text_comparison": "All three modules .text byte-identical to previously tested versions",
+    "runtime_modules_replaced": false,
+    "images_repacked": false,
+    "other_buses_revalidated": false
   }
 }

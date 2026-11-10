@@ -1,16 +1,22 @@
+# Linux/Android sources are flat; Bluetooth is an explicit separate target.
+ifeq ($(GREEN2_BTUSB_ONLY),1)
+include $(src)/configs/kbuild/btusb.mk
+else
 # Shared kernel-module composition for Linux and Android.
 # External Android builds without module Kconfig default to the validated USB profile.
 ifeq ($(strip $(CONFIG_WHC_HCI_USB)$(CONFIG_WHC_HCI_SDIO)$(CONFIG_WHC_HCI_SPI)$(CONFIG_WHC_HCI_GSPI)),)
 include $(src)/configs/amebagreen2_usb_nan_bulk2048_defconfig
 endif
 ifeq ($(CONFIG_WHC_HCI_USB),y)
-include $(src)/bus/usb/Kbuild
+include $(src)/configs/kbuild/usb.mk
 else ifeq ($(CONFIG_WHC_HCI_SDIO),y)
-include $(src)/bus/sdio/Kbuild
+include $(src)/configs/kbuild/sdio.mk
 else ifeq ($(CONFIG_WHC_HCI_SPI),y)
-include $(src)/bus/spi/Kbuild
+include $(src)/configs/kbuild/spi.mk
 else ifeq ($(CONFIG_WHC_HCI_GSPI),y)
-include $(src)/bus/gspi/Kbuild
+include $(src)/configs/kbuild/gspi.mk
 else
 $(error Select an external WHC bus configuration; SDK in-tree IPC is not integrated here)
+endif
+
 endif

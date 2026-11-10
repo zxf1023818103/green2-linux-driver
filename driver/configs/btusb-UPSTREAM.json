@@ -5,34 +5,35 @@
   "license": "Per-file retained SPDX/copyright notices",
   "files": [
     {
-      "path": "btusb.c",
+      "path": "driver/btusb.c",
       "source": "drivers/bluetooth/btusb.c",
       "upstream_sha256": "e323c48a6b605a6fa7ca4bf2b6c4343aa94a5500361665105f881201f6eb40b3",
       "local_change": "Green2 0bda:f851 Bluetooth interface uses generic HCI USB"
     },
     {
-      "path": "btintel.h",
+      "path": "driver/btintel.h",
       "source": "drivers/bluetooth/btintel.h",
       "upstream_sha256": "e4b5556b5da5808ed99a4d749c558bad691ba401178ecca91e5aaa63149246a0",
       "local_change": null
     },
     {
-      "path": "btbcm.h",
+      "path": "driver/btbcm.h",
       "source": "drivers/bluetooth/btbcm.h",
       "upstream_sha256": "43ab94feac41161ff6adca55002b5494117da72b968a41c972144d92b51d574e",
       "local_change": null
     },
     {
-      "path": "btrtl.h",
+      "path": "driver/btrtl.h",
       "source": "drivers/bluetooth/btrtl.h",
       "upstream_sha256": "452d4467259f1da92f0f71bb566499f1fa0e1c89ec4f5bf7412ba8c5489daaa1",
       "local_change": null
     },
     {
-      "path": "btmtk.h",
+      "path": "driver/btmtk.h",
       "source": "drivers/bluetooth/btmtk.h",
       "upstream_sha256": "4b5d3781d0d8e47e3282c53564e83892793bb4a18c5ca318e821220316bcd9f3",
       "local_change": null
     }
-  ]
+  ],
+  "paths_relative_to": "repository root"
 }

@@ -83,7 +83,11 @@ HAL 在 android_app/hal/，需要设备匹配的生成 AIDL 头文件及 vendor 
 ## Green2 USB Bluetooth
 
 Green2 的 btusb 例外规则已直接合入
-`driver/platforms/linux_android/bluetooth/btusb.c`。Core 26 从该目录构建
+`driver/btusb.c`。Core 26 使用 `make -C driver ... btusb` 构建
 btusb.ko，不再提取整包内核源码或应用单独的 patch。四个私有头文件与内核
 版本、原始摘要一并固定。该模块是独立的内核集成组件，当前 Android 的板载
 UART 蓝牙 HAL 路径不需要构建它。
+
+驱动源码和头文件已展平到 driver/，总线构建片段位于 driver/configs/kbuild/，
+设备树资料位于 driver/configs/device-tree/。默认 make 入口仍生成 WHC 模块，
+显式 `make -C driver KDIR=... btusb` 使用同一源码目录构建 btusb.ko。

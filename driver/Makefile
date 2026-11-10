@@ -7,10 +7,12 @@ export CONFIG_NAN CONFIG_P2P CONFIG_MCC CONFIG_BT_INIC CONFIG_IEEE80211R CONFIG_
 export CONFIG_WHC_CMD_PATH CONFIG_WHC_WIFI_API_PATH CONFIG_WHC_HOST_RTW_CLI
 export CONFIG_RMESH CONFIG_FW_DOWNLOAD CONFIG_WHCH CONFIG_WHC_USB_BULK_2048
 KDIR ?= /lib/modules/$(shell uname -r)/build
-.PHONY: all modules clean prepare list-defconfigs menuconfig
+.PHONY: all modules btusb clean prepare list-defconfigs menuconfig
 all: modules
 modules:
 	$(MAKE) -C $(KDIR) M=$(ROOT) modules
+btusb:
+	$(MAKE) -C $(KDIR) M=$(ROOT) GREEN2_BTUSB_ONLY=1 modules
 clean:
 	$(MAKE) -C $(KDIR) M=$(ROOT) clean
 prepare:
