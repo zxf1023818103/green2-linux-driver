@@ -29,13 +29,15 @@ Module.symvers 必须与目标一致。脚本不构建工具链或完整 AOSP。
 ```sh
 cmake -S cli_tool -B /path/to/cli-build \
   -DGREEN2_HOSTAP_DIR=/path/to/hostap \
-  -DGREEN2_BUILD_LEGACY_NAN_TOOLS=ON
+  -DGREEN2_BUILD_NAN_TOOLS=ON
 cmake --build /path/to/cli-build --parallel 4
 ctest --test-dir /path/to/cli-build --output-on-failure
 ```
 
 主要产物：green2_cli、pasn_live、pasn_vendor_events、libgreen2pasn.so。
-发布服务兼容工具为 rtw_aware / libnanapi.so；原厂其他诊断源码保留于 legacy/。
+Linux NAN 发布程序为 src/publisher/rtw_aware.c，libnanapi 源码为 src/nan/，
+公共接口为 include/nan/；hostap 配置位于 config/hostap-pasn.config。
+共享 NANDOW 协议头文件与纯 C SHA-256 位于 shared/。未使用的旧诊断工具已删除。
 CLI 的两种入口：`green2_cli events nan0`、`green2_cli pasn nan0 2437`。
 事件流含握手材料，应直接通过管道送入 PASN 处理，不作为公开日志保存。
 

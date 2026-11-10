@@ -18,6 +18,8 @@
 #ifndef __RTW_NAN_VENDOR_DEF_H__
 #define __RTW_NAN_VENDOR_DEF_H__
 
+#include <stdint.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif

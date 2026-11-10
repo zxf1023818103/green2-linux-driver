@@ -22,7 +22,7 @@
 #include <memory>
 #include <optional>
 extern "C" {
-#include "sha256.h"
+#include "green2_sha256.h"
 }
 namespace green2 {
 using Status=ndk::ScopedAStatus;

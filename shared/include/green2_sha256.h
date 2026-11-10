@@ -1,7 +1,8 @@
-#ifndef SHA256
-#define SHA256
+#ifndef GREEN2_SHA256_H
+#define GREEN2_SHA256_H
 
-#include "rtw_nan_cmd_api.h"
+#include <stdint.h>
+#include <stddef.h>
 #include <string.h>
 #define SHA256_BLOCK_SIZE 64
 

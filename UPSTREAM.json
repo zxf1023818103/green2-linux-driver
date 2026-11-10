@@ -22,286 +22,10 @@
       "path_at_import": "Makefile"
     },
     {
-      "path": "cli_tool/legacy/rtw_cli/Makefile",
-      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/Makefile",
-      "sha256": "d7a715c5215dbedd059e44e67fc7082d43da1d797180883dd798004fcccf8230",
-      "path_at_import": "app/rtw_cli/Makefile"
-    },
-    {
-      "path": "cli_tool/legacy/rtw_cli/rtw_cli.c",
-      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli.c",
-      "sha256": "84fa0234f30eb6b5cbd79f1d4ab6b189b39eb3aa6f70ba05357fdeeb547ea97a",
-      "path_at_import": "app/rtw_cli/rtw_cli.c"
-    },
-    {
-      "path": "cli_tool/legacy/rtw_cli/rtw_cli_api.c",
-      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_api.c",
-      "sha256": "8f5365e4760c7d0f3837b8e703d6d82287c83a08a118d81ba22bc08dc4b39cee",
-      "path_at_import": "app/rtw_cli/rtw_cli_api.c"
-    },
-    {
-      "path": "cli_tool/legacy/rtw_cli/rtw_cli_api.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_api.h",
-      "sha256": "262f6048b5dff34d2ea96b752db1645d91ef8df3df878477cdcbb4cdc1bbf77e",
-      "path_at_import": "app/rtw_cli/rtw_cli_api.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtw_cli/rtw_cli_netlink.c",
-      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_netlink.c",
-      "sha256": "dfbe67e5faf8117f28235bb2bf1a4547b633f1dd2a18f775332e1664a2edabd4",
-      "path_at_import": "app/rtw_cli/rtw_cli_netlink.c"
-    },
-    {
-      "path": "cli_tool/legacy/rtw_cli/rtw_cli_netlink.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_netlink.h",
-      "sha256": "14f3779a6a40de352afa644b79030780cfe4d79b03493dbb8d4bafc4973ab4d1",
-      "path_at_import": "app/rtw_cli/rtw_cli_netlink.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtw_cli/rtw_cli_wifi_types.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_wifi_types.h",
-      "sha256": "4a70222114ff9a75ec7dfd1a37a09203027a063fbeabb0786c78ad87b9d05abb",
-      "path_at_import": "app/rtw_cli/rtw_cli_wifi_types.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/Android.mk",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/Android.mk",
-      "sha256": "62f773d7329a4427f43fbcf5cd250da0bc436e25453a90ccf3ec17e08cee7de8",
-      "path_at_import": "app/rtwpriv/Android.mk"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/Makefile",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/Makefile",
-      "sha256": "932cd87865e15ec9176fb5fdb517487f4fa29f963e25f5e15871f68d9c81fd4d",
-      "path_at_import": "app/rtwpriv/Makefile"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/cra/ARCHITECTURE.md",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/ARCHITECTURE.md",
-      "sha256": "2730f8128109029e87b800a0c94600a3ba81994fbfc1d9b551a2ba067cd87214",
-      "path_at_import": "app/rtwpriv/cra/ARCHITECTURE.md"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/cra/EU_DECLARATION_OF_CONFORMITY.md",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/EU_DECLARATION_OF_CONFORMITY.md",
-      "sha256": "0c5d8811a94196ef88d4d9587c11123f5157c980bfa40b71791cbbf6bdcf0dbe",
-      "path_at_import": "app/rtwpriv/cra/EU_DECLARATION_OF_CONFORMITY.md"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/cra/SECURITY.md",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/SECURITY.md",
-      "sha256": "20a808ee8cc6df3006457d636e15abe1eb4bf5d80c58a06ce83cd93d1a3a7def",
-      "path_at_import": "app/rtwpriv/cra/SECURITY.md"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/cra/bom.json",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/bom.json",
-      "sha256": "6f6118c977db876cfa971dbe7858fd0dbf650c09c22f61bd7e34f243923ddc21",
-      "path_at_import": "app/rtwpriv/cra/bom.json"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/cra/bom.spdx.json",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/bom.spdx.json",
-      "sha256": "a13fbbdffa6a1a46ca0d905d9619f2a2f7ed40701d65e5726654876b0c6c27da",
-      "path_at_import": "app/rtwpriv/cra/bom.spdx.json"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/cra/scan-cve.sh",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/scan-cve.sh",
-      "sha256": "cc66e3ff117db419057a27b9f8f4bc16f896ba7841d2bd0b4d64f634ae85463b",
-      "path_at_import": "app/rtwpriv/cra/scan-cve.sh"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/readme.txt",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/readme.txt",
-      "sha256": "14d34654eab99fd2caabb3c86954e2b5df3c948fba1c79d39d6ab09e8d15390c",
-      "path_at_import": "app/rtwpriv/readme.txt"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_api.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_api.h",
-      "sha256": "8fe53ffabfcc34cfb7ed9aa0fb0a0db4c95c11a92e568a374edfd7644d95359a",
-      "path_at_import": "app/rtwpriv/rtw_api.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_hwtx.cpp",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_hwtx.cpp",
-      "sha256": "9924d5f70d58edd48ab62261b6e70c9d66f2552982c0868e3bca2472aacb1ed3",
-      "path_at_import": "app/rtwpriv/rtw_hwtx.cpp"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_hwtx.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_hwtx.h",
-      "sha256": "cbdff2984cd24281faf874dc8caab5d0773590f8d27630dd9b3028d48305c413",
-      "path_at_import": "app/rtwpriv/rtw_hwtx.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_ioctl.cpp",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_ioctl.cpp",
-      "sha256": "15ed2267b11b99cb52762fa7083b5cc72b3f7928e48faa50b5ecd29deee5cbac",
-      "path_at_import": "app/rtwpriv/rtw_ioctl.cpp"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_ioctl.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_ioctl.h",
-      "sha256": "4061ece9c80effa288c868b2e89d92295aaa18db63d2b2af766b67493cc81534",
-      "path_at_import": "app/rtwpriv/rtw_ioctl.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_nl.cpp",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl.cpp",
-      "sha256": "e9c723d0ed1df2bf5a4a1ecc936da4c22bf5fb7626aa5937d4039d628ad9c1e8",
-      "path_at_import": "app/rtwpriv/rtw_nl.cpp"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_nl.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl.h",
-      "sha256": "be39e231c6f0a249607d981448be2a5f1950daafa2a125bdf74f7a632540f58a",
-      "path_at_import": "app/rtwpriv/rtw_nl.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_nl_cmd.cpp",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl_cmd.cpp",
-      "sha256": "d502cc9437efdec46a04ca7cf139617d292cc9fba0b011687d54fa22be01d72d",
-      "path_at_import": "app/rtwpriv/rtw_nl_cmd.cpp"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_nl_cmd.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl_cmd.h",
-      "sha256": "9d60264f2fe335d83f4424317a9e88539ef798c1fd847395ca9036aa49a7ec41",
-      "path_at_import": "app/rtwpriv/rtw_nl_cmd.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_parse.cpp",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_parse.cpp",
-      "sha256": "064069a3cb9131c630f63397497fadc732ceaf340ef454257ca590dc8cc340d0",
-      "path_at_import": "app/rtwpriv/rtw_parse.cpp"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_parse.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_parse.h",
-      "sha256": "83567b36e6e61542d671d76135e123543f975cd99670ae87ac7e0f76db6cbc42",
-      "path_at_import": "app/rtwpriv/rtw_parse.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_transport.cpp",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_transport.cpp",
-      "sha256": "d72914d1f3628d8e0a1396f8e2090749f14f9d1d389d9d58240b12030e179535",
-      "path_at_import": "app/rtwpriv/rtw_transport.cpp"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_transport.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_transport.h",
-      "sha256": "e90829c28cab15d3a927aa8f3087ce1fcadb9aca0b1b4d414299e8a1cc5e9dcc",
-      "path_at_import": "app/rtwpriv/rtw_transport.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_udpsrv.cpp",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_udpsrv.cpp",
-      "sha256": "d596f15f4b47e6a61bf52be43381ba24dee5c457201cdd7004d7a906a2fc3551",
-      "path_at_import": "app/rtwpriv/rtw_udpsrv.cpp"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtw_udpsrv.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_udpsrv.h",
-      "sha256": "d98d35031cbaa248dadb8504b705f7e4b349c26669cbdae0cd11856161784344",
-      "path_at_import": "app/rtwpriv/rtw_udpsrv.h"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtwpriv.cpp",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtwpriv.cpp",
-      "sha256": "ec3f188040fd466b111195b030e3e20d9927c0e6d91feb9a5294a3edcf7d81c9",
-      "path_at_import": "app/rtwpriv/rtwpriv.cpp"
-    },
-    {
-      "path": "cli_tool/legacy/rtwpriv/rtwpriv.h",
-      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtwpriv.h",
-      "sha256": "60e91bbcc7cbfdca7d3ecbf353e6fbfc275ac64437667c61e48b377a3d827976",
-      "path_at_import": "app/rtwpriv/rtwpriv.h"
-    },
-    {
-      "path": "cli_tool/legacy/whc_cust_path_demo/Makefile",
-      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/Makefile",
-      "sha256": "9315dc55ec096ea68c7933a0672ba0fdb8efeb454d6d4694ebcf23e588f3a997",
-      "path_at_import": "app/whc_cust_path_demo/Makefile"
-    },
-    {
-      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app.c",
-      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app.c",
-      "sha256": "b712b3b22a5c17b72f5b8bce0e810199dbada751c79c19048f714136e231232f",
-      "path_at_import": "app/whc_cust_path_demo/whc_host_app.c"
-    },
-    {
-      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app_api.c",
-      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_api.c",
-      "sha256": "d92530693fe40406737b915c58e8a87a0252a6f6cf6783137931d9c5735087f0",
-      "path_at_import": "app/whc_cust_path_demo/whc_host_app_api.c"
-    },
-    {
-      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app_api.h",
-      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_api.h",
-      "sha256": "2750451b569a80a39ed1ea3d5fdbce1668f61102f8423daa60a1e1a05e1d28bc",
-      "path_at_import": "app/whc_cust_path_demo/whc_host_app_api.h"
-    },
-    {
-      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app_ota.c",
-      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_ota.c",
-      "sha256": "6a88116d6d70d0ad31e7e3fc34986e12bffc8ba784623f96f08a5a0edfa4be2d",
-      "path_at_import": "app/whc_cust_path_demo/whc_host_app_ota.c"
-    },
-    {
-      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app_ota.h",
-      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_ota.h",
-      "sha256": "d4233a0cd8bf863e0f8cf34663d773f2f45d24a23e98c6dfdcafe534ab155402",
-      "path_at_import": "app/whc_cust_path_demo/whc_host_app_ota.h"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/Makefile",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/Makefile",
-      "sha256": "4c02ca9259b2ff6eee46ebae8242c5c38c0ed728222c70ff98cff746afb4fdda",
-      "path_at_import": "app/wifi_nan_utility/Makefile"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/.gitignore",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/.gitignore",
-      "sha256": "7258521d782e66ebe19b84fb6d8a2fba30996f14e8a88d1cf2fc11eb990e4f26",
-      "path_at_import": "app/wifi_nan_utility/pasn_probe/.gitignore"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/Makefile",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/Makefile",
-      "sha256": "03cd3a83f080b63e4d735b6a78080329791c6c5639bd38748e4d47d6d2d03cd7",
-      "path_at_import": "app/wifi_nan_utility/pasn_probe/Makefile"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/README.md",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/README.md",
-      "sha256": "2951acf3d42649cd444cb286a24fda2f1f4a8544c2c0eafab64b84c4171aaa69",
-      "path_at_import": "app/wifi_nan_utility/pasn_probe/README.md"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/live_auth2.sh",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/live_auth2.sh",
-      "sha256": "62f38a17878fd33244335ca2871a3af718b9a4550fb2508f72f601c2839a309e",
-      "path_at_import": "app/wifi_nan_utility/pasn_probe/live_auth2.sh"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/live_pasn.sh",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/live_pasn.sh",
-      "sha256": "a3ed59127b7cc6dd4ac4d006b59de84ca727d04d437ef04e45c19fbaaf2c159c",
-      "path_at_import": "app/wifi_nan_utility/pasn_probe/live_pasn.sh"
-    },
-    {
       "path": "cli_tool/src/main.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/pasn_live.c",
       "sha256": "f83c96951889b17d9b36d36ab6660b09f38a443deb2b71d20c9051dcf8b7457c",
       "path_at_import": "app/wifi_nan_utility/pasn_probe/pasn_live.c"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/pasn_probe.c",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/pasn_probe.c",
-      "sha256": "df6bc8db11e8f4c93e656dd93ea4d92faaa9262edd0bde345c0eefd996f5722b",
-      "path_at_import": "app/wifi_nan_utility/pasn_probe/pasn_probe.c"
     },
     {
       "path": "cli_tool/src/comm_helper.c",
@@ -310,184 +34,100 @@
       "path_at_import": "app/wifi_nan_utility/pasn_probe/pasn_vendor_events.c"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/send_auth2.c",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/send_auth2.c",
-      "sha256": "d54a868acf63d57a2012d7024b848abe99aab1c88bb3b916b43f0a84e0030b02",
-      "path_at_import": "app/wifi_nan_utility/pasn_probe/send_auth2.c"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/Makefile",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/Makefile",
-      "sha256": "a869e91c373279c267b15c79e0ef24c0d3f2822272b97c06430087a7df1d44eb",
-      "path_at_import": "app/wifi_nan_utility/rtw_aware/Makefile"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/aware.conf",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/aware.conf",
-      "sha256": "dea0b258e529f837d3b2abfc2db1148837b09e3460a390b7e6ae29edf1b83d67",
-      "path_at_import": "app/wifi_nan_utility/rtw_aware/aware.conf"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/hooks.sh",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/hooks.sh",
-      "sha256": "dc121fd88b44fe8fb94fea554908f3a86c5c3506e63322fd0ddd61c0843baacf",
-      "path_at_import": "app/wifi_nan_utility/rtw_aware/hooks.sh"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/nan_supplicant.conf",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/nan_supplicant.conf",
-      "sha256": "a32c0d960515fc7a9afc3a51eab6ca1cdcb618cc44d2d43c4d1fee0156d3d163",
-      "path_at_import": "app/wifi_nan_utility/rtw_aware/nan_supplicant.conf"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/rtw_aware.c",
+      "path": "cli_tool/src/publisher/rtw_aware.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_aware.c",
       "sha256": "b5783a4a97ddac9785bda39d39465bf3dcf1484954dad5865892109b1bd27d69",
       "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_aware.c"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/rtw_nan_cmd_api.h",
+      "path": "cli_tool/include/nan/rtw_nan_cmd_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_nan_cmd_api.h",
       "sha256": "f561294670806cfeb654da8b406e312f178ae06e4bf3dc1f7851cbbf47c58e38",
       "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_nan_cmd_api.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/rtw_nan_scenario_api.h",
+      "path": "cli_tool/include/nan/rtw_nan_scenario_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_nan_scenario_api.h",
       "sha256": "2c81a9072f5a23f654e60000ef6e12617ab5e74733155729e4b6c2e614697dee",
       "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_nan_scenario_api.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/rtw_nan_struct.h",
+      "path": "cli_tool/include/nan/rtw_nan_struct.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/rtw_nan_struct.h",
       "sha256": "acbcceadf19629450ed66f04b377a399b39629a6465e82bf25e39ccaac22c43d",
       "path_at_import": "app/wifi_nan_utility/rtw_aware/rtw_nan_struct.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/start_rtw_aware.sh",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/start_rtw_aware.sh",
-      "sha256": "37c6896fc2723344894fd02bbb0a6edad2a1cf8297681f650dae92157ee129fa",
-      "path_at_import": "app/wifi_nan_utility/rtw_aware/start_rtw_aware.sh"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/script/nan_test",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/script/nan_test",
-      "sha256": "fb20ed731d9ce6f740124d10b50532c7aa4a1f1875cab2a727dfc8cd2199142a",
-      "path_at_import": "app/wifi_nan_utility/script/nan_test"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/Makefile",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/Makefile",
-      "sha256": "d98b4b7b08a0886108d7373a61717176790853c046deb84f0d383fa847143feb",
-      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/Makefile"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/nan_cache_file.h",
+      "path": "cli_tool/src/nan/nan_cache_file.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_cache_file.h",
       "sha256": "ac125d445be6e36edb0ba29b6d424b496ef69b1f3ec0cad488ad01bf89cb237f",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_cache_file.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/nan_event.c",
+      "path": "cli_tool/src/nan/nan_event.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_event.c",
       "sha256": "9121b7782eb6921d2a6441b5a1d794ed62d8707c298b6a0af054165f61c897a4",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_event.c"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/nan_event.h",
+      "path": "cli_tool/src/nan/nan_event.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_event.h",
       "sha256": "81e3161a4119f52444c826371b7d6999e22013c006dc9f2e726ad90b33b18e2f",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_event.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/nan_scenario.c",
+      "path": "cli_tool/src/nan/nan_scenario.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/nan_scenario.c",
       "sha256": "5ecb26ed3ec03fcd7edc627fe1b26ac6f3dc8473c9fade928e188a381ee0f33b",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/nan_scenario.c"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.c",
+      "path": "cli_tool/src/nan/rtw_nan_cmd.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.c",
       "sha256": "65d1c076505a5afa7fbdedca311341ab658bc01f8bec9e94e1b2be2069ee82bf",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.c"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.h",
+      "path": "cli_tool/src/nan/rtw_nan_cmd.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.h",
       "sha256": "aba8e042f97ecffa7c096104a560bf4e098a7c309ff14888e14bb6679985f06d",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd_api.h",
+      "path": "cli_tool/include/nan/rtw_nan_cmd_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd_api.h",
       "sha256": "4a5275e917c6cb6b75dc715e922744acb4225bbea2eb542727f19758b0702cba",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_cmd_api.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/rtw_nan_scenario_api.h",
+      "path": "cli_tool/include/nan/rtw_nan_scenario_api.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_scenario_api.h",
       "sha256": "2c81a9072f5a23f654e60000ef6e12617ab5e74733155729e4b6c2e614697dee",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_scenario_api.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/rtw_nan_struct.h",
+      "path": "cli_tool/include/nan/rtw_nan_struct.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_struct.h",
       "sha256": "acbcceadf19629450ed66f04b377a399b39629a6465e82bf25e39ccaac22c43d",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_struct.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/rtw_nan_vendor_def.h",
+      "path": "shared/include/rtw_nan_vendor_def.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_vendor_def.h",
       "sha256": "8ce7c1e433218575c84df22568c2e2fd2538a12f23830e9f0cb45385d3d8a5e8",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/rtw_nan_vendor_def.h"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/sha256.c",
+      "path": "shared/src/sha256.c",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/sha256.c",
       "sha256": "41d59ba45cafdaa24d0f6b286a05b5fe300762deb23635f05a651885136508ae",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/sha256.c"
     },
     {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/sha256.h",
+      "path": "shared/include/green2_sha256.h",
       "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/sha256.h",
       "sha256": "1fa30e8473d7ea44e939b8859b98655a2478bdba21a119ee5f3a6e1909446063",
       "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/sha256.h"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/nan_vendor_wrapper.c",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/nan_vendor_wrapper.c",
-      "sha256": "56580fd679ff40a214367a9bd7456fd8a098ec267493fa432ae781651e426b84",
-      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/nan_vendor_wrapper.c"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/phl_nan_def_ioctl.h",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/phl_nan_def_ioctl.h",
-      "sha256": "51c41b079f766d6f829db73b9552afcb147a5073576540b07c0748f5b07f187d",
-      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/phl_nan_def_ioctl.h"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_ioctrl_struc.h",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_ioctrl_struc.h",
-      "sha256": "17996283744ed2fc657f909e8f5074ccf6aca32a1b1ff2f254dfb10592d0766f",
-      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_ioctrl_struc.h"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_osdep.h",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_osdep.h",
-      "sha256": "7002b68a4188e9930f7f864f1a5e5c18c071e8ee548771a2037d6a4b8ff888c5",
-      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_osdep.h"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vendor_def.h",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vendor_def.h",
-      "sha256": "771ca34eb331a41b8ce1b2a5cc2ee76b3267a501c39831343365470f0324ab92",
-      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vendor_def.h"
-    },
-    {
-      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/user_os_info.h",
-      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/user_os_info.h",
-      "sha256": "3447327f1fd6fcb51f863f266599c527b0e7bfc5b9cd5126ac41cd0bc85298f2",
-      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/user_os_info.h"
     },
     {
       "path": "driver/configs/amebadplus_spi_wpaod_defconfig",
@@ -1419,6 +1059,428 @@
       "source_package": "Ubuntu linux-source-7.0.0",
       "version": "7.0.0-38.38",
       "local_change": "Direct Green2 Bluetooth interface exception in btusb.c; no external patch"
+    }
+  ],
+  "removed_files": [
+    {
+      "path": "cli_tool/legacy/rtw_cli/Makefile",
+      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/Makefile",
+      "sha256": "d7a715c5215dbedd059e44e67fc7082d43da1d797180883dd798004fcccf8230",
+      "path_at_import": "app/rtw_cli/Makefile",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtw_cli/rtw_cli.c",
+      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli.c",
+      "sha256": "84fa0234f30eb6b5cbd79f1d4ab6b189b39eb3aa6f70ba05357fdeeb547ea97a",
+      "path_at_import": "app/rtw_cli/rtw_cli.c",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtw_cli/rtw_cli_api.c",
+      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_api.c",
+      "sha256": "8f5365e4760c7d0f3837b8e703d6d82287c83a08a118d81ba22bc08dc4b39cee",
+      "path_at_import": "app/rtw_cli/rtw_cli_api.c",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtw_cli/rtw_cli_api.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_api.h",
+      "sha256": "262f6048b5dff34d2ea96b752db1645d91ef8df3df878477cdcbb4cdc1bbf77e",
+      "path_at_import": "app/rtw_cli/rtw_cli_api.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtw_cli/rtw_cli_netlink.c",
+      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_netlink.c",
+      "sha256": "dfbe67e5faf8117f28235bb2bf1a4547b633f1dd2a18f775332e1664a2edabd4",
+      "path_at_import": "app/rtw_cli/rtw_cli_netlink.c",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtw_cli/rtw_cli_netlink.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_netlink.h",
+      "sha256": "14f3779a6a40de352afa644b79030780cfe4d79b03493dbb8d4bafc4973ab4d1",
+      "path_at_import": "app/rtw_cli/rtw_cli_netlink.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtw_cli/rtw_cli_wifi_types.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtw_cli/rtw_cli_wifi_types.h",
+      "sha256": "4a70222114ff9a75ec7dfd1a37a09203027a063fbeabb0786c78ad87b9d05abb",
+      "path_at_import": "app/rtw_cli/rtw_cli_wifi_types.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/Android.mk",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/Android.mk",
+      "sha256": "62f773d7329a4427f43fbcf5cd250da0bc436e25453a90ccf3ec17e08cee7de8",
+      "path_at_import": "app/rtwpriv/Android.mk",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/Makefile",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/Makefile",
+      "sha256": "932cd87865e15ec9176fb5fdb517487f4fa29f963e25f5e15871f68d9c81fd4d",
+      "path_at_import": "app/rtwpriv/Makefile",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/cra/ARCHITECTURE.md",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/ARCHITECTURE.md",
+      "sha256": "2730f8128109029e87b800a0c94600a3ba81994fbfc1d9b551a2ba067cd87214",
+      "path_at_import": "app/rtwpriv/cra/ARCHITECTURE.md",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/cra/EU_DECLARATION_OF_CONFORMITY.md",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/EU_DECLARATION_OF_CONFORMITY.md",
+      "sha256": "0c5d8811a94196ef88d4d9587c11123f5157c980bfa40b71791cbbf6bdcf0dbe",
+      "path_at_import": "app/rtwpriv/cra/EU_DECLARATION_OF_CONFORMITY.md",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/cra/SECURITY.md",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/SECURITY.md",
+      "sha256": "20a808ee8cc6df3006457d636e15abe1eb4bf5d80c58a06ce83cd93d1a3a7def",
+      "path_at_import": "app/rtwpriv/cra/SECURITY.md",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/cra/bom.json",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/bom.json",
+      "sha256": "6f6118c977db876cfa971dbe7858fd0dbf650c09c22f61bd7e34f243923ddc21",
+      "path_at_import": "app/rtwpriv/cra/bom.json",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/cra/bom.spdx.json",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/bom.spdx.json",
+      "sha256": "a13fbbdffa6a1a46ca0d905d9619f2a2f7ed40701d65e5726654876b0c6c27da",
+      "path_at_import": "app/rtwpriv/cra/bom.spdx.json",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/cra/scan-cve.sh",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/cra/scan-cve.sh",
+      "sha256": "cc66e3ff117db419057a27b9f8f4bc16f896ba7841d2bd0b4d64f634ae85463b",
+      "path_at_import": "app/rtwpriv/cra/scan-cve.sh",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/readme.txt",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/readme.txt",
+      "sha256": "14d34654eab99fd2caabb3c86954e2b5df3c948fba1c79d39d6ab09e8d15390c",
+      "path_at_import": "app/rtwpriv/readme.txt",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_api.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_api.h",
+      "sha256": "8fe53ffabfcc34cfb7ed9aa0fb0a0db4c95c11a92e568a374edfd7644d95359a",
+      "path_at_import": "app/rtwpriv/rtw_api.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_hwtx.cpp",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_hwtx.cpp",
+      "sha256": "9924d5f70d58edd48ab62261b6e70c9d66f2552982c0868e3bca2472aacb1ed3",
+      "path_at_import": "app/rtwpriv/rtw_hwtx.cpp",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_hwtx.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_hwtx.h",
+      "sha256": "cbdff2984cd24281faf874dc8caab5d0773590f8d27630dd9b3028d48305c413",
+      "path_at_import": "app/rtwpriv/rtw_hwtx.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_ioctl.cpp",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_ioctl.cpp",
+      "sha256": "15ed2267b11b99cb52762fa7083b5cc72b3f7928e48faa50b5ecd29deee5cbac",
+      "path_at_import": "app/rtwpriv/rtw_ioctl.cpp",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_ioctl.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_ioctl.h",
+      "sha256": "4061ece9c80effa288c868b2e89d92295aaa18db63d2b2af766b67493cc81534",
+      "path_at_import": "app/rtwpriv/rtw_ioctl.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_nl.cpp",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl.cpp",
+      "sha256": "e9c723d0ed1df2bf5a4a1ecc936da4c22bf5fb7626aa5937d4039d628ad9c1e8",
+      "path_at_import": "app/rtwpriv/rtw_nl.cpp",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_nl.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl.h",
+      "sha256": "be39e231c6f0a249607d981448be2a5f1950daafa2a125bdf74f7a632540f58a",
+      "path_at_import": "app/rtwpriv/rtw_nl.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_nl_cmd.cpp",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl_cmd.cpp",
+      "sha256": "d502cc9437efdec46a04ca7cf139617d292cc9fba0b011687d54fa22be01d72d",
+      "path_at_import": "app/rtwpriv/rtw_nl_cmd.cpp",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_nl_cmd.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_nl_cmd.h",
+      "sha256": "9d60264f2fe335d83f4424317a9e88539ef798c1fd847395ca9036aa49a7ec41",
+      "path_at_import": "app/rtwpriv/rtw_nl_cmd.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_parse.cpp",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_parse.cpp",
+      "sha256": "064069a3cb9131c630f63397497fadc732ceaf340ef454257ca590dc8cc340d0",
+      "path_at_import": "app/rtwpriv/rtw_parse.cpp",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_parse.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_parse.h",
+      "sha256": "83567b36e6e61542d671d76135e123543f975cd99670ae87ac7e0f76db6cbc42",
+      "path_at_import": "app/rtwpriv/rtw_parse.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_transport.cpp",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_transport.cpp",
+      "sha256": "d72914d1f3628d8e0a1396f8e2090749f14f9d1d389d9d58240b12030e179535",
+      "path_at_import": "app/rtwpriv/rtw_transport.cpp",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_transport.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_transport.h",
+      "sha256": "e90829c28cab15d3a927aa8f3087ce1fcadb9aca0b1b4d414299e8a1cc5e9dcc",
+      "path_at_import": "app/rtwpriv/rtw_transport.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_udpsrv.cpp",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_udpsrv.cpp",
+      "sha256": "d596f15f4b47e6a61bf52be43381ba24dee5c457201cdd7004d7a906a2fc3551",
+      "path_at_import": "app/rtwpriv/rtw_udpsrv.cpp",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtw_udpsrv.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtw_udpsrv.h",
+      "sha256": "d98d35031cbaa248dadb8504b705f7e4b349c26669cbdae0cd11856161784344",
+      "path_at_import": "app/rtwpriv/rtw_udpsrv.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtwpriv.cpp",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtwpriv.cpp",
+      "sha256": "ec3f188040fd466b111195b030e3e20d9927c0e6d91feb9a5294a3edcf7d81c9",
+      "path_at_import": "app/rtwpriv/rtwpriv.cpp",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/rtwpriv/rtwpriv.h",
+      "source": "component/wifi/whc/whc_host_linux/app/rtwpriv/rtwpriv.h",
+      "sha256": "60e91bbcc7cbfdca7d3ecbf353e6fbfc275ac64437667c61e48b377a3d827976",
+      "path_at_import": "app/rtwpriv/rtwpriv.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/whc_cust_path_demo/Makefile",
+      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/Makefile",
+      "sha256": "9315dc55ec096ea68c7933a0672ba0fdb8efeb454d6d4694ebcf23e588f3a997",
+      "path_at_import": "app/whc_cust_path_demo/Makefile",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app.c",
+      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app.c",
+      "sha256": "b712b3b22a5c17b72f5b8bce0e810199dbada751c79c19048f714136e231232f",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app.c",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app_api.c",
+      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_api.c",
+      "sha256": "d92530693fe40406737b915c58e8a87a0252a6f6cf6783137931d9c5735087f0",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app_api.c",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app_api.h",
+      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_api.h",
+      "sha256": "2750451b569a80a39ed1ea3d5fdbce1668f61102f8423daa60a1e1a05e1d28bc",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app_api.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app_ota.c",
+      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_ota.c",
+      "sha256": "6a88116d6d70d0ad31e7e3fc34986e12bffc8ba784623f96f08a5a0edfa4be2d",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app_ota.c",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/whc_cust_path_demo/whc_host_app_ota.h",
+      "source": "component/wifi/whc/whc_host_linux/app/whc_cust_path_demo/whc_host_app_ota.h",
+      "sha256": "d4233a0cd8bf863e0f8cf34663d773f2f45d24a23e98c6dfdcafe534ab155402",
+      "path_at_import": "app/whc_cust_path_demo/whc_host_app_ota.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/Makefile",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/Makefile",
+      "sha256": "4c02ca9259b2ff6eee46ebae8242c5c38c0ed728222c70ff98cff746afb4fdda",
+      "path_at_import": "app/wifi_nan_utility/Makefile",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/.gitignore",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/.gitignore",
+      "sha256": "7258521d782e66ebe19b84fb6d8a2fba30996f14e8a88d1cf2fc11eb990e4f26",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/.gitignore",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/Makefile",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/Makefile",
+      "sha256": "03cd3a83f080b63e4d735b6a78080329791c6c5639bd38748e4d47d6d2d03cd7",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/Makefile",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/README.md",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/README.md",
+      "sha256": "2951acf3d42649cd444cb286a24fda2f1f4a8544c2c0eafab64b84c4171aaa69",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/README.md",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/live_auth2.sh",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/live_auth2.sh",
+      "sha256": "62f38a17878fd33244335ca2871a3af718b9a4550fb2508f72f601c2839a309e",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/live_auth2.sh",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/live_pasn.sh",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/live_pasn.sh",
+      "sha256": "a3ed59127b7cc6dd4ac4d006b59de84ca727d04d437ef04e45c19fbaaf2c159c",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/live_pasn.sh",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/pasn_probe.c",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/pasn_probe.c",
+      "sha256": "df6bc8db11e8f4c93e656dd93ea4d92faaa9262edd0bde345c0eefd996f5722b",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/pasn_probe.c",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/pasn_probe/send_auth2.c",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/pasn_probe/send_auth2.c",
+      "sha256": "d54a868acf63d57a2012d7024b848abe99aab1c88bb3b916b43f0a84e0030b02",
+      "path_at_import": "app/wifi_nan_utility/pasn_probe/send_auth2.c",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/Makefile",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/Makefile",
+      "sha256": "a869e91c373279c267b15c79e0ef24c0d3f2822272b97c06430087a7df1d44eb",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/Makefile",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/aware.conf",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/aware.conf",
+      "sha256": "dea0b258e529f837d3b2abfc2db1148837b09e3460a390b7e6ae29edf1b83d67",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/aware.conf",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/hooks.sh",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/hooks.sh",
+      "sha256": "dc121fd88b44fe8fb94fea554908f3a86c5c3506e63322fd0ddd61c0843baacf",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/hooks.sh",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/nan_supplicant.conf",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/nan_supplicant.conf",
+      "sha256": "a32c0d960515fc7a9afc3a51eab6ca1cdcb618cc44d2d43c4d1fee0156d3d163",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/nan_supplicant.conf",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/rtw_aware/start_rtw_aware.sh",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/rtw_aware/start_rtw_aware.sh",
+      "sha256": "37c6896fc2723344894fd02bbb0a6edad2a1cf8297681f650dae92157ee129fa",
+      "path_at_import": "app/wifi_nan_utility/rtw_aware/start_rtw_aware.sh",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/script/nan_test",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/script/nan_test",
+      "sha256": "fb20ed731d9ce6f740124d10b50532c7aa4a1f1875cab2a727dfc8cd2199142a",
+      "path_at_import": "app/wifi_nan_utility/script/nan_test",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/src/rtw_nan_api/Makefile",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/rtw_nan_api/Makefile",
+      "sha256": "d98b4b7b08a0886108d7373a61717176790853c046deb84f0d383fa847143feb",
+      "path_at_import": "app/wifi_nan_utility/src/rtw_nan_api/Makefile",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/nan_vendor_wrapper.c",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/nan_vendor_wrapper.c",
+      "sha256": "56580fd679ff40a214367a9bd7456fd8a098ec267493fa432ae781651e426b84",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/nan_vendor_wrapper.c",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/phl_nan_def_ioctl.h",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/phl_nan_def_ioctl.h",
+      "sha256": "51c41b079f766d6f829db73b9552afcb147a5073576540b07c0748f5b07f187d",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/phl_nan_def_ioctl.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_ioctrl_struc.h",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_ioctrl_struc.h",
+      "sha256": "17996283744ed2fc657f909e8f5074ccf6aca32a1b1ff2f254dfb10592d0766f",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_ioctrl_struc.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_osdep.h",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_osdep.h",
+      "sha256": "7002b68a4188e9930f7f864f1a5e5c18c071e8ee548771a2037d6a4b8ff888c5",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vender_osdep.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vendor_def.h",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vendor_def.h",
+      "sha256": "771ca34eb331a41b8ce1b2a5cc2ee76b3267a501c39831343365470f0324ab92",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/rtw_nan_vendor_def.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
+    },
+    {
+      "path": "cli_tool/legacy/wifi_nan_utility/src/vendor_wrapper/user_os_info.h",
+      "source": "component/wifi/whc/whc_host_linux/app/wifi_nan_utility/src/vendor_wrapper/user_os_info.h",
+      "sha256": "3447327f1fd6fcb51f863f266599c527b0e7bfc5b9cd5126ac41cd0bc85298f2",
+      "path_at_import": "app/wifi_nan_utility/src/vendor_wrapper/user_os_info.h",
+      "removal_reason": "Unused diagnostic tool or superseded build/script/header; retained in Git history"
     }
   ]
 }

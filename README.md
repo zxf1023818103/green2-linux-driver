@@ -28,3 +28,6 @@ Windows 接入目录目前为移植说明，尚无 WiFiCx/NetAdapterCx 实现。
 当前开发回归使用预编译工具链/主机工具。固件、编译产物、个人配置、运行日志、
 配对缓存和签名私钥不进入 Git。构建、系统启动与真实无线测试分别记录，避免
 将目录重排或编译通过等同于设备回归完成。
+
+NAN 发布程序、库和配置已迁入 cli_tool/src/publisher/、src/nan/、include/nan/
+和 config/；公共协议及纯 C SHA-256 在 shared/。仓库不再保留 legacy/ 旧工具目录。

@@ -17,7 +17,7 @@
 #include <cctype>
 #include <cstdio>
 extern "C" {
-#include "sha256.h"
+#include "green2_sha256.h"
 }
 namespace green2 {
 void append(Bytes&a,const Bytes&b){a.insert(a.end(),b.begin(),b.end());}

@@ -184,5 +184,23 @@
     "module_build": "PASS with existing precompiled GCC 15 and matching kernel headers",
     "comparison_with_previously_tested_module": "btusb.c and four private headers byte-identical; .text section byte-identical",
     "runtime_replacement": "Not performed: integration-only change, previously tested code retained"
+  },
+  "legacy_cleanup": {
+    "date": "2026-11-11",
+    "legacy_directory_removed": true,
+    "unused_files_removed": 60,
+    "publisher": "cli_tool/src/publisher/rtw_aware.c",
+    "nan_library": "cli_tool/src/nan",
+    "nan_public_api": "cli_tool/include/nan",
+    "shared_protocol_and_hash": "shared/include/rtw_nan_vendor_def.h, shared/include/green2_sha256.h, shared/src/sha256.c",
+    "hostap_config": "cli_tool/config/hostap-pasn.config",
+    "linux_cli_publisher_library_build": "PASS",
+    "android_cli_and_hal_build": "PASS",
+    "PASN_tests": "All 3 PASS in builder, Core 26 VM and Android target",
+    "shared_sha256": "4 independent vectors PASS through libnanapi in Core 26 VM",
+    "publisher_loader_help": "PASS (existing help exit status 1)",
+    "android_hal_text_comparison": "Byte-identical to previously flashed image",
+    "runtime_services_replaced": false,
+    "images_repacked": false
   }
 }

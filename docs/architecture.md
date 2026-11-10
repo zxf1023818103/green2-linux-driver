@@ -4,7 +4,7 @@
 
 | 目录 | 职责 | 当前实现边界 |
 | --- | --- | --- |
-| shared | 固定宽度协议结构、宏、纯 C NIRA 解析和缓存差分 | 无 Binder、hostap、Netlink、文件或线程依赖 |
+| shared | 固定宽度协议结构、NANDOW ABI、纯 C NIRA/缓存逻辑与 SHA-256 | 无 Binder、hostap、Netlink、文件或线程依赖 |
 | driver | 内核模块、WHC 收发、USB/SDIO 绑定和 cfg80211 接入 | Linux / Android 共享；现有 core 仍使用 Linux 内核 API |
 | cli_tool | 用户态 CLI、PASN 引擎、Linux 发布服务和 Core 26 镜像集成 | CMake；依赖匹配的 hostap、OpenSSL 与 libnl |
 | android_app | Gradle/NDK APK、独立 AIDL HAL、Android 镜像打包 | 包名 cn.zenghome.flashstudio；HAL 与 APK 分别构建/部署 |
@@ -40,3 +40,8 @@ PASN 引擎留在用户态：它包含 hostap/密码学、Netlink 和存储适�
 Android 必须在握手、密钥安装和本次 NIK 交换完成后向 framework 确认配对；
 数据链路建立/结束时配置和清理 IPv6 邻居；TCP 在服务发布前绑定 NAN 地址，
 避免 iPhone 的首个 SYN 早于应用网络回调。配对密钥保留在平台私有存储中。
+
+NAN 发布程序在 cli_tool/src/publisher/，用户态 NAN 库在 cli_tool/src/nan/，
+公共 API 在 cli_tool/include/nan/。Linux 服务使用这些正式构建目标；Android HAL
+复用 shared/ 的 NANDOW 定义和 SHA-256。旧诊断工具已删除，来源及删除记录
+仍保留在 UPSTREAM.json 和 Git 历史中。

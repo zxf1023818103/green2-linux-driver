@@ -11,7 +11,7 @@
 #include <unistd.h>
 #include <sys/stat.h>
 extern "C" {
-#include "sha256.h"
+#include "green2_sha256.h"
 }
 namespace green2 {
 namespace {

@@ -5,7 +5,7 @@
 #include <sys/stat.h>
 #include <sys/random.h>
 #include <fcntl.h>
-#include "sha256.h"
+#include "green2_sha256.h"
 #include "rtw_nan_cmd_api.h"
 #include "rtw_nan_cmd.h"
 #include "nan_event.h"
