@@ -77,7 +77,12 @@ python3 -u "$bundle/watch-radio.py" "$base" "$base_index" "$nan_index" "$phy" & 
 rm -f pasn-events
 mkfifo -m 600 pasn-events
 "$bundle/pasn_vendor_events" nan0 >pasn-events & children+=("$!")
-"$bundle/pasn_live" nan0 2437 <pasn-events & children+=("$!")
+pasn_frequency=${GREEN2_PASN_FREQUENCY:-2437}
+case "$pasn_frequency" in
+    2437|5220|5745) ;;
+    *) echo 'Invalid NAN PASN frequency' >&2; exit 2 ;;
+esac
+"$bundle/pasn_live" nan0 "$pasn_frequency" <pasn-events & children+=("$!")
 sleep 1
 kill -0 "${children[@]}"
 python3 -u "$bundle/nan_echo.py" & children+=("$!")

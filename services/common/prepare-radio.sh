@@ -5,12 +5,13 @@ export PATH=/usr/sbin:/usr/bin:/sbin:/bin
 base=${1:-wlan0}
 band=${2:-2GHz}
 [[ $# -le 2 && $EUID == 0 && $base =~ ^[[:alnum:]_.:-]+$ ]] || {
-    echo "usage: sudo $0 GREEN2_BASE_INTERFACE [2GHz|dual]" >&2; exit 2;
+    echo "usage: sudo $0 GREEN2_BASE_INTERFACE [2GHz|dual|5GHz]" >&2; exit 2;
 }
 case "$band" in
     2GHz) bands=(2GHz) ;;
     dual) bands=(2GHz 5GHz) ;;
-    *) echo "band must be 2GHz or dual" >&2; exit 2 ;;
+    5GHz) bands=(5GHz) ;;
+    *) echo "band must be 2GHz, dual or 5GHz" >&2; exit 2 ;;
 esac
 driver=$(basename "$(readlink -f "/sys/class/net/$base/device/driver")")
 # WHC_USB parents netdevs to the USB device; its driver binds the child interface.
@@ -26,6 +27,16 @@ fi
     echo "$base is not a WHC_SDIO/WHC_USB interface" >&2; exit 1;
 }
 phy=$(readlink -f "/sys/class/net/$base/phy80211")
+if [[ $band == 5GHz ]]; then
+    [[ $(cat /sys/module/cfg80211/parameters/nan_allow_5g_only 2>/dev/null) == Y ]] || {
+        echo '5GHz bench requires the experimental cfg80211 module opt-in' >&2; exit 1;
+    }
+    iw phy "${phy##*/}" info | awk '
+        $3 == "MHz" && $2 >= 2400 && $2 < 2500 && !/disabled/ {bad=1}
+        END {exit bad}' || {
+        echo '5GHz bench refuses a PHY with enabled 2.4GHz channels' >&2; exit 1;
+    }
+fi
 [[ -n $phy && $(readlink -f /sys/class/net/nan0/phy80211) == "$phy" ]] || {
     echo "Create nan0 on the Green2 PHY first." >&2; exit 1;
 }

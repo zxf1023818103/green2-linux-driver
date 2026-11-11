@@ -1,0 +1,74 @@
+{
+  "date_local": "2026-11-12",
+  "branch": "experiment/nan-5ghz-only",
+  "target": "AmebaGreen2 USB 0bda:f851 / Ubuntu Core26 amd64 7.0.0-38-generic",
+  "firmware_app_sha256": "f35cc75dd65ac08ce9dbe0764964a70b921ec83372bfc1b22709c286e67c3b4b",
+  "cfg80211_module_sha256": "3fe8b1e1a7f15640b68dd733e2e7955f8fd15e2e163e53a945ecd4b922e080f2",
+  "device_checks": {
+    "boot_band": "5G",
+    "nan_mask": 2,
+    "primary_channel": 149,
+    "secondary_channel": 149,
+    "enabled": true,
+    "api_return": 0,
+    "auto_restore_24ghz": "suppressed by verified instruction patch",
+    "channel_plan": "0x6f, CN TX power limits retained"
+  },
+  "host_checks": {
+    "nan_bands": 2,
+    "cfg80211_opt_in": true,
+    "phy_24ghz_channels_enabled": 0,
+    "phy_5ghz_channels_enabled": [
+      36,
+      40,
+      44,
+      48,
+      149,
+      153,
+      157,
+      161,
+      165
+    ],
+    "services_published": [
+      "TCP",
+      "UDP"
+    ],
+    "tcp_8000": "LISTEN",
+    "pasn_frequency_mhz": 5745
+  },
+  "phone_results": {
+    "five_ghz_only": "FAIL: no device in first-pairing picker after user removed pairing; no pairing request received by host",
+    "paired_cache_scenario": "NOT independently verified",
+    "ndp_tcp_throughput": "NOT reached in 5GHz-only test",
+    "dual_band_control": "PASS: same phone sees device and receives PONG after original firmware/module restored"
+  },
+  "interpretation": "Experimental initialization succeeded, iPhone cold discovery interoperability failed. Does not establish a universal iPhone limitation; forcing both legacy discovery slots to 149 may affect firmware protocol/scheduling semantics. No monitor-mode RF capture proving all transmitted frame frequencies.",
+  "efuse_written": false,
+  "bootloader_changed": false,
+  "dual_control_state": {
+    "firmware": "original 4684c981270f4712a9f53c74f998ef38f3fb5bb7a9e4b216249d4a412fb2a4f8",
+    "cfg80211": "original signed module",
+    "nan_band": "dual (bands=3)",
+    "country": "CN"
+  },
+  "current_state": {
+    "cfg80211_nan_allow_5g_only": "Y",
+    "phy": "phy1",
+    "enabled_24ghz_channels": [],
+    "enabled_5ghz_channels": [
+      36,
+      40,
+      44,
+      48,
+      149,
+      153,
+      157,
+      161,
+      165
+    ],
+    "experiment_service": "active",
+    "nan_bands": 2,
+    "note": "Switched back to pure 5GHz at user request after successful dual-band control."
+  },
+  "firmware_experiment_commit": "2baffbc02"
+}

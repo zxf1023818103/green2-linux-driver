@@ -1,0 +1,48 @@
+--- a/net/wireless/nl80211.c
++++ b/net/wireless/nl80211.c
+@@ -15701,6 +15701,11 @@
+ 	return 0;
+ }
+ 
++/* Isolated Green2 5 GHz-only NAN experiment; default retains upstream policy. */
++static bool nan_allow_5g_only;
++module_param_named(nan_allow_5g_only, nan_allow_5g_only, bool, 0644);
++MODULE_PARM_DESC(nan_allow_5g_only, "Experimental NAN without 2.4 GHz discovery");
++
+ static int nl80211_parse_nan_conf(struct wiphy *wiphy,
+ 				  struct genl_info *info,
+ 				  struct cfg80211_nan_conf *conf,
+@@ -15725,22 +15730,26 @@
+ 		if (bands & ~(u32)wiphy->nan_supported_bands)
+ 			return -EOPNOTSUPP;
+ 
+-		if (bands && !(bands & BIT(NL80211_BAND_2GHZ)))
++		if (bands && !(bands & BIT(NL80211_BAND_2GHZ)) &&
++		    !nan_allow_5g_only)
+ 			return -EINVAL;
+ 
+ 		conf->bands = bands;
+ 		changed |= CFG80211_NAN_CONF_CHANGED_BANDS;
+ 	}
+ 
+-	conf->band_cfgs[NL80211_BAND_2GHZ].awake_dw_interval = 1;
++	if (!conf->bands || conf->bands & BIT(NL80211_BAND_2GHZ))
++		conf->band_cfgs[NL80211_BAND_2GHZ].awake_dw_interval = 1;
+ 	if (conf->bands & BIT(NL80211_BAND_5GHZ) || !conf->bands)
+ 		conf->band_cfgs[NL80211_BAND_5GHZ].awake_dw_interval = 1;
+ 
+-	/* On 2.4 GHz band use channel 6 */
+-	conf->band_cfgs[NL80211_BAND_2GHZ].chan =
+-		nl80211_get_nan_channel(wiphy, 2437);
+-	if (!conf->band_cfgs[NL80211_BAND_2GHZ].chan)
+-		return -EINVAL;
++	/* A 5 GHz-only experiment must not enable or validate a 2.4 GHz DW. */
++	if (!conf->bands || conf->bands & BIT(NL80211_BAND_2GHZ)) {
++		conf->band_cfgs[NL80211_BAND_2GHZ].chan =
++			nl80211_get_nan_channel(wiphy, 2437);
++		if (!conf->band_cfgs[NL80211_BAND_2GHZ].chan)
++			return -EINVAL;
++	}
+ 
+ 	if (!info->attrs[NL80211_ATTR_NAN_CONFIG])
+ 		goto out;
