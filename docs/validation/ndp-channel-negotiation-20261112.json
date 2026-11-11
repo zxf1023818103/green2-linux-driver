@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-12",
+  "restored": {
+    "firmware_branch": "fix/green2-nan-ios-interop",
+    "driver_branch": "main",
+    "runtime": "Ubuntu Core26 original cfg80211 and firmware; nan-band=dual; nan-country=CN; NAN/BLE active"
+  },
+  "verified_static_findings": [
+    {
+      "function": "rtw_nan_schdlr_priv_init",
+      "offset": "0x0c, literal +0x44",
+      "finding": "g_nanschdl_priv+0x110c initialized to 0x95000006: channel tuples start with 6 and 149."
+    },
+    {
+      "function": "_rtw_nan_slot_book_match_potential_attr",
+      "offset": "0x1a-0x64",
+      "finding": "If g_nanpriv+0x929 has 5GHz bit set, copy tuple +0x110f and attempt match first; if return is zero, copy tuple +0x110c and retry. This is a candidate path, not proof of the final committed schedule."
+    },
+    {
+      "function": "rtw_nan_avail_attr_parse_phyinfo",
+      "offset": "0x1e-0x50",
+      "finding": "Iterates peer channel entries and returns on first successful channel-entry parse. Peer entry ordering and committed schedule constraints also affect selection."
+    },
+    {
+      "interface": "rtw_nan_datapath_request / response",
+      "finding": "Public vendor structures expose no NDP preferred-channel field. Primary/secondary master channel commands are not a dedicated data-channel preference."
+    },
+    {
+      "interface": "FlashStudio iOS",
+      "finding": "TCP and throughput already set performanceMode=.bulk; it is not a frequency selector."
+    }
+  ],
+  "runtime_data_channel": "NOT YET VERIFIED: iw dev nan0 info has no channel, host NDP status structure reports no committed channel; no claim that traffic currently uses 5GHz.",
+  "policy": "Keep 2.4GHz discovery and pairing, enable 5GHz candidates via dual band, preserve vendor fallback. Do not change PASN 2437 to force NDP frequency or apply the failed 5GHz-only experiment.",
+  "remaining_validation": "Observe final committed NDL/FAW channel and airtime during an actual iPhone TCP/throughput session, with metadata-only firmware instrumentation or an external RF monitor.",
+  "code_changes_this_investigation": false,
+  "source_archive_sha256": "9ade71dee6186bfb5bdc634869d577e38746971bcbf09d908d87a87015cdbe6a"
+}
