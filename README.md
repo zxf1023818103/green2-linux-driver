@@ -32,6 +32,8 @@ Windows 接入目录目前为移植说明，尚无 WiFiCx/NetAdapterCx 实现。
 
 CLI 自有源码、头文件和测试全部放在 cli_tool/ 根目录。服务脚本在 services/common/，
 构建配置在 services/config/，Core 26 集成在 services/ubuntu-core26/。
+
+Ubuntu Core 26 的 VMware OVA 打包、首次启动用户名/密码配置见 [OVA 使用说明](services/ubuntu-core26/OVA.md)。
 公共协议及纯 C 算法继续位于 shared/，由 CLI 和 Android HAL 共用。
 
 Linux/Android 驱动的 C/H 文件位于 driver/ 同一层，构建片段、defconfig 和设备树

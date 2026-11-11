@@ -50,4 +50,14 @@ for name in names:
                 dest.unlink()
             shutil.copy2(source, dest)
 (root / 'runtime-packages.txt').write_text('\n'.join(manifest) + '\n')
+# rpctool is a standalone precompiled libc-only utility. No VMware daemon is
+# needed to read the OVA's first-boot GuestInfo deployment properties.
+rpctool = Path('/usr/bin/vmware-rpctool')
+if rpctool.is_file():
+    shutil.copy2(rpctool, root / 'usr/bin/vmware-rpctool')
+    version = subprocess.check_output([
+        'dpkg-query', '-W', '-f=${Version}', 'open-vm-tools'
+    ], text=True)
+    with (root / 'runtime-packages.txt').open('a') as stream:
+        stream.write('open-vm-tools ' + version + ' (vmware-rpctool only)\n')
 print(f'Staged {len(manifest)} runtime packages')

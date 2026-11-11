@@ -1,22 +1,28 @@
 #!/bin/bash
 # Build a development image; SSH public keys are local inputs, never repository data.
 set -euo pipefail
-[[ $# == 3 && $EUID == 0 ]] || {
+mode=ssh
+if [[ ${1:-} == --ova ]]; then mode=ova; shift; fi
+[[ $EUID == 0 && (($mode == ssh && $# == 3) || ($mode == ova && $# == 2)) ]] || {
     echo "usage: sudo $0 WORK_DIR SSH_PUBLIC_KEY NEW_IMAGE_WORK_DIR" >&2
+    echo "       sudo $0 --ova WORK_DIR NEW_IMAGE_WORK_DIR" >&2
     exit 2
 }
 work=$(realpath "$1")
-key=$(realpath "$2")
-image_work=$(realpath -m "$3")
+key=
+if [[ $mode == ssh ]]; then key=$(realpath "$2"); fi
+image_work=$(realpath -m "${@: -1}")
+source_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
 [[ ! -e $image_work ]] || { echo 'Image work directory must be new' >&2; exit 1; }
 cd "$work"
-python3 - "$key" <<'PY'
+python3 - "$key" "$mode" "$source_dir" <<'PY'
 from pathlib import Path
 import sys
 import os
 import yaml
-key = Path(sys.argv[1]).read_text().strip()
-if '\n' in key or len(key.split()) < 2:
+mode = sys.argv[2]
+key = Path(sys.argv[1]).read_text().strip() if mode == 'ssh' else ''
+if mode == 'ssh' and ('\n' in key or len(key.split()) < 2):
     raise SystemExit('Expected a single OpenSSH public key')
 userdata = {
     'hostname': 'green2-core26', 'manage_etc_hosts': True,
@@ -49,6 +55,26 @@ userdata = {
         ['snap', 'refresh', '--hold=forever'],
     ],
 }
+if mode == 'ova':
+    if not Path('app-tree/usr/bin/vmware-rpctool').is_file():
+        raise SystemExit('OVA requires the staged precompiled vmware-rpctool')
+    if not Path('app-tree/services/provision_ova.py').is_file():
+        raise SystemExit('OVA requires the staged provision_ova.py service')
+    userdata['users'] = []
+    userdata['ssh_pwauth'] = True
+    userdata['write_files'].extend([{
+        'path': '/etc/systemd/system/green2-ova-provision.service',
+        'permissions': '0644',
+        'content': Path(sys.argv[3], 'ova-provision.service').read_text(),
+    }, {
+        'path': '/etc/ssh/sshd_config.d/10-green2-ova.conf',
+        'permissions': '0644',
+        'content': 'PasswordAuthentication yes\nPermitRootLogin no\n',
+    }])
+    userdata['runcmd'].extend([
+        ['systemctl', 'daemon-reload'],
+        ['systemctl', 'enable', '--now', '--no-block', 'green2-ova-provision.service'],
+    ])
 cloud = {'datasource': {'NoCloud': {
     'meta-data': {'instance-id': 'green2-core26', 'local-hostname': 'green2-core26'},
     'user-data': '#cloud-config\n' + yaml.safe_dump(userdata, sort_keys=False),
@@ -67,7 +93,7 @@ gadget['defaults'] = {'system': {'service': {'console-conf': {'disable': True}}}
 p.write_text(yaml.safe_dump(gadget, sort_keys=False))
 p = Path('pc-tree/meta/snap.yaml')
 meta = yaml.safe_load(p.read_text())
-meta.update(version='26-0.1-cross.1', grade='devel')
+meta.update(version='26-0.1-ova.1' if mode == 'ova' else '26-0.1-cross.1', grade='devel')
 p.write_text(yaml.safe_dump(meta, sort_keys=False))
 PY
 snap pack pc-tree . --filename pc-green2.snap

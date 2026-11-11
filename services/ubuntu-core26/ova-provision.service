@@ -1,0 +1,19 @@
+[Unit]
+Description=Configure Green2 appliance account from deployment properties
+After=snapd.seeded.service
+Wants=snapd.seeded.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+Environment=SNAP=/snap/green2-nan-ble/current
+Environment=SNAP_COMMON=/var/snap/green2-nan-ble/common
+ExecStart=/snap/green2-nan-ble/current/bin/environment /snap/green2-nan-ble/current/usr/bin/python3 /snap/green2-nan-ble/current/services/provision_ova.py
+StandardOutput=journal+console
+StandardError=journal+console
+RemainAfterExit=yes
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

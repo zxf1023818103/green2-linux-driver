@@ -1,0 +1,38 @@
+{
+  "artifact": "Green2-Core26.ova",
+  "date": "2026-11-11",
+  "architecture": "amd64",
+  "size_bytes": 674293760,
+  "sha256": "1c34ec59477c3ecd6e2b5b57f29e3e7851e7c94c8a643867baf82a305fc162c2",
+  "kernel": "7.0.0-38-generic",
+  "vm_hardware": {
+    "vcpus": 2,
+    "memory_mib": 2048,
+    "disk_gib": 16,
+    "firmware": "EFI",
+    "secure_boot": false,
+    "network": "NAT"
+  },
+  "precompiled_vmware_rpc": {
+    "package": "open-vm-tools",
+    "version": "13.0.10-1ubuntu1.1",
+    "binary_sha256": "733246d14eedb6fdd5833d73fa083a403dd5e368d0a67707a046b34bcdeb9a4e"
+  },
+  "checks": {
+    "ovftool_manifest": "PASS",
+    "fresh_import": "PASS",
+    "first_boot_custom_username": "PASS",
+    "ssh_password_with_vmx_special_characters": "PASS",
+    "sudo_with_password": "PASS",
+    "wrong_password_rejected": "PASS",
+    "factory_personal_ssh_keys_absent": "PASS",
+    "nan_ble_camera_services": "active (USB remains on original regression VM)",
+    "ovf_xml_properties_and_validation": "PASS",
+    "reboot_password_login": "PASS"
+  },
+  "limitations": [
+    "vSphere deployment UI not tested; Workstation import helper tested",
+    "No new wireless throughput run for this packaging change; earlier Core26 physical regression retained",
+    "dangerous development model; initial password may remain in hypervisor deployment metadata"
+  ]
+}
